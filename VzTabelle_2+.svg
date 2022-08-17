@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <rect x="21" y="66" width="299" height="4" fill="rgb(0, 0, 0)" />
+    <rect fill="rgb(0, 0, 0)" x="65" y="18" width="4" height="101" />
+    <rect x="72" y="18" width="4" height="97" fill="rgb(0, 0, 0)" />
+    <rect x="110" y="19" width="3" height="101" fill="rgb(0, 0, 0)" />
+    <rect x="156" y="18" width="3" height="101" fill="rgb(0, 0, 0)" />
+    <rect fill="rgb(0, 0, 0)" x="229" y="18" width="3" height="101" />
+    <rect fill="rgb(0, 0, 0)" x="282" y="20" width="3" height="101" />
+    <text textLength="21" font-size="38" x="35" y="49.9" fill="rgb(0, 0, 0)"> x</text>
+    <text textLength="33.9" font-size="25" x="25.6" y="96.8" fill="rgb(0, 0, 0)"> f'(x)</text>
+    <text textLength="38.9" font-size="41" x="80.6" y="103.2" fill="rgb(0, 0, 0)"> +</text>
+    <text fill="rgb(0, 0, 0)" font-size="41" x="183.6" y="105.2" textLength="38.9">-</text>
+    <text fill="rgb(0, 0, 0)" font-size="41" x="288.6" y="97.2" textLength="38.9">+</text>
+    <text fill="rgb(0, 0, 0)" font-size="25" x="237.9" y="55.8" textLength="43.2">NST</text>
+    <text textLength="23.2" font-size="25" x="246.9" y="98.8" fill="rgb(0, 0, 0)">0</text>
+    <text fill="rgb(0, 0, 0)" font-size="25" x="111.9" y="52.8" textLength="43.2">NST</text>
+    <text fill="rgb(0, 0, 0)" font-size="25" x="123.9" y="101.8" textLength="23.2">0</text>
+    <path stroke="rgb(0, 0, 0)" d="M 282 16 C 209 166 176 152 107.1 14.9" fill="none"></path>
+</svg>
