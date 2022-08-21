@@ -36,6 +36,10 @@
       - [Beispiel](#beispiel)
   - [sinusfunktion](#sinusfunktion)
     - [Allgemeine](#allgemeine)
+    - [Nullstellen](#nullstellen)
+    - [Hochpunkte](#hochpunkte)
+    - [Phasen verschiebung P](#phasen-verschiebung-p)
+    - [Wertemenge](#wertemenge)
 
 <!-- /code_chunk_output -->
 
@@ -717,7 +721,7 @@ Blau = Periode
 
 
 $$
-f(x)=a+sin(bx+c)+d
+f(x)=a*sin(bx+c)+d
 $$
 
 $$
@@ -725,4 +729,97 @@ a = \text{Scheitelwert der Sinusfunktion (Amplitude)} \\
 b= \text{Anzahl der schwingungen je 2}\pi \text{ -sekunden} \\
 c= \text{Verschiebung entlang der x -achse} \\
 d = \text{verschiebung entlang der y-achse}
+$$
+
+### Nullstellen
+
+Abstand immer eine halbe perioden zueinander
+
+Die Sinusfunktion is 0 wenn das Argument gleich 0 ist also
+
+$$
+sin(0)=0;f(x)=\sin(bx+c)
+$$
+
+bsp.
+
+$$
+\begin{align*}
+y&=\sin(x+\frac{\pi}{4}) \\
+f(x)&=0\\
+x-\frac{\pi}{4}&=0 \\
+x_1&=\frac{\pi}{4}
+\end{align*}
+$$
+
+Weitere nullstellen
+
+$$
+T:Periode\\
+T:\frac{2\pi}{b}\\
+bsp. \\
+T=\frac{2\pi}{1}  =2\pi
+$$
+Abstand der Nullstellen
+$$
+\frac{T}{2} =\frac{2\pi}{2}=\pi \\
+x=\frac{\pi}{4}+K*\pi;K \in \mathbb{Z}
+$$
+
+### Hochpunkte
+
+Der Abstand der Hoch punkte beträgt eine periode
+
+bsp.
+
+$$
+f(x)=1,5*sin(2x-\frac{2\pi}{3}) \quad ;\qquad a=1,5\quad b=2\quad c=\frac{2\pi}{3}\\\
+\\
+T=\frac{2\pi}{b}=\frac{2\pi}{2} =\pi
+$$
+
+Am Hop besitzt die funktion den wert $a=1,5$
+
+$$
+\begin{align*}
+f(x)&=1,5\\
+1,5*\sin(2x-\frac{2\pi}{3})&=1,5 &|:1,5&\\
+sin(2x-\frac{2\pi}{3})&=1 &|sin^{-1}&\\
+2x-\frac{2\pi}{3}&=sin^{-1}(1) &|+\frac{2\pi}{3}  &\\
+x&=\frac{\sin^{-1}(1)+\frac{2\pi}{3}}{2} \\
+x&=\frac{7}{12}\pi
+\end{align*}
+$$
+
+alle hop
+
+$$
+y=x+K*T \\
+=\frac{7}{12}\pi+K*\pi  \quad ; k\in \mathbb{Z}
+$$
+
+### Phasen verschiebung P
+
+$$
+P=\frac{c}{b}
+$$
+
+bsp.
+
+$$
+f(x)=sin(2x+\frac{2\pi}{3}) \\
+P=\frac{\frac{2\pi}{3}}{3}=\frac{\pi}{3}
+$$
+
+### Wertemenge
+
+die a maxilame größe der amplitudde
+b
+bsp.
+
+$$
+f(x)=-2\sin(x-2\pi)\\
+\begin{bmatrix}
+  -2;2
+\end{bmatrix}
 $$
