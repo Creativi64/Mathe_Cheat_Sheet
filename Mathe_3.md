@@ -24,7 +24,7 @@
     - [Gradmaß](#gradmaß)
     - [Bogenmas](#bogenmas)
     - [Geodätischisches Winkelmaß](#geodätischisches-winkelmaß)
-    - [Ranges  >>>Bogenmaß](#ranges--bogenmaß)
+    - [Ranges  >>>Bogenmaß](#ranges-bogenmaß)
       - [umrechnung Sin](#umrechnung-sin)
       - [umrechnung Cos](#umrechnung-cos)
       - [umrechnung Tan](#umrechnung-tan)
@@ -36,10 +36,24 @@
       - [Beispiel](#beispiel)
   - [sinusfunktion](#sinusfunktion)
     - [Allgemeine](#allgemeine)
+    - [Streckung, Stauchung, Verschiebung](#streckung-stauchung-verschiebung)
+      - [Amplitude](#amplitude)
+      - [Periode](#periode)
+      - [Phasenverschiebnung](#phasenverschiebnung)
+    - [symetrie](#symetrie-1)
+      - [Sin](#sin)
+      - [Cos](#cos)
+      - [Tan](#tan)
+    - [Perioditität](#perioditität)
     - [Nullstellen](#nullstellen)
+      - [Nullstellen Für alle](#nullstellen-für-alle)
+        - [sin](#sin-1)
+        - [cos](#cos-1)
+        - [Tan](#tan-1)
     - [Hochpunkte](#hochpunkte)
     - [Phasen verschiebung P](#phasen-verschiebung-p)
     - [Wertemenge](#wertemenge)
+  - [Vektoren](#vektoren)
 
 <!-- /code_chunk_output -->
 
@@ -731,6 +745,98 @@ c= \text{Verschiebung entlang der x -achse} \\
 d = \text{verschiebung entlang der y-achse}
 $$
 
+### Streckung, Stauchung, Verschiebung
+
+#### Amplitude
+ 
+$$
+f(x)=a\sin(x) \\\
+\\
+\begin{align*}
+a&>1:\text{Streckung} \\
+0<a&<1:\text{Stachung} \\
+a&<0:\text{Spiegelung an der x-Achse}
+\end{align*}
+$$
+
+#### Periode
+
+Anzahl der schwingungen je $2\pi$-sekunden
+$$
+f(x)=\sin(bx) \\\
+\\
+\begin{align*}
+  b&>1 :\text{Stauchung}\\
+  0<b&<1:\text{Dehnug} \\
+\end{align*} \\\ 
+\\
+T=\frac{2\pi}{b}
+$$
+
+#### Phasenverschiebnung
+
+$$
+f(x)=\sin(x+c) \\
+\begin{align*}
+  c&>0:\text{nach Links}\\
+  c&<0:\text{nach Rechts}
+\end{align*}
+$$
+
+### symetrie
+
+#### Sin
+
+$$
+\begin{align*}
+  f(x)&=\sin(x) \\\
+  \\
+  f(-x)&=-f(x) \\
+  \sin(-x)&=-\sin(s) \\
+ \text{für alle } &x \in \mathbb{R} \\\
+ \\
+ (-1)\sin(a)&=\sin(-a)\\
+ \sin(a)&=-sin(-a)
+\end{align*}
+$$
+
+#### Cos
+
+$$
+\begin{align*}
+  f(x)&=\cos(x) \\\
+  \\
+f(-x)&=f(x) \\
+\cos(-x)&=\cos(x) \\
+\text{für alle } &x \in \mathbb{R}\\\
+\\
+\cos(a)&=\cos(-a)
+\end{align*}
+$$
+
+#### Tan
+
+$$
+\begin{align*}
+f(x)&=\tan(x) \\\
+\\
+  f(-x)&=-f(x) \\
+  \tan(-x)&=-\tan(x)\\
+  \text{für alle } &x\in \mathbb{R} \backslash \left\{ (2k+1)\frac{\pi}{2} \quad k \in \mathbb{Z} \right\} \\
+  (-1)\tan(a)&=\tan(-a)
+\end{align*}
+$$
+
+### Perioditität
+
+für alle $k \in \mathbb{Z}$ und $x \in \mathbb{R}$
+
+$$
+\sin(x)=\sin(x+k2\pi) \\
+\cos(x)=\cos(x+k2\pi) \\
+\tan(x)=\tan(x+k\pi)
+$$
+
 ### Nullstellen
 
 Abstand immer eine halbe perioden zueinander
@@ -740,6 +846,64 @@ Die Sinusfunktion is 0 wenn das Argument gleich 0 ist also
 $$
 sin(0)=0;f(x)=\sin(bx+c)
 $$
+
+
+#### Nullstellen Für alle
+
+##### sin
+
+$$
+\begin{align*}
+  \sin(x)&=0 \\
+\sin^{-1}(0)&=x \\
+\implies k*\pi&=x,k\in\mathbb{z}\\\
+\\
+\text{NST}\\
+\text{für}k=-2&;x=-2\pi \\
+\text{für}k=-1&;x=-\pi \\
+\text{für}k=0&;x=0 \\
+\text{für}k=1&;x=\pi \\
+\\
+NST(k*\pi&|0) \qquad k\in \mathbb{Z}
+\end{align*}
+$$
+
+##### cos
+
+$$
+\begin{align*}
+\cos(x)&=0 \\
+\cos^{-1}(0)&=0\\
+\implies(2k+1)*\frac{\pi}{2}&=y \\
+\\
+\text{NST} \\
+\text{für} k=0&;x=\frac{\pi}{2} \\
+\text{für} k=1&;x=\frac{3}{2}\pi \\
+\text{für} k=2&;x=\frac{5}{2}\pi \\
+\text{für} k=3&;x=\frac{7}{2}\pi \\
+\\
+NST ((2k+1)*\frac{\pi}{2}&|0)\qquad für k\in\mathbb{Z}
+\end{align*}
+$$
+
+##### Tan
+
+$$
+\begin{align*}
+  \tan(x)&=0\\
+  \tan^{-1}(0)&=0 \\
+  \implies k*\pi=x\\
+  \\
+  \text{NST}\\
+  \text{für }k =-1&;x=-\pi\\ 
+  \text{für }k =0&;x=0\\ 
+  \text{für }k =1&;x=\pi\\ 
+  \text{für }k =2&;x=2  \pi\\ 
+  \\
+  NST(k*\pi&|0) \qquad k=\mathbb{Z}
+\end{align*}
+$$
+
 
 bsp.
 
@@ -823,3 +987,4 @@ f(x)=-2\sin(x-2\pi)\\
   -2;2
 \end{bmatrix}
 $$
+
