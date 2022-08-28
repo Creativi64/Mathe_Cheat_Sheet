@@ -163,9 +163,72 @@ $$
 
 #### Addition und Substraktion
 
+beliebigerweiterbar
+
+$$
+\vec{a}+\vec{b}=\begin{pmatrix*}
+  a_x\\
+  a_y\\
+  a_z
+\end{pmatrix*}+\begin{pmatrix*}
+  b_x\\
+  b_y\\
+  b_z
+\end{pmatrix*}=\begin{pmatrix*}
+  a_x+b_x\\
+  a_y+b_y\\
+  a_z+b_z
+\end{pmatrix*}
+$$
+
+$$
+\vec{a}-\vec{b}=\begin{pmatrix*}
+  a_x\\
+  a_y\\
+  a_z
+\end{pmatrix*}-\begin{pmatrix*}
+  b_x\\
+  b_y\\
+  b_z
+\end{pmatrix*}=\begin{pmatrix*}
+  a_x-b_x\\
+  a_y-b_y\\
+  a_z-b_z
+\end{pmatrix*}
+$$
+
 #### Rechengesetze
 
+kommutativgesetz
+
+$$
+\vec{a}+\vec{b}=\vec{b}+\vec{a}
+$$
+
+Assoziativgesetz
+
+$$
+(\vec{a}+\vec{b})+\vec{c}=\vec{a}+(\vec{b}+\vec{c})
+$$
+
+Existenz eines neutralen Elemntes
+
+$$
+\vec{a}+\vec{0}=\vec{b}
+$$
+
+Existenz inverser Elemente
+
+$$
+\vec{a}+(-\vec{a})=\vec{0}
+$$
+
 #### Skalar multiplkation
+
+$$
+\
+$$
+
 ### Vektor typen
 
 #### Einheitsverktor
