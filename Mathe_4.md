@@ -25,6 +25,8 @@
       - [Gegensvektor](#gegensvektor)
       - [Ortsvektor](#ortsvektor)
       - [Skalar](#skalar)
+    - [Kollineare und Komplanare Vektoren](#kollineare-und-komplanare-vektoren)
+    - [Skalar produkt](#skalar-produkt)
 
 <!-- /code_chunk_output -->
 
@@ -225,16 +227,97 @@ $$
 
 #### Skalar multiplkation
 
+multiplikation eines vectors mit einer reellen zahl (Skalar)
+
 $$
-\
+\lambda*\vec{a}=\lambda*\begin{pmatrix*}
+  a_x\\
+  a_y\\
+  a_z
+\end{pmatrix*}=\begin{pmatrix*}
+  \lambda*a_x\\
+  \lambda*a_y\\
+  \lambda*a_z
+\end{pmatrix*}
+$$
+
+---
+
+$$
+\lambda =0\\
+\lambda*\vec{v}=0*\vec{v}=\vec{0}=\begin{pmatrix*}
+ 0\\
+ 0\\
+0
+\end{pmatrix*}
+$$
+
+---
+
+$$
+\vec{v} =\vec{0}\\\
+\\
+\lambda\vec{v} =\lambda*\vec{0}=\vec{0}
+$$
+
+---
+
+$$
+\vec{v}\neq\vec{0} \And \lambda \neq 0 \\\
+\\
+\begin{align*}
+  \lambda>0& \implies\lambda\vec{v}\uparrow\uparrow\vec{v}\\
+  \lambda<0&\implies\lambda\vec{v}\uparrow\downarrow\vec{v}\\
+  \lambda\in\mathbb{R}&\implies\lambda\vec{v}||\vec{v}\\
+  |\lambda*\vec{v}|&=|\lambda|*|\vec{v}|
+\end{align*}
+$$
+
+---
+
+$$
+\lambda,\mu =\text{Skalare}\\\ \\
+\begin{align*}
+a)& \quad \lambda*(\mu*\vec{v})=(\lambda*\mu)*\vec{v} \\
+b)& \quad (\lambda+\mu)*\vec{v} =\lambda\vec{v}+\mu\vec{v}\\
+C)&\quad 1*\vec{v}=\vec{v}\\
+\end{align*}
 $$
 
 ### Vektor typen
 
 #### Einheitsverktor
 
+Ein vector mit der länge 1
+
+$$
+\begin{align*}
+\vec{a}^0&=\frac{1}{|\vec{a}|}*\vec{a}\\
+&=\frac{1}{5}*\begin{pmatrix*}3\\-4\end{pmatrix*} \\
+&=\begin{pmatrix*}
+  \frac{3}{5}\\
+  \frac{4}{5}
+\end{pmatrix*}
+\end{align*}
+$$
+
 #### Gegensvektor
+
+Gleicher vektor aber in die entgegen gesetzte richtung
+
+$$
+\vec{a}\rightarrow-\vec{a}
+$$
 
 #### Ortsvektor
 
+Beginnt immer am koordinaten ursprung und hat ein ende an einem punkt
+
 #### Skalar
+
+eine Relelle zahl
+
+### Kollineare und Komplanare Vektoren
+
+### Skalar produkt
+
