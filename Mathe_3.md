@@ -24,7 +24,7 @@
     - [Gradmaß](#gradmaß)
     - [Bogenmas](#bogenmas)
     - [Geodätischisches Winkelmaß](#geodätischisches-winkelmaß)
-    - [Ranges  >>>Bogenmaß](#ranges-bogenmaß)
+    - [Ranges  >>>Bogenmaß](#ranges--bogenmaß)
       - [umrechnung Sin](#umrechnung-sin)
       - [umrechnung Cos](#umrechnung-cos)
       - [umrechnung Tan](#umrechnung-tan)
@@ -53,7 +53,6 @@
     - [Hochpunkte](#hochpunkte)
     - [Phasen verschiebung P](#phasen-verschiebung-p)
     - [Wertemenge](#wertemenge)
-  - [Vektoren](#vektoren)
 
 <!-- /code_chunk_output -->
 
