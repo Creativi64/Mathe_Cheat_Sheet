@@ -26,6 +26,9 @@
       - [Ortsvektor](#ortsvektor)
       - [Skalar](#skalar)
     - [Kollineare und Komplanare Vektoren](#kollineare-und-komplanare-vektoren)
+      - [Kollinear](#kollinear)
+      - [Komplanar](#komplanar)
+    - [Basisverktoren](#basisverktoren)
     - [Skalar produkt](#skalar-produkt)
 
 <!-- /code_chunk_output -->
@@ -319,5 +322,111 @@ eine Relelle zahl
 
 ### Kollineare und Komplanare Vektoren
 
+Wenn etwas kollinear oder komplanar ist bedeutet das es auch Linear abhänig wen es nicht das 
+
+#### Kollinear
+
+Ein vektor ist kolinear zu einem Vektor wenn er zu diesem auf irgendwie parallel zueinander sind,  die richtung in die sie verlaufen spielt keine rolle
+
+wenn ein vektor parallel zu einem andern ist ist er durch ein vielfaches des anderen vektores darstellbar so kann man feststellen ob diesen linear abhänigsind oder nicht
+
+$$
+\vec{b}=k*\vec{a}\\
+\begin{pmatrix*}2\\1\end{pmatrix*}=k*\begin{pmatrix*}4\\2\end{pmatrix*} \\\
+\\
+\begin{align*}
+I_x:&2=k*4 \implies &k_1=\frac{1}{2}\\
+II_y:&1=k*2 \implies& k_2=\frac{1}{2}\\
+\end{align*}
+\\
+k_1=k_2\\
+\implies \text{linear Abhänig}
+$$
+
+---
+
+$$
+\vec{c}=k*\vec{a}\\
+\begin{pmatrix*}4\\4\end{pmatrix*}=k*\begin{pmatrix*}4\\2\end{pmatrix*} \\\
+\\
+\begin{align*}
+I_x:&4=k*4 \implies &k_1=1\\
+II_y:&4=k*2 \implies& k_2=2\\
+\end{align*}
+\\
+k_1 \neq k_2\\
+\implies \text{linear unabhänig}
+$$
+
+$$
+\vec{a}\parallel\vec{b}\\
+\vec{a}\nparallel\vec{c}
+$$
+#### Komplanar
+
+erst in drei deminsionalen raum relevant
+
+Ein vektor ist Komplanar zu einem anderen vektor wenn die vektoren zusamen eine ebene aufspannen sie müssen dafür nicht umbedinkt parallel sein oder in die gleiche richtung verlaufen
+
+$$
+\vec{c}=r*\vec{a}+s*\vec{b}\\
+\vec{a}=\begin{pmatrix*}2\\3\\4\end{pmatrix*};
+\vec{b}=\begin{pmatrix*}4\\5\\6\end{pmatrix*};
+\vec{c}=\begin{pmatrix*}1\\5\\3\end{pmatrix*}
+$$
+
+$$
+\begin{align*}
+I_x:&1 =2r+4s \\
+II_y:& 2=3r+5s\\
+III_z:& 3=4r+6s\\
+\end{align*}
+$$
+
+$$
+\begin{align*}
+&I_x :&  1 &=2r+4s & |&-4s\\
+& & 1-4s&=2r & |& :2 \\
+&I_x':&\frac{1}{2}-2s&=r&&&
+\end{align*}
+$$
+
+$$
+\begin{align*}
+&r \text{ in } II :& 2  &=3(\frac{	1}{2}-2s)+5s & & \\
+& & 2  &=\frac{3}{2}-6s+5s & |&-\frac{3}{2} \\
+& & \frac{1}{2}  &=-s & |&*(-1) \\
+& &  s &=-\frac{1}{2} & & \\
+%& &   &= & |& \\
+\end{align*}
+$$
+
+$$
+\begin{align*}
+&s \text{ in } I_x': & \frac{1}{2}-2*(-\frac{1}{2})  &=r & & \\
+& & \frac{3}{2}  &=t & & \\
+%& &   &= & |& \\
+\end{align*}
+$$
+
+probe
+
+$$
+3=4*\frac{3}{2} +6*(-\frac{1}{2})\\
+3=3 \\
+\implies \text{ Die Vektoren sind Linear abhänig}
+$$
+
+### Basisverktoren
+
 ### Skalar produkt
 
+Inder physik wichtig
+
+$$
+\vec{a}\circ\vec{b} \quad \LARGE \rightarrow \normalsize \quad a_x*b_x+a_y*b_y
+$$
+
+$$
+\cos \varphi = \frac{\vec{a}\circ\vec{b}}{|\vec{a}|*|\vec{b}|}
+$$
