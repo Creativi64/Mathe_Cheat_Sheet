@@ -419,6 +419,21 @@ $$
 
 ### Basisverktoren
 
+$$
+\vec{e_1}=\begin{pmatrix*}1\\0\\0\end{pmatrix*};
+\vec{e_2}=\begin{pmatrix*}0\\1\\0\end{pmatrix*};
+\vec{e_3}=\begin{pmatrix*}0\\0\\1\end{pmatrix*};
+$$
+
+Aus diesen kann man jeden vektor bilden
+
+$$
+\vec{a} =
+x*\begin{pmatrix*}1\\0\\0\end{pmatrix*}+
+y*\begin{pmatrix*}0\\1\\0\end{pmatrix*}+
+z*\begin{pmatrix*}0\\0\\1\end{pmatrix*}
+$$
+
 ### Skalar produkt
 
 Inder physik wichtig
