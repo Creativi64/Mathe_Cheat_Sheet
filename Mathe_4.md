@@ -30,6 +30,13 @@
       - [Komplanar](#komplanar)
     - [Basisverktoren](#basisverktoren)
     - [Skalar produkt](#skalar-produkt)
+    - [Kreuzprodukt](#kreuzprodukt)
+      - [rechte hand regel](#rechte-hand-regel)
+      - [betrag](#betrag)
+      - [Rechenregeln](#rechenregeln)
+      - [rechnen](#rechnen)
+      - [Fläche Parallelogramm](#fläche-parallelogramm)
+      - [Fläche Dreiceck](#fläche-dreiceck)
 
 <!-- /code_chunk_output -->
 
@@ -435,13 +442,92 @@ z*\begin{pmatrix*}0\\0\\1\end{pmatrix*}
 $$
 
 ### Skalar produkt
-
-Inder physik wichtig
+ 
+immer eine zahl
 
 $$
-\vec{a}\circ\vec{b} \quad \LARGE \rightarrow \normalsize \quad a_x*b_x+a_y*b_y
+\vec{a}\circ\vec{b} \quad \LARGE \rightarrow \normalsize \quad a_x*b_x+a_y*b_y \\
+\vec{a}\circ\vec{b} \quad \LARGE \rightarrow \normalsize \quad a_x*b_x+a_y*b_y+a_z*b_z
 $$
 
 $$
 \cos \varphi = \frac{\vec{a}\circ\vec{b}}{|\vec{a}|*|\vec{b}|}
 $$
+
+Bei
+nötig da eine betrag nie negativ sein kann oder auch ein Volumen bei der spat Berechnung
+$$
+|\vec{a} \circ \vec{b}| \\
+|\text{skalar}| \\
+\text{skalar} * \text{skalar}
+$$
+
+### Kreuzprodukt
+
+Nur in $\mathbb{R}^3$
+Ergebnis Vektor steht Ortogonal(senkrech) auf $\vec{a}$ und $\vec{b}$
+
+$$
+\vec{c}=\vec{a} \times \vec{b}
+$$
+
+#### rechte hand regel
+
+richting nach rechter hand regel
+
+Pistolen hand und mittel finger 90° zur handfläche
+
+bsp.:
+daumen ist ist richtung von $\vec{a}$
+zeigefinger ist ist richtung von $\vec{b}$
+mittelfinger ist ist richtung von $\vec{c}$
+
+#### betrag
+
+betrag von $\vec{a}\times\vec{b}$ ist die fläche des parallelograms zwischen $\vec{a}$ und $\vec{b}$
+
+$$
+A= |\vec{a}\times\vec{b}| = |\vec{a}|*|\vec{b}|*\sin(\alpha)
+$$
+
+#### Rechenregeln
+
+$$
+\begin{align*}
+\vec{a}\times\vec{b} &= -(\vec{a}\times\vec{b}) \\
+\lambda(\vec{a}\times\vec{b}) &= (\lambda\vec{a})\times \vec{b} = \vec{a} \times (\lambda\vec{b}) \\ 
+(\vec{a}\times\vec{b})\times\vec{c}  &= \vec{a}\times\vec{b}+\vec{b}\times\vec{c}\\
+\vec{a}\times\vec{b} &=  \vec{0} \to \text{Prüfung auf lineare abhänigkeit}
+\end{align*} \\
+$$
+
+#### rechnen
+
+$$
+\vec{a_1}=\begin{pmatrix*}a_1\\a_2\\a_3\end{pmatrix*};
+\vec{b_2}=\begin{pmatrix*}b_1\\b_2\\b_3\end{pmatrix*}; \vec{a},\vec{b}\in \mathbb{R}^3
+$$
+
+1. Es werden die beiden Vektoren jeweils nochmal unter sich selbst Geschieben
+2. Oberste und unterste wegstreichen
+3. die blaunen vektoren mit dem gegenüberliegenden aber eins weiterunterliegenenn kreuzen
+4. die letzten (grün) werden nicht mehr gekreuzt
+
+$$
+\vec{a}\times\vec{b}=
+\begin{pmatrix*}a_1\\a_2\\a_3\end{pmatrix*}\times\begin{pmatrix*}b_1\\b_2\\b_3\end{pmatrix*} =
+\begin{align*}
+&\begin{pmatrix*}\sout{a_1}\\ \textcolor{blue}{a_2}\\ \textcolor{blue}{a_3}\end{pmatrix*}\begin{pmatrix*}{\sout{b_1}}\\\textcolor{blue}b{_2}\\\textcolor{blue}{b_3}\end{pmatrix*}\\
+&\begin{pmatrix*}\textcolor{blue}{a_1}\\\textcolor{green}{a_2}\\\sout{a_3}\end{pmatrix*}\begin{pmatrix*} \textcolor{blue}{b_1}\\ \textcolor{green}{b_2}\\\sout{b_3}\end{pmatrix*}
+\end{align*}=
+\begin{align*}
+&\begin{pmatrix*}\sout{a_1}\\ \textcolor{blue}{a_2}\searrow b_3\\ \textcolor{blue}{a_3}\searrow b_1\end{pmatrix*}\begin{pmatrix*}{\sout{b_1}}\\ a_1\swarrow \textcolor{blue}b{_2}\\ a_2\swarrow \textcolor{blue}{b_3}\end{pmatrix*}\\
+&\begin{pmatrix*}\textcolor{blue}{a_1}\searrow b_2\\\textcolor{green}{a_2}\\\sout{a_3}\end{pmatrix*}\begin{pmatrix*} a_2\swarrow \textcolor{blue}{b_1}\\ \textcolor{green}{b_2}\\\sout{b_3}\end{pmatrix*}
+\end{align*}
+= \begin{pmatrix*}a_2*b_3-b_2*a_1\\a_3*b_1-b_3*a_2\\a_1*b_3-b_1*a_2\end{pmatrix*} = \begin{pmatrix*}c_1\\c_2\\c_3\end{pmatrix*}
+$$
+
+#### Fläche Parallelogramm
+
+#### Fläche Dreiceck
+
