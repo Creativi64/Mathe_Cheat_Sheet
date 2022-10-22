@@ -35,8 +35,22 @@
       - [betrag](#betrag)
       - [Rechenregeln](#rechenregeln)
       - [rechnen](#rechnen)
-      - [Fläche Parallelogramm](#fläche-parallelogramm)
-      - [Fläche Dreiceck](#fläche-dreiceck)
+      - [Fläche](#fläche)
+        - [Fläche Parallelogramm](#fläche-parallelogramm)
+        - [Fläche Dreiceck](#fläche-dreiceck)
+      - [Vloumen](#vloumen)
+        - [Spat](#spat)
+        - [Prisma](#prisma)
+        - [4-Seitige Pyramide](#4-seitige-pyramide)
+        - [Tetraeder 3-Seitige Pyramide](#tetraeder-3-seitige-pyramide)
+  - [Geraden](#geraden)
+    - [Aufstellen](#aufstellen)
+    - [mit Varable](#mit-varable)
+    - [Koordinaten gleichung](#koordinaten-gleichung)
+    - [Normalen Form](#normalen-form)
+    - [Parameter From](#parameter-from)
+    - [Umrechnung](#umrechnung-1)
+  - [Ebenen](#ebenen)
 
 <!-- /code_chunk_output -->
 
@@ -527,7 +541,60 @@ $$
 = \begin{pmatrix*}a_2*b_3-b_2*a_1\\a_3*b_1-b_3*a_2\\a_1*b_3-b_1*a_2\end{pmatrix*} = \begin{pmatrix*}c_1\\c_2\\c_3\end{pmatrix*}
 $$
 
-#### Fläche Parallelogramm
+#### Fläche
+##### Fläche Parallelogramm
 
-#### Fläche Dreiceck
+$$
+A_\# = |\vec{a}\times\vec{b}|
+$$
+
+##### Fläche Dreiceck
+
+$$
+A_\triangle = \frac{1}{2} *|\vec{a}\times\vec{b}|
+$$
+
+#### Vloumen
+
+##### Spat
+
+$$
+V_{spat} = |(\vec{a}\times\vec{b})\circ\vec{c}|
+$$
+
+Wenn =0 sind die Vektoren linear abhängig
+
+##### Prisma
+
+$$
+V = \frac{1}{2}|(\vec{a}\times\vec{b})\circ\vec{c}|
+$$
+
+##### 4-Seitige Pyramide
+
+$$
+V = \frac{1}{3}|(\vec{a}\times\vec{b})\circ\vec{c}|
+$$
+
+##### Tetraeder 3-Seitige Pyramide
+
+$$
+V = \frac{1}{6}|(\vec{a}\times\vec{b})\circ\vec{c}|
+$$
+
+## Geraden
+
+### Aufstellen
+
+### mit Varable
+
+### Koordinaten gleichung
+
+### Normalen Form
+
+### Parameter From
+
+### Umrechnung
+
+## Ebenen
 
