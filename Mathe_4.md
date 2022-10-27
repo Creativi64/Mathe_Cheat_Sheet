@@ -45,11 +45,16 @@
         - [Tetraeder 3-Seitige Pyramide](#tetraeder-3-seitige-pyramide)
   - [Geraden](#geraden)
     - [Aufstellen](#aufstellen)
-    - [mit Varable](#mit-varable)
+    - [prüfen ob ein punkt auf der geraden liegt](#prüfen-ob-ein-punkt-auf-der-geraden-liegt)
+    - [Durch stoß punkt](#durch-stoß-punkt)
     - [Koordinaten gleichung](#koordinaten-gleichung)
+  - [Parameter From](#parameter-from)
     - [Normalen Form](#normalen-form)
-    - [Parameter From](#parameter-from)
-    - [Umrechnung](#umrechnung-1)
+    - [Umrechnung $\mathbb{R}^2$](#umrechnung-mathbbr2)
+      - [Parameterform in Normalenform](#parameterform-in-normalenform)
+      - [Normalenform in koordinatenform](#normalenform-in-koordinatenform)
+      - [koordinatenform in normalenform](#koordinatenform-in-normalenform)
+      - [Normalenform in Paramterform](#normalenform-in-paramterform)
   - [Ebenen](#ebenen)
 
 <!-- /code_chunk_output -->
@@ -584,17 +589,175 @@ $$
 
 ## Geraden
 
-### Aufstellen
+Standart Darstellung 
+$$
+\vec{x}=\vec{p}+\lambda*\vec{u} \\
+$$
 
-### mit Varable
+gerade wird durch 2 punkte festgelegt
+### Aufstellen
+$$
+P=(1,2,3) \\
+Q=(3,2,1) \\\
+\\
+\vec{x}=\vec{p}+\lambda*\vec{u} \\\
+\\
+\vec{p}=\begin{pmatrix*}P_x\\ P_y\\ P_z\end{pmatrix*}-\begin{pmatrix*}0\\0\\0\end{pmatrix*} =\begin{pmatrix*}1\\ 2\\3\end{pmatrix*}\\
+\vec{u} = \begin{pmatrix*}Q_x\\ Q_y\\ Q_z\end{pmatrix*}-\begin{pmatrix*}P_x\\ P_y\\ P_z\end{pmatrix*}=\begin{pmatrix*}2\\ 0\\-2\end{pmatrix*} \\
+\vec{x}=\begin{pmatrix*}1\\ 2\\ 3\end{pmatrix*}+\lambda*\begin{pmatrix*}2\\ 0\\ -2\end{pmatrix*} \\
+$$
+
+### prüfen ob ein punkt auf der geraden liegt
+
+Der punkt wird als x eingesetzt und nur wenn alle drei Ergebnisse gleich sind ist der punkt auf der grade
+
+$$
+\vec{a}=\begin{pmatrix*}
+  0\\-1\\10
+\end{pmatrix*}; \qquad \vec{x}=\begin{pmatrix*}3\\2\\1\end{pmatrix*}+s*\begin{pmatrix*}-1\\-1\\3\end{pmatrix*}
+$$
+
+$$
+\begin{rcases}
+  0&=3-5 &\implies s=3\\
+  -1&=2-5 &\implies s=3 \\
+  10 &=1+3s &\implies s=3
+\end{rcases}
+= \qquad;A\in g
+$$
+
+### Durch stoß punkt
+
+in der regel auf einer koordinaten eben
+
+$$
+\begin{rcases}
+  S(s_1|s_2|s_3)\\
+  x_1; x_2 : s_3 =0
+\end{rcases}
+\implies \vec{s}=\begin{pmatrix*}s_1\\s_2\\0\end{pmatrix*}
+\qquad s_1,s_2 \in \mathbb{R}
+$$
+
+$$
+\begin{pmatrix*}s_1\\s_2\\0\end{pmatrix*}=\begin{pmatrix*}2\\-1\\2\end{pmatrix*}+t*\begin{pmatrix*}-2\\6\\4\end{pmatrix*} \begin{matrix*}
+  \\
+  \\
+  \implies III: 0=2+4t \implies t=-0,5
+\end{matrix*}
+$$
+$$
+t \text{ in } I : s_1 = 2-0,5-(-2) \implies s_1=3\\
+t \text{ in } II : s_2 = -1+6*(-0,5) \implies s_2 = -4 \\
+\implies S(3|-4|0)
+$$
+
+<!-- ### mit Varable -->
 
 ### Koordinaten gleichung
 
+auch Paramterfreie darstellung
+
+$$
+x_2 =mx_1+t
+$$
+
+## Parameter From
+
+$$
+\vec{x}=\begin{pmatrix*}x_1\\x_2\end{pmatrix*}=\begin{pmatrix*}a_1\\a_2\end{pmatrix*}+\lambda*\begin{pmatrix*}1\\ m\end{pmatrix*}; \qquad\lambda\in\mathbb{R} \\\
+oder\\
+\vec{x}=\begin{pmatrix*}x\\ y\end{pmatrix*}=\begin{pmatrix*}x\\ mx+t\end{pmatrix*}+\lambda*\begin{pmatrix*}0\\ t\end{pmatrix*}; \qquad x\in\mathbb{R}
+$$
+
 ### Normalen Form
 
-### Parameter From
+$$
+\vec{n}\circ\vec{x}=\vec{n}\circ\vec{a} \Leftrightarrow \vec{n}\circ (\vec{x}-\vec{a})=0
+$$
 
-### Umrechnung
+$\vec{n}$ erhält man indem zwei koordinaten von $\vec{u}$ miteindander vertauscht werden und eine koordinaten von den getaischenten mit -1 multipliziert
+
+Am besten immer daruf schauen das man alles postiv hat
+
+$$
+\mathbb{R}^2: \vec{u}=\begin{pmatrix*} u_1\\u_2\end{pmatrix*} \implies\vec{n}=\begin{pmatrix*} u_2\\-u_1\end{pmatrix*}
+$$
+
+in $\mathbb{R}^3$ wird noch eine variable gleich null gesetzt
+
+$$
+\vec{u}=\begin{pmatrix*} u_1\\u_2\\u_3\end{pmatrix*} \implies \vec{n}=\begin{pmatrix*} 0\\-u_3\\u_2 \end{pmatrix*} \text{Auch anderst möglich z.b. } \begin{pmatrix*} u_2\\-u_1\\0\end{pmatrix*}
+$$
+
+### Umrechnung $\mathbb{R}^2$
+
+
+#### Parameterform in Normalenform
+
+$$
+g: \vec{x}=\begin{pmatrix*}2\\-1\end{pmatrix*}+\lambda*\begin{pmatrix*}-2\\4\end{pmatrix*}, \qquad \lambda \in \mathbb{R}\\
+\text{Tausch von u durchführen }\\
+\implies \vec{n}=\begin{pmatrix*}4\\2\end{pmatrix*}
+$$
+
+$$
+\begin{pmatrix*}4\\2\end{pmatrix*} \circ (\vec{x}-\begin{pmatrix*}2\\-1\end{pmatrix*})=0 \\
+\text{Klammer auflösen}\\
+\begin{pmatrix*}4\\2\end{pmatrix*}\circ \vec{x}-\begin{pmatrix*}4\\2\end{pmatrix*}\circ\begin{pmatrix*}2\\-1\end{pmatrix*} =0\\
+\text{Vektorprodukt auflösen}\\
+\begin{pmatrix*}4\\2\end{pmatrix*}\circ \begin{pmatrix*}x_1\\ x_2\end{pmatrix*} -6 =0
+$$
+
+#### Normalenform in koordinatenform
+
+$$
+\begin{align*}
+g: \begin{pmatrix*}4\\2\end{pmatrix*}\circ \begin{pmatrix*}x_1\\ x_2\end{pmatrix*} -6 &=0\\
+\text{Funktionen auf stellen durch}& \text{ ausschreiben des Vektorprodukts}\\
+4x_1+2x_2-6 &=0 \\
+\text{ mit } x_1=x &\text{ und } x_2 =y\\
+4x+2y-6 &=0\\
+\implies g : y&=-2x+3
+\end{align*}
+$$
+
+#### koordinatenform in normalenform
+
+Vektor produkt zurück schreiben
+
+$$
+\begin{align*}
+ \textcolor{orange}{4}x+ \textcolor{orange}{2}y-6&=0\\
+\text{ mit } x_1=x &\text{ und } x_2 =y\\
+ \implies \begin{pmatrix*} \textcolor{orange}{4}\\ \textcolor{orange}{2}\end{pmatrix*}\circ \begin{pmatrix*}x_1\\ x_2\end{pmatrix*} -6 &=0
+\end{align*}
+$$
+
+#### Normalenform in Paramterform
+
+Komplexeste
+
+Aufpunkt ermitteln :
+
+$$
+\underbrace{\begin{pmatrix*}4\\2\end{pmatrix*}\circ\begin{pmatrix*}x_1\\x_2\end{pmatrix*}}_{\vec{n}\circ\vec{x}}-\underbrace{6}_{\vec{n}\circ\vec{a}}=0 \\
+\implies \vec{n}  \circ \vec{a}=6 \\
+\implies \begin{pmatrix*}4\\2\end{pmatrix*} \circ \begin{pmatrix*}a_1\\a_2\end{pmatrix*} =6\\
+\text{eine Stelle Kann frei gewählt werden}\\
+a_1 = 2\\
+\implies 4*2+2a_2 =6 \\
+a_2 =-1\\
+\vec{a}=\begin{pmatrix*}2\\-1\end{pmatrix*}
+$$
+
+Richtingsvektor ermitteln:
+
+$$
+\vec{u} \perp\vec{n}; \qquad \vec{n}=\begin{pmatrix*}4\\2\end{pmatrix*} \quad \implies \vec{u}\circ\vec{n} =0 \\
+\text{Tausch trick verwenden} \\
+\vec{u}=\begin{pmatrix*}-2\\4\end{pmatrix*}\\
+\implies g: \vec{x}=\begin{pmatrix*}2\\-2\end{pmatrix*}+\lambda*\begin{pmatrix*}-2\\4\end{pmatrix*} \qquad ;\lambda \in \mathbb{R}
+$$
 
 ## Ebenen
-
