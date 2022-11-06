@@ -761,3 +761,13 @@ $$
 $$
 
 ## Ebenen
+
+Wird durch drei punkte eindeutig definiert
+
+die Verbindungsvektoren sind $\vec{AU},\vec{AV},\vec{VU}$ sind komplanar, je zwei sind nicht kollinear
+
+Der  punkt x, vektor $\vec{AX}$ wird aus der linear kombination der vekoren $\vec{u}\text{ und }\vec{v}$ dargestellt
+
+$$
+E: \vec{x}=\vec{a}+\lambda*\vec{u}+\mu*\vec{v}\qquad mit \lambda,\mu\in\mathbb{R}
+$$
