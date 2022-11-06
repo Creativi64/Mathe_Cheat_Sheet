@@ -56,6 +56,10 @@
       - [koordinatenform in normalenform](#koordinatenform-in-normalenform)
       - [Normalenform in Paramterform](#normalenform-in-paramterform)
   - [Ebenen](#ebenen)
+    - [Normalenform](#normalenform)
+    - [Koordinaten form](#koordinaten-form)
+      - [von Parameter zu Koordinaten form](#von-parameter-zu-koordinaten-form)
+      - [Normalen gleichung in paramterform](#normalen-gleichung-in-paramterform)
 
 <!-- /code_chunk_output -->
 
@@ -768,6 +772,88 @@ die Verbindungsvektoren sind $\vec{AU},\vec{AV},\vec{VU}$ sind komplanar, je zwe
 
 Der  punkt x, vektor $\vec{AX}$ wird aus der linear kombination der vekoren $\vec{u}\text{ und }\vec{v}$ dargestellt
 
+Punnkt richtiungs gleichung
+
 $$
-E: \vec{x}=\vec{a}+\lambda*\vec{u}+\mu*\vec{v}\qquad mit \lambda,\mu\in\mathbb{R}
+E: \vec{x}=\vec{a}+\lambda*\vec{u}+\mu*\vec{v}\qquad mit \quad \lambda,\mu\in\mathbb{R}
 $$
+
+Drei punkte Gleichung
+
+$$
+E:\vec{x}=\vec{a}+\lambda*(\vec{u}-\vec{a})+\mu *(\vec{v}-\vec{a}) \qquad mit \quad \lambda,\mu\in\mathbb{R}
+$$
+
+$\vec{u}$ und $\vec{v}$ müssen linear unabhänig sein für eine eindeute Ebenengleichung
+
+### Normalenform
+
+$$
+E: \vec{n}\circ\vec{x}=\vec{b}\circ \vec{a} \\\
+\\
+E: \vec{n}\circ(\vec{c}-\vec{a})=0
+$$
+
+---
+
+$$
+\vec{x} =\begin{pmatrix*}3\\2\\1\end{pmatrix*}+s\begin{pmatrix*}2\\6\\-7\end{pmatrix*}+t\begin{pmatrix*}2\\2\\-6\end{pmatrix*} \\
+\vec{u}=\begin{pmatrix*}2\\6\\ -7\end{pmatrix*} \qquad \vec{v}=\begin{pmatrix*}2\\5\\-6\end{pmatrix*}
+$$
+
+1. NormalenVektor
+
+Ortigonalen Vektor $\vec{n}$ zur den vektoren $\vec{u}$ und $\vec{v}$ mit dem kreuzprodukt erstellen
+
+$$
+\textcolor{green}{\vec{n}=\vec{u}\times\vec{v}} = \begin{pmatrix*}2\\6\\-7\end{pmatrix*}\times\begin{pmatrix*}2\\2\\-6\end{pmatrix*}=\begin{pmatrix*}-1\\-2\\-2\end{pmatrix*}
+$$
+
+$$
+\textcolor{green}{\vec{n}\circ\vec{x}=\vec{n}\circ\vec{a}} \implies \begin{pmatrix*}-1\\-2\\-2\end{pmatrix*}\circ\vec{x}= \underbrace{ \begin{pmatrix*}-1\\-2\\-2\end{pmatrix*}\circ\begin{pmatrix*}3\\2\\1\end{pmatrix*}}_{-9}
+$$
+
+2. Normalengleiung
+
+$$
+\begin{pmatrix*}-1\\-2\\-2\end{pmatrix*} \circ\vec{x}=-9
+$$
+
+### Koordinaten form
+
+Ebenen lassen sich durch die gleichung $a*x_1+b*x_2+c*x_3=d$ paramterfrei beschrieben
+
+#### von Parameter zu Koordinaten form
+
+$$
+\begin{pmatrix*}x_1\\x_2\\x_3\end{pmatrix*}=\begin{pmatrix*}0\\0\\10\end{pmatrix*}+s\begin{pmatrix*}1\\0\\-2\end{pmatrix*}+t\begin{pmatrix*}0\\1\\4\end{pmatrix*} \qquad s,t\in\mathbb{R}
+$$
+
+$$
+\vec{x}=\begin{pmatrix*}x_1\\x_2\\x_3\end{pmatrix*}=\begin{pmatrix*}
+0+s+0t\\
+0+0s+t\\
+10-2s+4t
+\end{pmatrix*}\implies\begin{matrix}x_1&=&s&\\x_2&=&t&\\x_3&=&10&-2s+4t\end{matrix}
+$$
+
+$$
+x_3=10-2x_1+4x_2\\\
+\\
+\implies 2x_1-4x_2+x_3 = 10
+$$
+
+#### Normalen gleichung in paramterform
+
+$$
+\begin{pmatrix*}-1\\-2\\-2\end{pmatrix*}\circ\vec{x}=-9\\
+\begin{pmatrix*}-1\\-2\\-2\end{pmatrix*}\circ\begin{pmatrix*}x_1\\x_2\\x_3\end{pmatrix*}=-9
+$$
+
+vektorprodukt auflösen
+
+Koordinaten gelchung:
+$$
+-x_1-2x_2-2s_3=-9
+$$
+
