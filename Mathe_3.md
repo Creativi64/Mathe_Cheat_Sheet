@@ -74,7 +74,7 @@ gegebene Funktion
 
 $$f(x)= ax^4+bx^3+cx^2+dx+e$$
 
-$$D_f=[-15;15] \text{und } a \neq 0 ,b,c,d,c \in \mathbb{R} $$
+$$D_f=[-15;15] \text{und } a \neq 0 ,b,c,d,c \in \mathbb{R}$$
 
 #### Symetrie
 
