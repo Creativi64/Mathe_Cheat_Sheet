@@ -56,12 +56,16 @@
       - [koordinatenform in normalenform](#koordinatenform-in-normalenform)
       - [Normalenform in Paramterform](#normalenform-in-paramterform)
   - [Ebenen](#ebenen)
+    - [Parameterform](#parameterform)
     - [Normalenform](#normalenform)
-      - [Parameter zu normalenform](#parameter-zu-normalenform)
     - [Koordinaten form](#koordinaten-form)
-      - [von Parameter zu Koordinaten form](#von-parameter-zu-koordinaten-form)
-      - [Normalen gleichung in paramterform](#normalen-gleichung-in-paramterform)
-      - [ParameterForm in Koordiantenform](#parameterform-in-koordiantenform)
+    - [Umrechnung](#umrechnung-1)
+      - [Parameter zu normalenform](#parameter-zu-normalenform)
+      - [Normalenform in paramterform](#normalenform-in-paramterform-1)
+      - [Parameterform zu Koordinatenform](#parameterform-zu-koordinatenform)
+      - [Koordinatenform zu Parameterform](#koordinatenform-zu-parameterform)
+        - [Methode 1](#methode-1)
+        - [Methode 2](#methode-2)
 
 <!-- /code_chunk_output -->
 
@@ -793,6 +797,12 @@ $$
 
 $\vec{u}$ und $\vec{v}$ müssen linear unabhänig sein für eine eindeute Ebenengleichung
 
+### Parameterform
+
+$$
+E: \vec{x}=\vec{a}+\lambda*\vec{u}+\mu*\vec{v}\qquad mit \quad \lambda,\mu\in\mathbb{R}
+$$
+
 ### Normalenform
 
 $$
@@ -800,6 +810,19 @@ E: \vec{n}\circ\vec{x}=\vec{b}\circ \vec{a} \\\
 \\
 E: \vec{n}\circ(\vec{c}-\vec{a})=0
 $$
+
+### Koordinaten form
+
+Ebenen lassen sich durch die gleichung
+
+$$
+a*x_1+b*x_2+c*x_3=d
+$$
+
+paramterfrei beschrieben
+
+### Umrechnung
+
 #### Parameter zu normalenform
 $$
 \vec{x} =\begin{pmatrix}3\\2\\1\end{pmatrix}+s\begin{pmatrix}2\\6\\-7\end{pmatrix}+t\begin{pmatrix}2\\2\\-6\end{pmatrix} \\
@@ -824,31 +847,7 @@ $$
 \begin{pmatrix}-1\\-2\\-2\end{pmatrix} \circ\vec{x}=-9
 $$
 
-### Koordinaten form
-
-Ebenen lassen sich durch die gleichung $a*x_1+b*x_2+c*x_3=d$ paramterfrei beschrieben
-
-#### von Parameter zu Koordinaten form
-
-$$
-\begin{pmatrix}x_1\\x_2\\x_3\end{pmatrix}=\begin{pmatrix}0\\0\\10\end{pmatrix}+s\begin{pmatrix}1\\0\\-2\end{pmatrix}+t\begin{pmatrix}0\\1\\4\end{pmatrix} \qquad s,t\in\mathbb{R}
-$$
-
-$$
-\vec{x}=\begin{pmatrix}x_1\\x_2\\x_3\end{pmatrix}=\begin{pmatrix}
-0+s+0t\\
-0+0s+t\\
-10-2s+4t
-\end{pmatrix}\implies\begin{matrix}x_1&=&s&\\x_2&=&t&\\x_3&=&10&-2s+4t\end{matrix}
-$$
-
-$$
-x_3=10-2x_1+4x_2\\\
-\\
-\implies 2x_1-4x_2+x_3 = 10
-$$
-
-#### Normalen gleichung in paramterform
+#### Normalenform in paramterform
 
 $$
 \begin{pmatrix}-1\\-2\\-2\end{pmatrix}\circ\vec{x}=-9\\
@@ -862,38 +861,112 @@ $$
 -x_1-2x_2-2s_3=-9
 $$
 
-#### ParameterForm in Koordiantenform
+#### Parameterform zu Koordinatenform
 
 $$
-\vec{x}=\left(\begin{array}{}
-  0\\0\\0
-\end{array}\right)+s\begin{pmatrix}
-  1\\0\\-2
-\end{pmatrix}+t\begin{pmatrix}
-  0\\1\\4
-\end{pmatrix}
+\begin{pmatrix}x_1\\x_2\\x_3\end{pmatrix}=\begin{pmatrix}0\\0\\10\end{pmatrix}+s\begin{pmatrix}1\\0\\-2\end{pmatrix}+t\begin{pmatrix}0\\1\\4\end{pmatrix} \qquad s,t\in\mathbb{R}
 $$
-
 umrechnung
+$$
+\vec{x}=\begin{pmatrix}x_1\\x_2\\x_3\end{pmatrix}=\begin{pmatrix}
+0+s+0t\\
+0+0s+t\\
+10-2s+4t
+\end{pmatrix}\implies\begin{matrix}x_1&=&s&\\x_2&=&t&\\x_3&=&10&-2s+4t\end{matrix}
+$$
+$s$ und $t$ in $x_3$ einsetzen
+$$
+x_3=10-2x_1+4x_2\\\
+\\
+\implies 2x_1-4x_2+x_3 = 10
+$$
+
+#### Koordinatenform zu Parameterform
+
+##### Methode 1
+
+$$
+E: x_1+2x_2+2s_3=9 \\
+x_1= x,\qquad x_2=y,\qquad x_3=z \\
+\text{Nach x auflösen}\\
+x_1=\quad x=9-2y-2z
+$$
 
 $$
 \vec{x}=\begin{pmatrix*}
-  x_1\\ x_2\\ x_3
-\end{pmatrix*}=\begin{pmatrix*}
-  0+s+0t\\
-  0+0s+0t\\
-  10-2s+4t
-\end{pmatrix*} \implies
-\begin{matrix}
-  &x_1=&s&\\
-  &x_2=&t&\\
-  &x_3=&10-xs+4t&
-\end{matrix}
+  x_1\\x_2\\x_3
+\end{pmatrix*}=\left( \begin{array}{}9\\0\\0\end{array}
+\begin{array}{}-2y\\y\\0\end{array}
+\begin{array}{}-2z\\0\\z\end{array}
+\right) =
 $$
 
-$s$ und $t$ in $x_3$ einsetzen
+$$
+\vec{x}=
+\begin{pmatrix}
+  9\\0\\0
+\end{pmatrix}+y\begin{pmatrix}
+  -2\\0\\0
+\end{pmatrix}+z\begin{pmatrix}
+  -2\\0\\1
+\end{pmatrix} \qquad x,y\in \mathbb{R}
+$$
+##### Methode 2
+
+Über Koordinaten gleichung
 
 $$
-x_3 = 10-2x_1+4x_2\\
-\implies 2x_1-4x_2+x_3=10
+E: x_1+2x_2+2s_3=9
+$$
+
+$$
+\vec{p}=\begin{pmatrix}
+  p_1\\p_2\\p_3
+\end{pmatrix} \text{Frei wählen}
+$$
+
+Trick: 1 und 2 =0 setzen und drei ausrechnechen
+
+$$
+p_1=0,\quad p_2=0\\
+p_1+2p_2+2p_3=9 \\
+p_3=9 \\
+\\
+\vec{p}=\begin{pmatrix}
+  9\\0\\0
+\end{pmatrix} \in E
+$$
+
+n bestimmen
+
+$$
+\begin{align*}  
+\vec{n}\circ\vec{x}&=\vec{n}\circ\vec{p} \\
+n_1*x_1+n_2*x_2+n_3*x_3 &= \vec{n}\circ\vec{p} \\
+1*x_1+2*x_2+2*x_3 &= 9
+\end{align*}
+$$
+$$
+\vec{n}=
+\begin{pmatrix*}
+1\\2\\2  
+\end{pmatrix*}
+$$
+
+richttungsvektoren bestimmen
+
+Tausch und minus trick eine 0 setzen
+
+$$
+\vec{n}=\begin{pmatrix*}1\\2\\2\end{pmatrix*} \implies\vec{u}=\begin{pmatrix*}-2\\1\\0\end{pmatrix*};\vec{v}=\begin{pmatrix*}-2\\0\\1\end{pmatrix*}
+$$
+
+$$
+E:\vec{x}=\begin{pmatrix*}
+  9\\0\\0
+\end{pmatrix*}+\lambda\begin{pmatrix*}
+  -2\\1\\0
+\end{pmatrix*}+\mu\begin{pmatrix*}
+  -2\\0\\1
+\end{pmatrix*}\qquad, \lambda,\mu \in \mathbb{R}
 $$
