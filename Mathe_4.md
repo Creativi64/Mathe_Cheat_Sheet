@@ -50,16 +50,18 @@
     - [Koordinaten gleichung](#koordinaten-gleichung)
   - [Parameter From](#parameter-from)
     - [Normalen Form](#normalen-form)
-    - [Umrechnung $\mathbb{R}^2$](#umrechnung-mathbbr2)
+    - [Umrechnung $\\mathbb{R}^2$](#umrechnung-mathbbr2)
       - [Parameterform in Normalenform](#parameterform-in-normalenform)
       - [Normalenform in koordinatenform](#normalenform-in-koordinatenform)
       - [koordinatenform in normalenform](#koordinatenform-in-normalenform)
       - [Normalenform in Paramterform](#normalenform-in-paramterform)
   - [Ebenen](#ebenen)
     - [Normalenform](#normalenform)
+      - [Parameter zu normalenform](#parameter-zu-normalenform)
     - [Koordinaten form](#koordinaten-form)
       - [von Parameter zu Koordinaten form](#von-parameter-zu-koordinaten-form)
       - [Normalen gleichung in paramterform](#normalen-gleichung-in-paramterform)
+      - [ParameterForm in Koordiantenform](#parameterform-in-koordiantenform)
 
 <!-- /code_chunk_output -->
 
@@ -136,13 +138,13 @@ B(b_2|b_2)
 $$
 
 $$
-\vec{v}=\begin{pmatrix*}
+\vec{v}=\begin{pmatrix}
   v_x\\
   v_y
-\end{pmatrix*}=\begin{pmatrix*}
+\end{pmatrix}=\begin{pmatrix}
   b_1-a_1\\
   b_2-a_2
-\end{pmatrix*}
+\end{pmatrix}
 $$
 
 #### x,y Richtung zu Länge und winkel
@@ -162,10 +164,10 @@ $$
 #### Länge und winkel zu x,y Richtung
 
 $$
-\vec{v}=\begin{pmatrix*}
+\vec{v}=\begin{pmatrix}
   v_x\\
   v_y
-\end{pmatrix*}
+\end{pmatrix}
 $$
 
 $$
@@ -182,13 +184,13 @@ A(a_1|a_2)
 $$
 
 $$
-\begin{pmatrix*}
+\begin{pmatrix}
   b_1\\
   b_2
-\end{pmatrix*} =\begin{pmatrix*}
+\end{pmatrix} =\begin{pmatrix}
   a_1-v_x\\
   a_2-v_y
-\end{pmatrix*}
+\end{pmatrix}
 $$
 
 $$
@@ -201,35 +203,35 @@ $$
 beliebigerweiterbar
 
 $$
-\vec{a}+\vec{b}=\begin{pmatrix*}
+\vec{a}+\vec{b}=\begin{pmatrix}
   a_x\\
   a_y\\
   a_z
-\end{pmatrix*}+\begin{pmatrix*}
+\end{pmatrix}+\begin{pmatrix}
   b_x\\
   b_y\\
   b_z
-\end{pmatrix*}=\begin{pmatrix*}
+\end{pmatrix}=\begin{pmatrix}
   a_x+b_x\\
   a_y+b_y\\
   a_z+b_z
-\end{pmatrix*}
+\end{pmatrix}
 $$
 
 $$
-\vec{a}-\vec{b}=\begin{pmatrix*}
+\vec{a}-\vec{b}=\begin{pmatrix}
   a_x\\
   a_y\\
   a_z
-\end{pmatrix*}-\begin{pmatrix*}
+\end{pmatrix}-\begin{pmatrix}
   b_x\\
   b_y\\
   b_z
-\end{pmatrix*}=\begin{pmatrix*}
+\end{pmatrix}=\begin{pmatrix}
   a_x-b_x\\
   a_y-b_y\\
   a_z-b_z
-\end{pmatrix*}
+\end{pmatrix}
 $$
 
 #### Rechengesetze
@@ -263,26 +265,26 @@ $$
 multiplikation eines vectors mit einer reellen zahl (Skalar)
 
 $$
-\lambda*\vec{a}=\lambda*\begin{pmatrix*}
+\lambda*\vec{a}=\lambda*\begin{pmatrix}
   a_x\\
   a_y\\
   a_z
-\end{pmatrix*}=\begin{pmatrix*}
+\end{pmatrix}=\begin{pmatrix}
   \lambda*a_x\\
   \lambda*a_y\\
   \lambda*a_z
-\end{pmatrix*}
+\end{pmatrix}
 $$
 
 ---
 
 $$
 \lambda =0\\
-\lambda*\vec{v}=0*\vec{v}=\vec{0}=\begin{pmatrix*}
+\lambda*\vec{v}=0*\vec{v}=\vec{0}=\begin{pmatrix}
  0\\
  0\\
 0
-\end{pmatrix*}
+\end{pmatrix}
 $$
 
 ---
@@ -326,11 +328,11 @@ Ein vector mit der länge 1
 $$
 \begin{align*}
 \vec{a}^0&=\frac{1}{|\vec{a}|}*\vec{a}\\
-&=\frac{1}{5}*\begin{pmatrix*}3\\-4\end{pmatrix*} \\
-&=\begin{pmatrix*}
+&=\frac{1}{5}*\begin{pmatrix}3\\-4\end{pmatrix} \\
+&=\begin{pmatrix}
   \frac{3}{5}\\
   \frac{4}{5}
-\end{pmatrix*}
+\end{pmatrix}
 \end{align*}
 $$
 
@@ -362,9 +364,8 @@ wenn ein vektor parallel zu einem andern ist ist er durch ein vielfaches des and
 
 $$
 \vec{b}=k*\vec{a}\\
-\begin{pmatrix*}2\\1\end{pmatrix*}=k*\begin{pmatrix*}4\\2\end{pmatrix*} \\\
-\\
-\begin{align*}
+\begin{pmatrix}2\\1\end{pmatrix}=k*\begin{pmatrix}4\\2\end{pmatrix} \\
+\begin{align*}\\
 I_x:&2=k*4 \implies &k_1=\frac{1}{2}\\
 II_y:&1=k*2 \implies& k_2=\frac{1}{2}\\
 \end{align*}
@@ -377,7 +378,7 @@ $$
 
 $$
 \vec{c}=k*\vec{a}\\
-\begin{pmatrix*}4\\4\end{pmatrix*}=k*\begin{pmatrix*}4\\2\end{pmatrix*} \\\
+\begin{pmatrix}4\\4\end{pmatrix}=k*\begin{pmatrix}4\\2\end{pmatrix} \\\
 \\
 \begin{align*}
 I_x:&4=k*4 \implies &k_1=1\\
@@ -400,9 +401,9 @@ Ein vektor ist Komplanar zu einem anderen vektor wenn die vektoren zusamen eine 
 
 $$
 \vec{c}=r*\vec{a}+s*\vec{b}\\
-\vec{a}=\begin{pmatrix*}2\\3\\4\end{pmatrix*};
-\vec{b}=\begin{pmatrix*}4\\5\\6\end{pmatrix*};
-\vec{c}=\begin{pmatrix*}1\\5\\3\end{pmatrix*}
+\vec{a}=\begin{pmatrix}2\\3\\4\end{pmatrix};
+\vec{b}=\begin{pmatrix}4\\5\\6\end{pmatrix};
+\vec{c}=\begin{pmatrix}1\\5\\3\end{pmatrix}
 $$
 
 $$
@@ -450,18 +451,18 @@ $$
 ### Basisverktoren
 
 $$
-\vec{e_1}=\begin{pmatrix*}1\\0\\0\end{pmatrix*};
-\vec{e_2}=\begin{pmatrix*}0\\1\\0\end{pmatrix*};
-\vec{e_3}=\begin{pmatrix*}0\\0\\1\end{pmatrix*};
+\vec{e_1}=\begin{pmatrix}1\\0\\0\end{pmatrix};
+\vec{e_2}=\begin{pmatrix}0\\1\\0\end{pmatrix};
+\vec{e_3}=\begin{pmatrix}0\\0\\1\end{pmatrix};
 $$
 
 Aus diesen kann man jeden vektor bilden
 
 $$
 \vec{a} =
-x*\begin{pmatrix*}1\\0\\0\end{pmatrix*}+
-y*\begin{pmatrix*}0\\1\\0\end{pmatrix*}+
-z*\begin{pmatrix*}0\\0\\1\end{pmatrix*}
+x*\begin{pmatrix}1\\0\\0\end{pmatrix}+
+y*\begin{pmatrix}0\\1\\0\end{pmatrix}+
+z*\begin{pmatrix}0\\0\\1\end{pmatrix}
 $$
 
 ### Skalar produkt
@@ -527,8 +528,8 @@ $$
 #### rechnen
 
 $$
-\vec{a_1}=\begin{pmatrix*}a_1\\a_2\\a_3\end{pmatrix*};
-\vec{b_2}=\begin{pmatrix*}b_1\\b_2\\b_3\end{pmatrix*}; \vec{a},\vec{b}\in \mathbb{R}^3
+\vec{a_1}=\begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix};
+\vec{b_2}=\begin{pmatrix}b_1\\b_2\\b_3\end{pmatrix}; \vec{a},\vec{b}\in \mathbb{R}^3
 $$
 
 1. Es werden die beiden Vektoren jeweils nochmal unter sich selbst Geschieben
@@ -538,16 +539,18 @@ $$
 
 $$
 \vec{a}\times\vec{b}=
-\begin{pmatrix*}a_1\\a_2\\a_3\end{pmatrix*}\times\begin{pmatrix*}b_1\\b_2\\b_3\end{pmatrix*} =
+\begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix}\times\begin{pmatrix}b_1\\b_2\\b_3\end{pmatrix} =
 \begin{align*}
-&\begin{pmatrix*}\sout{a_1}\\ \textcolor{blue}{a_2}\\ \textcolor{blue}{a_3}\end{pmatrix*}\begin{pmatrix*}{\sout{b_1}}\\\textcolor{blue}b{_2}\\\textcolor{blue}{b_3}\end{pmatrix*}\\
-&\begin{pmatrix*}\textcolor{blue}{a_1}\\\textcolor{green}{a_2}\\\sout{a_3}\end{pmatrix*}\begin{pmatrix*} \textcolor{blue}{b_1}\\ \textcolor{green}{b_2}\\\sout{b_3}\end{pmatrix*}
+&\begin{pmatrix}\cancel{a_1}\\ \textcolor{blue}{a_2}\\ \textcolor{blue}{a_3}\end{pmatrix}\begin{pmatrix}{\cancel{b_1}}\\\textcolor{blue}b{_2}\\\textcolor{blue}{b_3}\end{pmatrix}\\
+&\begin{pmatrix}\textcolor{blue}{a_1}\\\textcolor{green}{a_2}\\\cancel{a_3}\end{pmatrix}\begin{pmatrix} \textcolor{blue}{b_1}\\ \textcolor{green}{b_2}\\\cancel{b_3}\end{pmatrix}
 \end{align*}=
+$$
+$$
 \begin{align*}
-&\begin{pmatrix*}\sout{a_1}\\ \textcolor{blue}{a_2}\searrow b_3\\ \textcolor{blue}{a_3}\searrow b_1\end{pmatrix*}\begin{pmatrix*}{\sout{b_1}}\\ a_1\swarrow \textcolor{blue}b{_2}\\ a_2\swarrow \textcolor{blue}{b_3}\end{pmatrix*}\\
-&\begin{pmatrix*}\textcolor{blue}{a_1}\searrow b_2\\\textcolor{green}{a_2}\\\sout{a_3}\end{pmatrix*}\begin{pmatrix*} a_2\swarrow \textcolor{blue}{b_1}\\ \textcolor{green}{b_2}\\\sout{b_3}\end{pmatrix*}
+&\begin{pmatrix}\cancel{a_1}\\ \textcolor{blue}{a_2}\searrow b_3\\ \textcolor{blue}{a_3}\searrow b_1\end{pmatrix}\begin{pmatrix}{\cancel{b_1}}\\ a_1\swarrow \textcolor{blue}b{_2}\\ a_2\swarrow \textcolor{blue}{b_3}\end{pmatrix}\\
+&\begin{pmatrix}\textcolor{blue}{a_1}\searrow b_2\\\textcolor{green}{a_2}\\\cancel{a_3}\end{pmatrix}\begin{pmatrix} a_2\swarrow \textcolor{blue}{b_1}\\ \textcolor{green}{b_2}\\\cancel{b_3}\end{pmatrix}
 \end{align*}
-= \begin{pmatrix*}a_2*b_3-b_2*a_1\\a_3*b_1-b_3*a_2\\a_1*b_3-b_1*a_2\end{pmatrix*} = \begin{pmatrix*}c_1\\c_2\\c_3\end{pmatrix*}
+= \begin{pmatrix}a_2*b_3-b_2*a_1\\a_3*b_1-b_3*a_2\\a_1*b_3-b_1*a_2\end{pmatrix} = \begin{pmatrix}c_1\\c_2\\c_3\end{pmatrix}
 $$
 
 #### Fläche
@@ -606,9 +609,9 @@ Q=(3,2,1) \\\
 \\
 \vec{x}=\vec{p}+\lambda*\vec{u} \\\
 \\
-\vec{p}=\begin{pmatrix*}P_x\\ P_y\\ P_z\end{pmatrix*}-\begin{pmatrix*}0\\0\\0\end{pmatrix*} =\begin{pmatrix*}1\\ 2\\3\end{pmatrix*}\\
-\vec{u} = \begin{pmatrix*}Q_x\\ Q_y\\ Q_z\end{pmatrix*}-\begin{pmatrix*}P_x\\ P_y\\ P_z\end{pmatrix*}=\begin{pmatrix*}2\\ 0\\-2\end{pmatrix*} \\
-\vec{x}=\begin{pmatrix*}1\\ 2\\ 3\end{pmatrix*}+\lambda*\begin{pmatrix*}2\\ 0\\ -2\end{pmatrix*} \\
+\vec{p}=\begin{pmatrix}P_x\\ P_y\\ P_z\end{pmatrix}-\begin{pmatrix}0\\0\\0\end{pmatrix} =\begin{pmatrix}1\\ 2\\3\end{pmatrix}\\
+\vec{u} = \begin{pmatrix}Q_x\\ Q_y\\ Q_z\end{pmatrix}-\begin{pmatrix}P_x\\ P_y\\ P_z\end{pmatrix}=\begin{pmatrix}2\\ 0\\-2\end{pmatrix} \\
+\vec{x}=\begin{pmatrix}1\\ 2\\ 3\end{pmatrix}+\lambda*\begin{pmatrix}2\\ 0\\ -2\end{pmatrix} \\
 $$
 
 ### prüfen ob ein punkt auf der geraden liegt
@@ -616,9 +619,9 @@ $$
 Der punkt wird als x eingesetzt und nur wenn alle drei Ergebnisse gleich sind ist der punkt auf der grade
 
 $$
-\vec{a}=\begin{pmatrix*}
+\vec{a}=\begin{pmatrix}
   0\\-1\\10
-\end{pmatrix*}; \qquad \vec{x}=\begin{pmatrix*}3\\2\\1\end{pmatrix*}+s*\begin{pmatrix*}-1\\-1\\3\end{pmatrix*}
+\end{pmatrix}; \qquad \vec{x}=\begin{pmatrix}3\\2\\1\end{pmatrix}+s*\begin{pmatrix}-1\\-1\\3\end{pmatrix}
 $$
 
 $$
@@ -639,16 +642,16 @@ $$
   S(s_1|s_2|s_3)\\
   x_1; x_2 : s_3 =0
 \end{rcases}
-\implies \vec{s}=\begin{pmatrix*}s_1\\s_2\\0\end{pmatrix*}
+\implies \vec{s}=\begin{pmatrix}s_1\\s_2\\0\end{pmatrix}
 \qquad s_1,s_2 \in \mathbb{R}
 $$
 
 $$
-\begin{pmatrix*}s_1\\s_2\\0\end{pmatrix*}=\begin{pmatrix*}2\\-1\\2\end{pmatrix*}+t*\begin{pmatrix*}-2\\6\\4\end{pmatrix*} \begin{matrix*}
+\begin{pmatrix}s_1\\s_2\\0\end{pmatrix}=\begin{pmatrix}2\\-1\\2\end{pmatrix}+t*\begin{pmatrix}-2\\6\\4\end{pmatrix} \begin{matrix}
   \\
   \\
   \implies III: 0=2+4t \implies t=-0,5
-\end{matrix*}
+\end{matrix}
 $$
 $$
 t \text{ in } I : s_1 = 2-0,5-(-2) \implies s_1=3\\
@@ -669,9 +672,9 @@ $$
 ## Parameter From
 
 $$
-\vec{x}=\begin{pmatrix*}x_1\\x_2\end{pmatrix*}=\begin{pmatrix*}a_1\\a_2\end{pmatrix*}+\lambda*\begin{pmatrix*}1\\ m\end{pmatrix*}; \qquad\lambda\in\mathbb{R} \\\
+\vec{x}=\begin{pmatrix}x_1\\x_2\end{pmatrix}=\begin{pmatrix}a_1\\a_2\end{pmatrix}+\lambda*\begin{pmatrix}1\\ m\end{pmatrix}; \qquad\lambda\in\mathbb{R} \\\
 oder\\
-\vec{x}=\begin{pmatrix*}x\\ y\end{pmatrix*}=\begin{pmatrix*}x\\ mx+t\end{pmatrix*}+\lambda*\begin{pmatrix*}0\\ t\end{pmatrix*}; \qquad x\in\mathbb{R}
+\vec{x}=\begin{pmatrix}x\\ y\end{pmatrix}=\begin{pmatrix}x\\ mx+t\end{pmatrix}+\lambda*\begin{pmatrix}0\\ t\end{pmatrix}; \qquad x\in\mathbb{R}
 $$
 
 ### Normalen Form
@@ -685,13 +688,13 @@ $\vec{n}$ erhält man indem zwei koordinaten von $\vec{u}$ miteindander vertausc
 Am besten immer daruf schauen das man alles postiv hat
 
 $$
-\mathbb{R}^2: \vec{u}=\begin{pmatrix*} u_1\\u_2\end{pmatrix*} \implies\vec{n}=\begin{pmatrix*} u_2\\-u_1\end{pmatrix*}
+\mathbb{R}^2: \vec{u}=\begin{pmatrix} u_1\\u_2\end{pmatrix} \implies\vec{n}=\begin{pmatrix} u_2\\-u_1\end{pmatrix}
 $$
 
 in $\mathbb{R}^3$ wird noch eine variable gleich null gesetzt
 
 $$
-\vec{u}=\begin{pmatrix*} u_1\\u_2\\u_3\end{pmatrix*} \implies \vec{n}=\begin{pmatrix*} 0\\-u_3\\u_2 \end{pmatrix*} \text{Auch anderst möglich z.b. } \begin{pmatrix*} u_2\\-u_1\\0\end{pmatrix*}
+\vec{u}=\begin{pmatrix} u_1\\u_2\\u_3\end{pmatrix} \implies \vec{n}=\begin{pmatrix} 0\\-u_3\\u_2 \end{pmatrix} \text{Auch anderst möglich z.b. } \begin{pmatrix} u_2\\-u_1\\0\end{pmatrix}
 $$
 
 ### Umrechnung $\mathbb{R}^2$
@@ -700,24 +703,27 @@ $$
 #### Parameterform in Normalenform
 
 $$
-g: \vec{x}=\begin{pmatrix*}2\\-1\end{pmatrix*}+\lambda*\begin{pmatrix*}-2\\4\end{pmatrix*}, \qquad \lambda \in \mathbb{R}\\
+g: \vec{x}=\begin{pmatrix}2\\-1\end{pmatrix}+\lambda*\begin{pmatrix}-2\\4\end{pmatrix}, \qquad \lambda \in \mathbb{R}\\
 \text{Tausch von u durchführen }\\
-\implies \vec{n}=\begin{pmatrix*}4\\2\end{pmatrix*}
+\implies \vec{n}=\begin{pmatrix}4\\2\end{pmatrix}
 $$
 
 $$
-\begin{pmatrix*}4\\2\end{pmatrix*} \circ (\vec{x}-\begin{pmatrix*}2\\-1\end{pmatrix*})=0 \\
+\text{werte In} \\
+ \vec{n} \circ (\vec{x}-\vec{a})=0 \\
+ \text{Eeinseten} \\
+\begin{pmatrix}4\\2\end{pmatrix} \circ (\vec{x}-\begin{pmatrix}2\\-1\end{pmatrix})=0 \\
 \text{Klammer auflösen}\\
-\begin{pmatrix*}4\\2\end{pmatrix*}\circ \vec{x}-\begin{pmatrix*}4\\2\end{pmatrix*}\circ\begin{pmatrix*}2\\-1\end{pmatrix*} =0\\
+\begin{pmatrix}4\\2\end{pmatrix}\circ \vec{x}-\begin{pmatrix}4\\2\end{pmatrix}\circ\begin{pmatrix}2\\-1\end{pmatrix} =0\\
 \text{Vektorprodukt auflösen}\\
-\begin{pmatrix*}4\\2\end{pmatrix*}\circ \begin{pmatrix*}x_1\\ x_2\end{pmatrix*} -6 =0
+\begin{pmatrix}4\\2\end{pmatrix}\circ \begin{pmatrix}x_1\\ x_2\end{pmatrix} -6 =0
 $$
 
 #### Normalenform in koordinatenform
 
 $$
 \begin{align*}
-g: \begin{pmatrix*}4\\2\end{pmatrix*}\circ \begin{pmatrix*}x_1\\ x_2\end{pmatrix*} -6 &=0\\
+g: \begin{pmatrix}4\\2\end{pmatrix}\circ \begin{pmatrix}x_1\\ x_2\end{pmatrix} -6 &=0\\
 \text{Funktionen auf stellen durch}& \text{ ausschreiben des Vektorprodukts}\\
 4x_1+2x_2-6 &=0 \\
 \text{ mit } x_1=x &\text{ und } x_2 =y\\
@@ -734,7 +740,7 @@ $$
 \begin{align*}
  \textcolor{orange}{4}x+ \textcolor{orange}{2}y-6&=0\\
 \text{ mit } x_1=x &\text{ und } x_2 =y\\
- \implies \begin{pmatrix*} \textcolor{orange}{4}\\ \textcolor{orange}{2}\end{pmatrix*}\circ \begin{pmatrix*}x_1\\ x_2\end{pmatrix*} -6 &=0
+ \implies \begin{pmatrix} \textcolor{orange}{4}\\ \textcolor{orange}{2}\end{pmatrix}\circ \begin{pmatrix}x_1\\ x_2\end{pmatrix} -6 &=0
 \end{align*}
 $$
 
@@ -745,23 +751,24 @@ Komplexeste
 Aufpunkt ermitteln :
 
 $$
-\underbrace{\begin{pmatrix*}4\\2\end{pmatrix*}\circ\begin{pmatrix*}x_1\\x_2\end{pmatrix*}}_{\vec{n}\circ\vec{x}}-\underbrace{6}_{\vec{n}\circ\vec{a}}=0 \\
+\vec{n}\circ\vec{x}-b = 0 \\
+\underbrace{\begin{pmatrix}4\\2\end{pmatrix}\circ\begin{pmatrix}x_1\\x_2\end{pmatrix}}_{\vec{n}\circ\vec{x}}-\underbrace{6}_{\vec{n}\circ\vec{a}}=0 \\
 \implies \vec{n}  \circ \vec{a}=6 \\
-\implies \begin{pmatrix*}4\\2\end{pmatrix*} \circ \begin{pmatrix*}a_1\\a_2\end{pmatrix*} =6\\
+\implies \begin{pmatrix}4\\2\end{pmatrix} \circ \begin{pmatrix}a_1\\a_2\end{pmatrix} =6\\
 \text{eine Stelle Kann frei gewählt werden}\\
 a_1 = 2\\
 \implies 4*2+2a_2 =6 \\
 a_2 =-1\\
-\vec{a}=\begin{pmatrix*}2\\-1\end{pmatrix*}
+\vec{a}=\begin{pmatrix}2\\-1\end{pmatrix}
 $$
 
 Richtingsvektor ermitteln:
 
 $$
-\vec{u} \perp\vec{n}; \qquad \vec{n}=\begin{pmatrix*}4\\2\end{pmatrix*} \quad \implies \vec{u}\circ\vec{n} =0 \\
+\vec{u} \perp\vec{n}; \qquad \vec{n}=\begin{pmatrix}4\\2\end{pmatrix} \quad \implies \vec{u}\circ\vec{n} =0 \\
 \text{Tausch trick verwenden} \\
-\vec{u}=\begin{pmatrix*}-2\\4\end{pmatrix*}\\
-\implies g: \vec{x}=\begin{pmatrix*}2\\-2\end{pmatrix*}+\lambda*\begin{pmatrix*}-2\\4\end{pmatrix*} \qquad ;\lambda \in \mathbb{R}
+\vec{u}=\begin{pmatrix}-2\\4\end{pmatrix}\\
+\implies g: \vec{x}=\begin{pmatrix}2\\-2\end{pmatrix}+\lambda*\begin{pmatrix}-2\\4\end{pmatrix} \qquad ;\lambda \in \mathbb{R}
 $$
 
 ## Ebenen
@@ -793,12 +800,10 @@ E: \vec{n}\circ\vec{x}=\vec{b}\circ \vec{a} \\\
 \\
 E: \vec{n}\circ(\vec{c}-\vec{a})=0
 $$
-
----
-
+#### Parameter zu normalenform
 $$
-\vec{x} =\begin{pmatrix*}3\\2\\1\end{pmatrix*}+s\begin{pmatrix*}2\\6\\-7\end{pmatrix*}+t\begin{pmatrix*}2\\2\\-6\end{pmatrix*} \\
-\vec{u}=\begin{pmatrix*}2\\6\\ -7\end{pmatrix*} \qquad \vec{v}=\begin{pmatrix*}2\\5\\-6\end{pmatrix*}
+\vec{x} =\begin{pmatrix}3\\2\\1\end{pmatrix}+s\begin{pmatrix}2\\6\\-7\end{pmatrix}+t\begin{pmatrix}2\\2\\-6\end{pmatrix} \\
+\vec{u}=\begin{pmatrix}2\\6\\ -7\end{pmatrix} \qquad \vec{v}=\begin{pmatrix}2\\2\\-6\end{pmatrix}
 $$
 
 1. NormalenVektor
@@ -806,17 +811,17 @@ $$
 Ortigonalen Vektor $\vec{n}$ zur den vektoren $\vec{u}$ und $\vec{v}$ mit dem kreuzprodukt erstellen
 
 $$
-\textcolor{green}{\vec{n}=\vec{u}\times\vec{v}} = \begin{pmatrix*}2\\6\\-7\end{pmatrix*}\times\begin{pmatrix*}2\\2\\-6\end{pmatrix*}=\begin{pmatrix*}-1\\-2\\-2\end{pmatrix*}
+\textcolor{green}{\vec{n}=\vec{u}\times\vec{v}} = \begin{pmatrix}2\\6\\-7\end{pmatrix}\times\begin{pmatrix}2\\2\\-6\end{pmatrix}=\begin{pmatrix}-1\\-2\\-2\end{pmatrix}
 $$
 
 $$
-\textcolor{green}{\vec{n}\circ\vec{x}=\vec{n}\circ\vec{a}} \implies \begin{pmatrix*}-1\\-2\\-2\end{pmatrix*}\circ\vec{x}= \underbrace{ \begin{pmatrix*}-1\\-2\\-2\end{pmatrix*}\circ\begin{pmatrix*}3\\2\\1\end{pmatrix*}}_{-9}
+\textcolor{green}{\vec{n}\circ\vec{x}=\vec{n}\circ\vec{a}} \implies \begin{pmatrix}-1\\-2\\-2\end{pmatrix}\circ\vec{x}= \underbrace{ \begin{pmatrix}-1\\-2\\-2\end{pmatrix}\circ\begin{pmatrix}3\\2\\1\end{pmatrix}}_{-9}
 $$
 
 2. Normalengleiung
 
 $$
-\begin{pmatrix*}-1\\-2\\-2\end{pmatrix*} \circ\vec{x}=-9
+\begin{pmatrix}-1\\-2\\-2\end{pmatrix} \circ\vec{x}=-9
 $$
 
 ### Koordinaten form
@@ -826,15 +831,15 @@ Ebenen lassen sich durch die gleichung $a*x_1+b*x_2+c*x_3=d$ paramterfrei beschr
 #### von Parameter zu Koordinaten form
 
 $$
-\begin{pmatrix*}x_1\\x_2\\x_3\end{pmatrix*}=\begin{pmatrix*}0\\0\\10\end{pmatrix*}+s\begin{pmatrix*}1\\0\\-2\end{pmatrix*}+t\begin{pmatrix*}0\\1\\4\end{pmatrix*} \qquad s,t\in\mathbb{R}
+\begin{pmatrix}x_1\\x_2\\x_3\end{pmatrix}=\begin{pmatrix}0\\0\\10\end{pmatrix}+s\begin{pmatrix}1\\0\\-2\end{pmatrix}+t\begin{pmatrix}0\\1\\4\end{pmatrix} \qquad s,t\in\mathbb{R}
 $$
 
 $$
-\vec{x}=\begin{pmatrix*}x_1\\x_2\\x_3\end{pmatrix*}=\begin{pmatrix*}
+\vec{x}=\begin{pmatrix}x_1\\x_2\\x_3\end{pmatrix}=\begin{pmatrix}
 0+s+0t\\
 0+0s+t\\
 10-2s+4t
-\end{pmatrix*}\implies\begin{matrix}x_1&=&s&\\x_2&=&t&\\x_3&=&10&-2s+4t\end{matrix}
+\end{pmatrix}\implies\begin{matrix}x_1&=&s&\\x_2&=&t&\\x_3&=&10&-2s+4t\end{matrix}
 $$
 
 $$
@@ -846,8 +851,8 @@ $$
 #### Normalen gleichung in paramterform
 
 $$
-\begin{pmatrix*}-1\\-2\\-2\end{pmatrix*}\circ\vec{x}=-9\\
-\begin{pmatrix*}-1\\-2\\-2\end{pmatrix*}\circ\begin{pmatrix*}x_1\\x_2\\x_3\end{pmatrix*}=-9
+\begin{pmatrix}-1\\-2\\-2\end{pmatrix}\circ\vec{x}=-9\\
+\begin{pmatrix}-1\\-2\\-2\end{pmatrix}\circ\begin{pmatrix}x_1\\x_2\\x_3\end{pmatrix}=-9
 $$
 
 vektorprodukt auflösen
@@ -857,4 +862,38 @@ $$
 -x_1-2x_2-2s_3=-9
 $$
 
-srdtftghkjk
+#### ParameterForm in Koordiantenform
+
+$$
+\vec{x}=\left(\begin{array}{}
+  0\\0\\0
+\end{array}\right)+s\begin{pmatrix}
+  1\\0\\-2
+\end{pmatrix}+t\begin{pmatrix}
+  0\\1\\4
+\end{pmatrix}
+$$
+
+umrechnung
+
+$$
+\vec{x}=\begin{pmatrix*}
+  x_1\\ x_2\\ x_3
+\end{pmatrix*}=\begin{pmatrix*}
+  0+s+0t\\
+  0+0s+0t\\
+  10-2s+4t
+\end{pmatrix*} \implies
+\begin{matrix}
+  &x_1=&s&\\
+  &x_2=&t&\\
+  &x_3=&10-xs+4t&
+\end{matrix}
+$$
+
+$s$ und $t$ in $x_3$ einsetzen
+
+$$
+x_3 = 10-2x_1+4x_2\\
+\implies 2x_1-4x_2+x_3=10
+$$
