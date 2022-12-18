@@ -866,7 +866,9 @@ $$
 $$
 \begin{pmatrix}x_1\\x_2\\x_3\end{pmatrix}=\begin{pmatrix}0\\0\\10\end{pmatrix}+s\begin{pmatrix}1\\0\\-2\end{pmatrix}+t\begin{pmatrix}0\\1\\4\end{pmatrix} \qquad s,t\in\mathbb{R}
 $$
+
 umrechnung
+
 $$
 \vec{x}=\begin{pmatrix}x_1\\x_2\\x_3\end{pmatrix}=\begin{pmatrix}
 0+s+0t\\
@@ -874,9 +876,11 @@ $$
 10-2s+4t
 \end{pmatrix}\implies\begin{matrix}x_1&=&s&\\x_2&=&t&\\x_3&=&10&-2s+4t\end{matrix}
 $$
+
 $s$ und $t$ in $x_3$ einsetzen
+
 $$
-x_3=10-2x_1+4x_2\\\
+x_3=10-2x_1+4x_2\\
 \\
 \implies 2x_1-4x_2+x_3 = 10
 $$
@@ -894,8 +898,8 @@ $$
 
 $$
 \vec{x}=\begin{pmatrix*}
-  x_1\\x_2\\x_3
-\end{pmatrix*}=\left( \begin{array}{}9\\0\\0\end{array}
+x_1\\x_2\\x_3
+\end{pmatrix*}=\left(\begin{array}{}9\\0\\0\end{array}
 \begin{array}{}-2y\\y\\0\end{array}
 \begin{array}{}-2z\\0\\z\end{array}
 \right) =
