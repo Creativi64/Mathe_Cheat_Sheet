@@ -50,22 +50,26 @@
     - [Koordinaten gleichung](#koordinaten-gleichung)
   - [Parameter From](#parameter-from)
     - [Normalen Form](#normalen-form)
-    - [Umrechnung $\\mathbb{R}^2$](#umrechnung-mathbbr2)
+    - [Umrechnung $\mathbb{R}^2$](#umrechnung-mathbbr2)
       - [Parameterform in Normalenform](#parameterform-in-normalenform)
       - [Normalenform in koordinatenform](#normalenform-in-koordinatenform)
       - [koordinatenform in normalenform](#koordinatenform-in-normalenform)
       - [Normalenform in Paramterform](#normalenform-in-paramterform)
+      - [parameter in koordianten](#parameter-in-koordianten)
+      - [Koordinaten in Parameter](#koordinaten-in-parameter)
   - [Ebenen](#ebenen)
     - [Parameterform](#parameterform)
     - [Normalenform](#normalenform)
     - [Koordinaten form](#koordinaten-form)
     - [Umrechnung](#umrechnung-1)
       - [Parameter zu normalenform](#parameter-zu-normalenform)
-      - [Normalenform in paramterform](#normalenform-in-paramterform-1)
+      - [Normalenform in Koordinateform](#normalenform-in-koordinateform)
       - [Parameterform zu Koordinatenform](#parameterform-zu-koordinatenform)
       - [Koordinatenform zu Parameterform](#koordinatenform-zu-parameterform)
         - [Methode 1](#methode-1)
         - [Methode 2](#methode-2)
+      - [Koordinateform in Normalenform](#koordinateform-in-normalenform)
+      - [Normalenform in Parameterfrom](#normalenform-in-parameterfrom)
 
 <!-- /code_chunk_output -->
 
@@ -775,6 +779,10 @@ $$
 \implies g: \vec{x}=\begin{pmatrix}2\\-2\end{pmatrix}+\lambda*\begin{pmatrix}-2\\4\end{pmatrix} \qquad ;\lambda \in \mathbb{R}
 $$
 
+#### parameter in koordianten
+
+#### Koordinaten in Parameter
+
 ## Ebenen
 
 Wird durch drei punkte eindeutig definiert
@@ -847,7 +855,7 @@ $$
 \begin{pmatrix}-1\\-2\\-2\end{pmatrix} \circ\vec{x}=-9
 $$
 
-#### Normalenform in paramterform
+#### Normalenform in Koordinateform
 
 $$
 \begin{pmatrix}-1\\-2\\-2\end{pmatrix}\circ\vec{x}=-9\\
@@ -881,7 +889,6 @@ $s$ und $t$ in $x_3$ einsetzen
 
 $$
 x_3=10-2x_1+4x_2\\
-\\
 \implies 2x_1-4x_2+x_3 = 10
 $$
 
@@ -958,6 +965,84 @@ $$
 $$
 
 richttungsvektoren bestimmen
+
+Tausch und minus trick eine 0 setzen
+
+$$
+\vec{n}=\begin{pmatrix*}1\\2\\2\end{pmatrix*} \implies\vec{u}=\begin{pmatrix*}-2\\1\\0\end{pmatrix*};\vec{v}=\begin{pmatrix*}-2\\0\\1\end{pmatrix*}
+$$
+
+$$
+E:\vec{x}=\begin{pmatrix*}
+  9\\0\\0
+\end{pmatrix*}+\lambda\begin{pmatrix*}
+  -2\\1\\0
+\end{pmatrix*}+\mu\begin{pmatrix*}
+  -2\\0\\1
+\end{pmatrix*}\qquad, \lambda,\mu \in \mathbb{R}
+$$
+
+#### Koordinateform in Normalenform
+
+$$
+E: x_1+2x_2+2s_3=9
+$$
+
+$$
+\vec{p}=\begin{pmatrix}
+  p_1\\p_2\\p_3
+\end{pmatrix} \text{Frei wählen}
+$$
+
+Trick: 1 und 2 =0 setzen und drei ausrechnechen
+
+$$
+p_1=0,\quad p_2=0\\
+p_1+2p_2+2p_3=9 \\
+p_3=9 \\
+\\
+\vec{p}=\begin{pmatrix}
+  9\\0\\0
+\end{pmatrix} \in E
+$$
+
+n bestimmen
+
+$$
+\begin{align*}  
+\vec{n}\circ\vec{x}&=\vec{n}\circ\vec{p} \\
+n_1*x_1+n_2*x_2+n_3*x_3 &= \vec{n}\circ\vec{p} \\
+1*x_1+2*x_2+2*x_3 &= 9
+\end{align*} \qquad
+\vec{n}=
+\begin{pmatrix*}
+1\\2\\2  
+\end{pmatrix*}
+$$
+
+$$
+g:
+\begin{pmatrix*}
+1\\2\\2  
+\end{pmatrix*} \circ \left[ \begin{pmatrix*}
+  x_1\\x_2\\x_3
+\end{pmatrix*} - \begin{pmatrix*}
+  9\\0\\0
+\end{pmatrix*}\right]=0
+$$
+
+#### Normalenform in Parameterfrom
+
+$$
+g:
+\begin{pmatrix*}
+1\\2\\2  
+\end{pmatrix*} \circ \left[ \begin{pmatrix*}
+  x_1\\x_2\\x_3
+\end{pmatrix*} - \begin{pmatrix*}
+  9\\0\\0
+\end{pmatrix*}\right]=0
+$$
 
 Tausch und minus trick eine 0 setzen
 
