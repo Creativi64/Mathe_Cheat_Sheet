@@ -50,7 +50,7 @@
     - [Koordinaten gleichung](#koordinaten-gleichung)
   - [Parameter From](#parameter-from)
     - [Normalen Form](#normalen-form)
-    - [Umrechnung $\mathbb{R}^2$](#umrechnung-mathbbr2)
+    - [Umrechnung $\\mathbb{R}^2$](#umrechnung-mathbbr2)
       - [Parameterform in Normalenform](#parameterform-in-normalenform)
       - [Normalenform in koordinatenform](#normalenform-in-koordinatenform)
       - [koordinatenform in normalenform](#koordinatenform-in-normalenform)
@@ -70,6 +70,58 @@
         - [Methode 2](#methode-2)
       - [Koordinateform in Normalenform](#koordinateform-in-normalenform)
       - [Normalenform in Parameterfrom](#normalenform-in-parameterfrom)
+  - [Lagebeziehungen](#lagebeziehungen)
+    - [Punkt zu Punkt](#punkt-zu-punkt)
+      - [Abstand](#abstand)
+      - [Mittelpunkt](#mittelpunkt)
+    - [Geraden zu geraden](#geraden-zu-geraden)
+    - [Ebene zu Gerade](#ebene-zu-gerade)
+      - [Ebene Enthälter Gerade](#ebene-enthälter-gerade)
+      - [Parallel](#parallel)
+      - [Gemeinsamer Punkt](#gemeinsamer-punkt)
+    - [Ebene zu Ebene](#ebene-zu-ebene)
+      - [Ebene Enthält Ebene](#ebene-enthält-ebene)
+      - [Parallel](#parallel-1)
+      - [Schnitt gerade](#schnitt-gerade)
+    - [Winkelbeziehungen](#winkelbeziehungen)
+      - [Geraden](#geraden-1)
+      - [Ebenen](#ebenen-1)
+    - [Abstände](#abstände)
+      - [Punkt zu Punkt](#punkt-zu-punkt-1)
+      - [Punkt zu Gerade](#punkt-zu-gerade)
+      - [Gerade zu Gerade](#gerade-zu-gerade)
+        - [EchtParralel](#echtparralel)
+        - [Windschief](#windschief)
+      - [Punkt zu ebene](#punkt-zu-ebene)
+        - [Lotfuß punkt](#lotfuß-punkt)
+        - [Hessische Normalenform](#hessische-normalenform)
+      - [Gerade zu Ebene](#gerade-zu-ebene)
+        - [Echtparallel](#echtparallel)
+      - [Ebene zu Ebene](#ebene-zu-ebene-1)
+      - [Hessische Normalform](#hessische-normalform)
+    - [](#)
+
+GeradePunkt zu Punkt](#punkt-zu-punkt)
+    
+    - [Punkt zu Punkt](#pGerade zu Gerade
+    
+    -[Punkt zu Punkt](#p# EchtParralel
+    
+    ##### Windschief
+    - [Punkt zu Punkt](#punkt-zu-punkt)
+    - [Punkt zu Punkt](#punkt-zu-punkt)
+      - [Abstand](#abstand)
+      - [Mittelpunkt](#mittelpunkt)
+    - [Geraden zu geraden](#geraden-zu-geraden)
+    - [Ebene zu Gerade](#ebene-zu-gerade)
+      - [Ebene Enthälter Gerade](#ebene-enthälter-gerade)
+      - [Parallel](#parallel)
+      - [Gemeinsamer Punkt](#gemeinsamer-punkt)
+    - [Ebene zu Ebene](#ebene-zu-ebene)
+    - [Winkelbeziehungen](#winkelbeziehungen)
+    - [Abstände](#abstände)
+      - [Hessische Normalform](#hessische-normalform)
+    - [](#)
 
 <!-- /code_chunk_output -->
 
@@ -1059,3 +1111,62 @@ E:\vec{x}=\begin{pmatrix*}
   -2\\0\\1
 \end{pmatrix*}\qquad, \lambda,\mu \in \mathbb{R}
 $$
+
+## Lagebeziehungen
+
+### Punkt zu Punkt
+
+#### Abstand
+
+#### Mittelpunkt
+
+### Geraden zu geraden
+
+### Ebene zu Gerade
+
+#### Ebene Enthälter Gerade
+
+#### Parallel
+
+#### Gemeinsamer Punkt
+
+### Ebene zu Ebene
+
+#### Ebene Enthält Ebene
+
+#### Parallel 
+
+#### Schnitt gerade
+
+### Winkelbeziehungen
+
+#### Geraden
+
+#### Ebenen
+
+### Abstände
+
+#### Punkt zu Punkt
+
+#### Punkt zu Gerade
+
+#### Gerade zu Gerade
+
+##### EchtParralel
+
+##### Windschief
+
+#### Punkt zu ebene
+
+##### Lotfuß punkt
+
+##### Hessische Normalenform
+#### Gerade zu Ebene
+
+##### Echtparallel
+
+#### Ebene zu Ebene
+
+#### Hessische Normalform
+
+### 
