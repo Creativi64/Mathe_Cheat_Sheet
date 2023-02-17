@@ -4,127 +4,42 @@
 
 <!-- code_chunk_output -->
 
-- [Mathe 4](#mathe-4)
-  - [Vektoren](#vektoren)
-    - [Darstellung](#darstellung)
-      - [Schreibweise](#schreibweise)
-      - [Direktere darstellung](#direktere-darstellung)
-    - [betrang/ länge berechnen von Vector](#betrang-länge-berechnen-von-vector)
-    - [Winkel Zwischen Zwei Vectoren Berechnen](#winkel-zwischen-zwei-vectoren-berechnen)
-    - [Umrechnung](#umrechnung)
-      - [zwei Punnkten zu x,y Richtung](#zwei-punnkten-zu-xy-richtung)
-      - [x,y Richtung zu Länge und winkel](#xy-richtung-zu-länge-und-winkel)
-      - [Länge und winkel zu x,y Richtung](#länge-und-winkel-zu-xy-richtung)
-      - [zu x,y Richtung zu zwei Punnkten](#zu-xy-richtung-zu-zwei-punnkten)
-    - [Rechnen mit Vectoren](#rechnen-mit-vectoren)
-      - [Addition und Substraktion](#addition-und-substraktion)
-      - [Rechengesetze](#rechengesetze)
-      - [Skalar multiplkation](#skalar-multiplkation)
-    - [Vektor typen](#vektor-typen)
-      - [Einheitsverktor](#einheitsverktor)
-      - [Gegensvektor](#gegensvektor)
-      - [Ortsvektor](#ortsvektor)
-      - [Skalar](#skalar)
-    - [Kollineare und Komplanare Vektoren](#kollineare-und-komplanare-vektoren)
-      - [Kollinear](#kollinear)
-      - [Komplanar](#komplanar)
-    - [Basisverktoren](#basisverktoren)
-    - [Skalar produkt](#skalar-produkt)
-    - [Kreuzprodukt](#kreuzprodukt)
-      - [rechte hand regel](#rechte-hand-regel)
-      - [betrag](#betrag)
-      - [Rechenregeln](#rechenregeln)
-      - [rechnen](#rechnen)
-      - [Fläche](#fläche)
-        - [Fläche Parallelogramm](#fläche-parallelogramm)
-        - [Fläche Dreiceck](#fläche-dreiceck)
-      - [Vloumen](#vloumen)
-        - [Spat](#spat)
-        - [Prisma](#prisma)
-        - [4-Seitige Pyramide](#4-seitige-pyramide)
-        - [Tetraeder 3-Seitige Pyramide](#tetraeder-3-seitige-pyramide)
-  - [Geraden](#geraden)
-    - [Aufstellen](#aufstellen)
-    - [prüfen ob ein punkt auf der geraden liegt](#prüfen-ob-ein-punkt-auf-der-geraden-liegt)
-    - [Durch stoß punkt](#durch-stoß-punkt)
-    - [Koordinaten gleichung](#koordinaten-gleichung)
-  - [Parameter From](#parameter-from)
-    - [Normalen Form](#normalen-form)
-    - [Umrechnung $\\mathbb{R}^2$](#umrechnung-mathbbr2)
-      - [Parameterform in Normalenform](#parameterform-in-normalenform)
-      - [Normalenform in koordinatenform](#normalenform-in-koordinatenform)
-      - [koordinatenform in normalenform](#koordinatenform-in-normalenform)
-      - [Normalenform in Paramterform](#normalenform-in-paramterform)
-      - [parameter in koordianten](#parameter-in-koordianten)
-      - [Koordinaten in Parameter](#koordinaten-in-parameter)
-  - [Ebenen](#ebenen)
-    - [Parameterform](#parameterform)
-    - [Normalenform](#normalenform)
-    - [Koordinaten form](#koordinaten-form)
-    - [Umrechnung](#umrechnung-1)
-      - [Parameter zu normalenform](#parameter-zu-normalenform)
-      - [Normalenform in Koordinateform](#normalenform-in-koordinateform)
-      - [Parameterform zu Koordinatenform](#parameterform-zu-koordinatenform)
-      - [Koordinatenform zu Parameterform](#koordinatenform-zu-parameterform)
-        - [Methode 1](#methode-1)
-        - [Methode 2](#methode-2)
-      - [Koordinateform in Normalenform](#koordinateform-in-normalenform)
-      - [Normalenform in Parameterfrom](#normalenform-in-parameterfrom)
-  - [Lagebeziehungen](#lagebeziehungen)
-    - [Punkt zu Punkt](#punkt-zu-punkt)
-      - [Abstand](#abstand)
-      - [Mittelpunkt](#mittelpunkt)
-    - [Geraden zu geraden](#geraden-zu-geraden)
-    - [Ebene zu Gerade](#ebene-zu-gerade)
-      - [Ebene Enthälter Gerade](#ebene-enthälter-gerade)
-      - [Parallel](#parallel)
-      - [Gemeinsamer Punkt](#gemeinsamer-punkt)
-    - [Ebene zu Ebene](#ebene-zu-ebene)
-      - [Ebene Enthält Ebene](#ebene-enthält-ebene)
-      - [Parallel](#parallel-1)
-      - [Schnitt gerade](#schnitt-gerade)
-    - [Winkelbeziehungen](#winkelbeziehungen)
-      - [Geraden](#geraden-1)
-      - [Ebenen](#ebenen-1)
-    - [Abstände](#abstände)
-      - [Punkt zu Punkt](#punkt-zu-punkt-1)
-      - [Punkt zu Gerade](#punkt-zu-gerade)
-      - [Gerade zu Gerade](#gerade-zu-gerade)
-        - [EchtParralel](#echtparralel)
-        - [Windschief](#windschief)
-      - [Punkt zu ebene](#punkt-zu-ebene)
-        - [Lotfuß punkt](#lotfuß-punkt)
-        - [Hessische Normalenform](#hessische-normalenform)
-      - [Gerade zu Ebene](#gerade-zu-ebene)
-        - [Echtparallel](#echtparallel)
-      - [Ebene zu Ebene](#ebene-zu-ebene-1)
-      - [Hessische Normalform](#hessische-normalform)
-    - [](#)
-
-GeradePunkt zu Punkt](#punkt-zu-punkt)
-    
-    - [Punkt zu Punkt](#pGerade zu Gerade
-    
-    -[Punkt zu Punkt](#p# EchtParralel
-    
-    ##### Windschief
-    - [Punkt zu Punkt](#punkt-zu-punkt)
-    - [Punkt zu Punkt](#punkt-zu-punkt)
-      - [Abstand](#abstand)
-      - [Mittelpunkt](#mittelpunkt)
-    - [Geraden zu geraden](#geraden-zu-geraden)
-    - [Ebene zu Gerade](#ebene-zu-gerade)
-      - [Ebene Enthälter Gerade](#ebene-enthälter-gerade)
-      - [Parallel](#parallel)
-      - [Gemeinsamer Punkt](#gemeinsamer-punkt)
-    - [Ebene zu Ebene](#ebene-zu-ebene)
-    - [Winkelbeziehungen](#winkelbeziehungen)
-    - [Abstände](#abstände)
-      - [Hessische Normalform](#hessische-normalform)
-    - [](#)
+- [Mathe 4](#-mathe-4-)
+      - [Zeiter Schritt](#-zeiter-schritt-)
+        - [Wenn vielfaches](#-wenn-vielfaches-)
+          - [Punkt Probe](#-punkt-probe-)
+        - [Wenn Kein vielfaches](#-wenn-kein-vielfaches-)
+        - [Gleichsetzen](#-gleichsetzen-)
+      - [Dritter Schritt](#-dritter-schritt-)
+        - [Ergebnis Punkt Probe](#-ergebnis-punkt-probe-)
+        - [Ergebnis Gleich Setzen](#-ergebnis-gleich-setzen-)
+    - [Ebene zu Gerade](#-ebene-zu-gerade-)
+      - [Ebene Enthälter Gerade](#-ebene-enthälter-gerade-)
+      - [Parallel](#-parallel-)
+      - [Gemeinsamer Punkt](#-gemeinsamer-punkt-)
+    - [Ebene zu Ebene](#-ebene-zu-ebene-)
+      - [Ebene Enthält Ebene](#-ebene-enthält-ebene-)
+      - [Parallel](#-parallel--)
+      - [Schnitt gerade](#-schnitt-gerade-)
+    - [Winkelbeziehungen](#-winkelbeziehungen-)
+      - [Geraden](#-geraden-)
+      - [Ebenen](#-ebenen-)
+    - [Abstände](#-abstände-)
+      - [Punkt zu Punkt](#-punkt-zu-punkt-)
+      - [Punkt zu Gerade](#-punkt-zu-gerade-)
+      - [Gerade zu Gerade](#-gerade-zu-gerade-)
+        - [EchtParralel](#-echtparralel-)
+        - [Windschief](#-windschief-)
+      - [Punkt zu ebene](#-punkt-zu-ebene-)
+        - [Lotfuß punkt](#-lotfuß-punkt-)
+        - [Hessische Normalenform](#-hessische-normalenform-)
+      - [Gerade zu Ebene](#-gerade-zu-ebene-)
+        - [Echtparallel](#-echtparallel-)
+      - [Ebene zu Ebene](#-ebene-zu-ebene--1)
+      - [Hessische Normalform](#-hessische-normalform-)
 
 <!-- /code_chunk_output -->
-
+<!-- 
 ## Vektoren
 
 Vektor
@@ -720,7 +635,7 @@ t \text{ in } II : s_2 = -1+6*(-0,5) \implies s_2 = -4 \\
 $$
 
 <!-- ### mit Varable -->
-
+<!--
 ### Koordinaten gleichung
 
 auch Paramterfreie darstellung
@@ -1118,17 +1033,121 @@ $$
 
 #### Abstand
 
+Richtungs vercktor aus punkten erstellen
+
+Betrag dessen berechnen
+
 #### Mittelpunkt
+
+Formel
+
+$$
+\big( \frac{a_1+b_1}{2} | \frac{a_2+b_2}{2}| \frac{a_3+b_3}{2} \big)
+$$
 
 ### Geraden zu geraden
 
+#### Erster Schritt
+
+Prüfung auf Vielfachheit
+
+$$
+\vec{u} = k*\vec{v} \qquad k \in \mathbb{R}
+$$
+
+$$
+\begin{pmatrix*}2\\1\\4\end{pmatrix*}= K\begin{pmatrix*}6\\8\\20\end{pmatrix*} \implies \begin{matrix*}
+I \quad 2 =6s \implies s=\frac{1}{3}\\
+II \quad 1=8s\implies s= \frac{1}{8}\\
+III \quad 4=20s \implies \end{matrix*} => \text{nicht Kolinear}
+$$ 
+
+-->
+
+#### Zeiter Schritt
+
+##### Wenn vielfaches
+
+Parallel $g_1||g_2$
+
+Identisch $g_1=g_2$
+
+###### Punkt Probe
+
+Auf punkt in die jeweils andere formel einsetzen
+
+$$
+\vec{p}=\vec{q}+t\vec{v}
+$$
+
+##### Wenn Kein vielfaches
+
+Ortiggonal $g_1 \perp g_2$
+
+Scneiden sich
+
+Windschief
+
+##### Gleichsetzen
+
+Beide Formel gleichsetzen
+
+$$\vec{p}+r*\vec{u}=\vec{q}+t*\vec{v}$$
+
+LGS aufstellen und Auflösen
+
+#### Dritter Schritt
+
+##### Ergebnis Punkt Probe
+
+Wenn LGS lösba Geraden sind Identisch
+
+Wenn LGS nicht lösbar gerade sind Echt Parallel
+
+##### Ergebnis Gleich Setzen
+
+Wenn Kein LGS aufgeläst werden kann, keine wahre aussage Gerade ist Windschief
+
+Wenn LGS nach punkt aufgelöt werden kann
+
+Ortogonal oder Schnittpunkt
+
+$$\vec{u}\circ\vec{v}=0$$
+
+Wenn gleich 0 Ortoginal
+
+Wenn ungelich 0 normaler schnitpunkt
+
 ### Ebene zu Gerade
+
+Ebenen Gleichung mit Geraden Gleichung gleichsetzten
+
+Sotieren aufpunkte auf einer seite verrechnen
+
+Gaus aufstellen
+
+Gaus Lösen
 
 #### Ebene Enthälter Gerade
 
+$$g_1 \subset E$$
+
+$0=0 \text{ Wahre aussage}$
+
 #### Parallel
 
+$$g_2 \not\subset E \quad \&\& \quad g_2 || E $$
+
+$0=8 \text{ Falsche Aussage}$
+
 #### Gemeinsamer Punkt
+
+$$
+g_3 \cap E = \{s\}\\
+s \in E ^ s\in g
+$$
+
+$r=1; s=5; t=3$
 
 ### Ebene zu Ebene
 
@@ -1168,5 +1187,3 @@ $$
 #### Ebene zu Ebene
 
 #### Hessische Normalform
-
-### 
