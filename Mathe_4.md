@@ -18,9 +18,10 @@
       - [Parallel](#-parallel-)
       - [Gemeinsamer Punkt](#-gemeinsamer-punkt-)
     - [Ebene zu Ebene](#-ebene-zu-ebene-)
-      - [Ebene Enthält Ebene](#-ebene-enthält-ebene-)
-      - [Parallel](#-parallel--)
-      - [Schnitt gerade](#-schnitt-gerade-)
+      - [Parameterfoorm und Parameterform](#-parameterfoorm-und-parameterform-)
+      - [Koordinatenform und Parameterform](#-koordinatenform-und-parameterform-)
+      - [Koordinatenform und Koordinatenform](#-koordinatenform-und-koordinatenform-)
+      - [Normalenform und Normalenform](#-normalenform-und-normalenform-)
     - [Winkelbeziehungen](#-winkelbeziehungen-)
       - [Geraden](#-geraden-)
       - [Ebenen](#-ebenen-)
@@ -1151,11 +1152,238 @@ $r=1; s=5; t=3$
 
 ### Ebene zu Ebene
 
-#### Ebene Enthält Ebene
+Ebene Sind Identisch
 
-#### Parallel 
+Eben Sind  Parallel
 
-#### Schnitt gerade
+Ebene Bilden schnitt gerade
+
+#### Parameterfoorm und Parameterform
+
+$$
+E_1:\vec{x}=\begin{pmatrix*}
+  1\\2\\3
+\end{pmatrix*}+r\begin{pmatrix*}
+  1\\1\\-1\\
+\end{pmatrix*}+t\begin{pmatrix*}
+  2\\1\\4
+\end{pmatrix*} \\
+E_2:\vec{x}=\begin{pmatrix*}
+  0\\0\\-\frac{4}{3}
+\end{pmatrix*}+f\begin{pmatrix*}
+  1\\0\\\frac{2}{3}
+\end{pmatrix*}+g\begin{pmatrix*}
+  0\\1\\\frac{1}{3}
+\end{pmatrix*}
+$$
+
+$\vec{x}$ gleich setzen
+
+$$
+\begin{pmatrix*}
+  1\\2\\3
+\end{pmatrix*}
++r\begin{pmatrix*}
+  1\\1\\-1\\
+\end{pmatrix*}
++t\begin{pmatrix*}
+  2\\1\\4
+\end{pmatrix*}
+=\begin{pmatrix*}
+  0\\0\\-\frac{4}{3}
+\end{pmatrix*}
++f\begin{pmatrix*}
+  1\\0\\\frac{2}{3}
+\end{pmatrix*}
++g\begin{pmatrix*}
+  0\\1\\\frac{1}{3}
+\end{pmatrix*}\\
+r\begin{pmatrix*}
+  1\\1\\-1\\
+\end{pmatrix*}
++t\begin{pmatrix*}
+  2\\1\\4
+\end{pmatrix*}
+-f\begin{pmatrix*}
+  1\\0\\\frac{2}{3}
+\end{pmatrix*}
+-g\begin{pmatrix*}
+  0\\1\\\frac{1}{3}
+\end{pmatrix*}
+=\begin{pmatrix*}
+  0\\0\\-\frac{4}{3}
+\end{pmatrix*}
+-\begin{pmatrix*}
+  1\\2\\3
+\end{pmatrix*}
+$$
+
+Zusammen fassen und LGS aufstellen mit Gaus Lösen
+
+$$
+\begin{align*}
+& r&t, & f & g&|&\\
+  I:& +1,&2,&-1,&-0,&|&-1\\
+  II:& +1,&1,&-0,&-1,&|&-2\\
+  III:& -1,&4,&-\frac{2}{3},&-\frac{1}{3},&|&-\frac{13}{3}\\
+\end{align*}\\
+...\\
+\begin{align*}
+: & r& t, & f& g& |& \\
+  III:&1,&+2,&-1,& 0,&|&-1\\
+  II:& 0,&-1,&+1,&-1,&|&-1\\
+  I:& 0,&+0,&+\frac{13}{3},&-\frac{19}{3},&|&-\frac{34}{3}\\
+\end{align*}
+$$
+
+$$
+\begin{align*}
+\frac{13}{3}f-\frac{19}{3}g&=-\frac{34}{3}\\
+f&=-\frac{34}{13}+\frac{19}{13}g
+\end{align*}
+$$
+
+Einsetzen
+
+$$
+E_1:\vec{x}=\begin{pmatrix*}
+  0\\0\\-\frac{4}{3}
+\end{pmatrix*}+(-\frac{34}{13}+\frac{19}{13}g)\begin{pmatrix*}
+  1\\0\\\frac{2}{3}
+\end{pmatrix*}+g\begin{pmatrix*}
+  0\\1\\\frac{1}{3}
+\end{pmatrix*}\\
+\vec{x}=\begin{pmatrix*}
+  0\\0\\-\frac{4}{3}
+\end{pmatrix*}+\begin{pmatrix*}
+  -\frac{34}{13}+\frac{19}{13}g\\0\\ -\frac{68}{39}+\frac{38}{39}g
+\end{pmatrix*}+g\begin{pmatrix*}
+  0\\1\\\frac{1}{3}
+\end{pmatrix*}\\
+\vec{x}=\begin{pmatrix*}
+ -\frac{34}{13}\\0\\-\frac{40}{13}
+\end{pmatrix*}+g\begin{pmatrix*}
+  \frac{19}{13}\\1\\\frac{17}{13}
+\end{pmatrix*}\\
+$$
+
+#### Koordinatenform und Parameterform
+
+Parameter form nach $x_x$ auflösen
+
+$$
+E_1:\vec{x}=\begin{pmatrix*}
+  1\\2\\3
+\end{pmatrix*}+r\begin{pmatrix*}
+  1\\1\\-1\\
+\end{pmatrix*}+t\begin{pmatrix*}
+  2\\1\\4
+\end{pmatrix*}\implies
+\begin{matrix*}
+  x_1=1+r+2t\\
+  x_2=2+r+t\\
+  x_3=3-r+4t
+\end{matrix*}
+$$
+
+$$
+E_2:2x_1+x_2-3x_3=4
+$$
+
+In Koordinaten form einsetzen
+
+$$
+x_1,x_2,x_3 in E_2: \\
+\begin{align*}
+2(1+r+2t)+(2+r+t)-3(3-r+4t)&=4\\
+2+2r+4t+2+r+t+9+3r-12t&=4\\
+-5-7t+6r&=4\\
+6r&=9+7t\\
+r&=\frac{9}{6}+\frac{7}{6}t\\
+\end{align*}
+$$
+
+Schnitt gerade auf stellen
+
+$$
+\vec{x}=\begin{pmatrix*}
+ 1\\2\\3
+\end{pmatrix*}+(\frac{9}{6}+\frac{7}{6}t)\begin{pmatrix*}
+  1\\1\\-1
+\end{pmatrix*}+t\begin{pmatrix*}
+  2\\1\\4
+\end{pmatrix*}\\
+\vec{x}=\begin{pmatrix*}
+ 1\\2\\3
+\end{pmatrix*}+\begin{pmatrix*}
+  \frac{9}{6}+\frac{7}{6}t\\  \frac{9}{6}+\frac{7}{6}t\\  -\frac{9}{6}-\frac{7}{6}t
+\end{pmatrix*}+t\begin{pmatrix*}
+  2\\1\\4
+\end{pmatrix*}\\
+\vec{x}=\begin{pmatrix*}
+ \frac{5}{2}\\\frac{7}{2}\\\frac{3}{2}
+\end{pmatrix*}+t\begin{pmatrix*}
+  \frac{19}{6}\\\frac{13}{6}\\\frac{17}{6}
+\end{pmatrix*}\\
+$$
+
+#### Koordinatenform und Koordinatenform
+
+Eine Variable muss mit Additions verfahren oder Gaus aufgelößt werden
+
+$$
+E_1:2x_1-4x_2+6x_3=8\\
+E_2:x_1+4x_2+3x_3=-5\\
+------------\\
+1x_1+1x_3=1\\
+x_1=1+x_3
+$$
+
+Keine Wahre oder Falsche Aussage
+
+Schnitt gerade bestimen
+
+$x_1=1-x_3$ in $E_1$ oder $E_2$ einsetzen
+
+$$
+\begin{align*}
+(1-x_3)+4s_2-3x_3&=-5\\
+4x_2&=-6+4x_3\\
+x_2&=-\frac{3}{2}+x_3
+\end{align*}
+$$
+
+In abhännigkeit zu hier $x_3$ auflößen
+Dies wird der parameter der schnittgerade
+
+Aufstellen
+
+$$
+gs:\vec{x}=\begin{pmatrix*}
+  x_1\\ x_2\\ x_3
+\end{pmatrix*}=\begin{pmatrix*}
+  1-x_3\\ - \frac{3}{2}+x_3 \\ x_3
+\end{pmatrix*} = \begin{pmatrix*}
+  1 \\ - \frac{3}{2} \\ 0
+\end{pmatrix*}+x_3\begin{pmatrix*}
+  -1 \\1\\1
+\end{pmatrix*} \qquad x_3\in \mathbb{R}
+$$
+#### Normalenform und Normalenform
+
+Normalen Vecktoren den beiden funktionen vergleichen
+
+$$\vec{n_1}= \lambda* \vec{n_2} \qquad \lambda \in \mathbb{R}$$
+
+Wenn Kein vielfaches LGS aufstellen und schnittgerade bestimmen
+
+Wenn vielfaches Punkt Proben der auf punkte durch führen
+
+$$a_1 \in E_2 \text{ oder } a_2 \in E_1$$
+
+Wenn wahre aussage Eben sind identisch
+
+Wenn Falsche Aussage Eben Sind Echt Parallel
 
 ### Winkelbeziehungen
 
