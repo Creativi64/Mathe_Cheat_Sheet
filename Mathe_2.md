@@ -23,11 +23,12 @@
   - [Kurven Diskussion](#kurven-diskussion)
     - [Definitionsmenge](#definitionsmenge)
     - [Nullstellen](#nullstellen)
-    - [Y-Achsen Abschnitt](#y-achsen-abschnitt)
+      - [X-Achse](#x-achse)
+      - [Y-Achsen Abschnitt](#y-achsen-abschnitt)
     - [Symmetrie](#symmetrie)
       - [achsen sysmetrie](#achsen-sysmetrie)
       - [Punkt sysmetrie](#punkt-sysmetrie)
-    - [Verhalten Für $f$ für $|x|\to\infty$](#verhalten-für-f-für-xtoinfty)
+    - [Verhalten Für $f$ für $|x|\\to\\infty$](#verhalten-für-f-für-xtoinfty)
     - [stetigkeit](#stetigkeit-1)
     - [Extrempunkte](#extrempunkte)
     - [Monotonie / Steigunsverhalten](#monotonie--steigunsverhalten)
@@ -37,6 +38,9 @@
     - [WeP](#wep)
     - [TeP](#tep)
   - [Wendetangente und Wendenormale](#wendetangente-und-wendenormale)
+    - [Wendetankgente](#wendetankgente)
+    - [Wende Normale](#wende-normale)
+- [Tests](#tests)
 
 <!-- /code_chunk_output -->
 
@@ -342,11 +346,13 @@ plot [-6:6][-2:6]  f(x),f1(x),f2(x)
 
 wenn nicht angegeben grundemenge ist immer ganz $\mathbb{R}$#
 
-Für $x$ einsetz bares $\mathbb{D}$ |alles was man einsetzen kann, oft $\mathbb{R}$
+Für $x$ einsetz bares $\mathbb{D}$ |alles was man einsetzen kann, bei ganzratzionalen funktionen nur $\mathbb{R}$ bei gebrochenen $\mathbb{R} \backslash \{...\}$
 
 für $y$ einsetz bares $\mathbb{W}$ |alles was herrauskommen kann,  oft $\mathbb{R}$
 
 ### Nullstellen
+
+#### X-Achse
 
 Nullstellen der grundlegenden Funktion Berechnen
 
@@ -357,15 +363,44 @@ $f(x)=0$
 wenn man kein x ausklammern kann und nicht auf $x^2$ kommt,
 Polynmo division mit erratener nullstelle (Taschenrechner rät gut), $(x-{geratenenNST})$
 
-### Y-Achsen Abschnitt
+bsp.
+
+$$
+f(x)=x^4-8x^3+18x^2 \qquad x\in\mathbb{R}\\
+f(x)=0\\
+0=x^2(x^2-8x-18)=0\\
+\rightarrow x_1,x_2=0\\
+0=x^2-8x+18\\
+x_3,x_4=\frac{+8\plusmn \sqrt{(-8)^2-4*1*18} }{2*1}\\
+x_3,x_4=\frac{+8\plusmn \sqrt{-8} }{2}= ↯ \\
+\implies Nst(0|0) \quad Doppelt
+$$
+
+#### Y-Achsen Abschnitt
 
 Schlagowrt: Ordinate -> Y-Achse
 
+$$
+f(0)=0^4-8*0^3+18*0=0\\
+\implies S_y(0|0)
+$$
+
 ### Symmetrie
+
+Beachten das $-x^4 = -x*-x*-x*-x = + ;\qquad -x^3 = -x*-x*-x=-$
 
 #### achsen sysmetrie
 
 $$f(x)=f(-x)$$
+
+bsp.
+
+$$
+f(x)=x^4-8x^3+18x^2 \qquad x\in\mathbb{R}\\
+f(-x)=(-x)^4-8(-x)^3+18(-x)^2\\
+f(-x)\neq x^4+8x^3+18x^2\\
+\implies\text{Nicht Achsen Symetrisch}
+$$
 
 #### Punkt sysmetrie
 
@@ -373,6 +408,13 @@ $$
 \begin{align*}
 f(-x)&=-f(x) \qquad |*(-1)\\-f(-x)&=f(x)
 \end{align*}
+$$
+bsp.w
+$$
+f(x)=x^4-8x^3+18x^2 \qquad x\in\mathbb{R}\\
+-f(-x)=-((x)^4+8(x)^3+18(-x)^2)\\
+-f(-x)\neq -x^4-8x^3-18x^2\\
+\implies\text{Nicht Punkt Symetrisch}
 $$
 
 ### Verhalten Für $f$ für $|x|\to\infty$
@@ -399,11 +441,29 @@ ergibnt $\infin$ und $-\infin$
 
 ### stetigkeit
 
-Eine Ungebrochene Stettigkeit ist in der Regel Stetig
+Eine Ungebrochene funktionen ist  Stetig
 
 $$\lim\limits_{x\to x_0^-} f(x)=\lim\limits_{x\to x_0^+} f(x)=f(x)$$
 
 Wenn der Nenner bei einer gebrochen rationalen funktion mit einem Faktor im zähler gekürzt werden kann dann ist die Definitions lücke behebbar
+
+Es ist nur die höchste potenz relevant
+
+bsp.
+
+Positive seite
+
+$$
+\lim_{x\rightarrow \infin}(x^4-8x^3+18x^2)=\lim_{x\rightarrow \infin}x^4(1-\frac{8}{x}+\frac{18}{x^2})=\infin(1-0^++0^+)=0*\infin=+\infin
+$$
+
+negative seite
+
+$$
+\lim_{x\rightarrow -\infin}(x^4-8x^3+18x^2)=\lim_{x\rightarrow -\infin}x^4(1-\frac{8}{x}+\frac{18}{x^2})=\infin(1-0+0)=0*\infin=+\infin
+$$
+
+Die funktion verläuft auf beiden seiten ins positive unendlich
 
 ### Extrempunkte
 
@@ -444,6 +504,8 @@ Vorzeichen Tabelle
 
 ---
 
+um die verlaufs form bestimmen zu können um die zahlen ein ne minimal großere oder kleiner zahl wähne und einsetzen vorzeichen bestimmt dann den verlauf
+
 <svg xmlns="http://www.w3.org/2000/svg">
 <rect x="21" y="66" width="299" height="4" fill="rgb(0, 0, 0)" />
 <rect fill="rgb(0, 0, 0)" x="65" y="18" width="4" height="101" />
@@ -477,6 +539,10 @@ $f'(x) < 0$ -> Streng Monoton Fallend
 $f'(x) > 0$ -> Streng Monoton steigend
 
 intervalle
+
+Streng monton steigend/Fallend ist wenn bis zum steigungs wechsel im verlauf keine unterbrechung ist
+
+monoton steigend/Fallend ist wenn der verlauf durch z.b. einen Terrasen punkt
 
 $$
 \begin{align*}
@@ -535,6 +601,7 @@ VZ tabelle Von Wendepunkt weiter nutzbar
 $f''(x)<0 \to$ ist rechts gekrümmt (steigung nimmt ab)
 $f''(x)>0 \to$ ist links gekrümmt (steigung nimmt zu)
 
+Die richung stellt man sich vor indem man von oben drauf schaut auf den verlauf
 
 $$
 \begin{align*}

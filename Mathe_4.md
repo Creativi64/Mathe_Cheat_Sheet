@@ -40,10 +40,9 @@
       - [Gerade zu Ebene](#-gerade-zu-ebene-)
         - [Echtparallel](#-echtparallel-)
         - [Ebene zu Ebene](#-ebene-zu-ebene--1)
-      - [Hessische Normalform](#-hessische-normalform-)
 
 <!-- /code_chunk_output -->
-<!-- 
+
 ## Vektoren
 
 Vektor
@@ -639,7 +638,7 @@ t \text{ in } II : s_2 = -1+6*(-0,5) \implies s_2 = -4 \\
 $$
 
 <!-- ### mit Varable -->
-<!--
+
 ### Koordinaten gleichung
 
 auch Paramterfreie darstellung
@@ -1066,7 +1065,6 @@ II \quad 1=8s\implies s= \frac{1}{8}\\
 III \quad 4=20s \implies \end{matrix*} => \text{nicht Kolinear}
 $$ 
 
--->
 
 #### Zeiter Schritt
 
@@ -1670,10 +1668,24 @@ $$
 ##### Hessische Normalenform
 
 $$
-d(P,E)=\bigg|\frac{a*x_1+bx_2+c+x_3+d}{|\vec{n}|}  \bigg|\\
-mit \vec{n}=\begin{pmatrix*}
+d(P,E)=\bigg|\frac{a*x_1+b*x_2+c*x_3+d}{|\vec{n}|}  \bigg|\\
+mit \quad \vec{n}=\begin{pmatrix*}
   a\\ b\\ c
 \end{pmatrix*}und \quad x_1,x_2,x_3 \quad aus \quad P
+$$
+
+bsp.:
+
+$$
+E:2x-3y+10z=6\\
+P(0_x|0_y|4_z)
+$$
+
+$$
+\vec{n}=\begin{pmatrix*}
+  2\\-3\\10
+\end{pmatrix*}=\sqrt{2^2+(-3)^2+10^2}=\sqrt{113}\\
+d(P,E)=\bigg|\frac{2*0-3*0+10*4-6}{\sqrt{113}}\bigg|=\bigg|\frac{34}{\sqrt{113}}\bigg|=3,198\approx 3,2
 $$
 
 #### Gerade zu Ebene
@@ -1695,7 +1707,6 @@ Wie Punkt zur Ebene
 
 Wie Punkt zur Ebene
 
-#### Hessische Normalform
 
 
 
