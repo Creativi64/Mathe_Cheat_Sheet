@@ -4,42 +4,113 @@
 
 <!-- code_chunk_output -->
 
-- [Mathe 4](#-mathe-4-)
-      - [Zeiter Schritt](#-zeiter-schritt-)
-        - [Wenn vielfaches](#-wenn-vielfaches-)
-          - [Punkt Probe](#-punkt-probe-)
-        - [Wenn Kein vielfaches](#-wenn-kein-vielfaches-)
-        - [Gleichsetzen](#-gleichsetzen-)
-      - [Dritter Schritt](#-dritter-schritt-)
-        - [Ergebnis Punkt Probe](#-ergebnis-punkt-probe-)
-        - [Ergebnis Gleich Setzen](#-ergebnis-gleich-setzen-)
-    - [Ebene zu Gerade](#-ebene-zu-gerade-)
-      - [Ebene Enthälter Gerade](#-ebene-enthälter-gerade-)
-      - [Parallel](#-parallel-)
-      - [Gemeinsamer Punkt](#-gemeinsamer-punkt-)
-    - [Ebene zu Ebene](#-ebene-zu-ebene-)
-      - [Parameterfoorm und Parameterform](#-parameterfoorm-und-parameterform-)
-      - [Koordinatenform und Parameterform](#-koordinatenform-und-parameterform-)
-      - [Koordinatenform und Koordinatenform](#-koordinatenform-und-koordinatenform-)
-      - [Normalenform und Normalenform](#-normalenform-und-normalenform-)
-    - [Winkelbeziehungen](#-winkelbeziehungen-)
-      - [Geraden](#-geraden-)
-      - [Ebenen](#-ebenen-)
-      - [Gerade und Ebene](#-gerade-und-ebene-)
-    - [Abstände](#-abstände-)
-      - [Punkt zu Punkt](#-punkt-zu-punkt-)
-      - [Punkt zu Gerade](#-punkt-zu-gerade-)
-      - [Gerade zu Gerade](#-gerade-zu-gerade-)
-        - [EchtParralel](#-echtparralel-)
-        - [Windschief](#-windschief-)
-          - [LGS](#-lgs-)
-          - [Hilfs Ebene](#-hilfs-ebene-)
-      - [Punkt zu ebene](#-punkt-zu-ebene-)
-        - [Lotfuß punkt](#-lotfuß-punkt-)
-        - [Hessische Normalenform](#-hessische-normalenform-)
-      - [Gerade zu Ebene](#-gerade-zu-ebene-)
-        - [Echtparallel](#-echtparallel-)
-        - [Ebene zu Ebene](#-ebene-zu-ebene--1)
+- [Mathe 4](#mathe-4)
+  - [Vektoren](#vektoren)
+    - [Darstellung](#darstellung)
+      - [Schreibweise](#schreibweise)
+      - [Direktere darstellung](#direktere-darstellung)
+    - [betrang/ länge berechnen von Vector](#betrang-länge-berechnen-von-vector)
+    - [Winkel Zwischen Zwei Vectoren Berechnen](#winkel-zwischen-zwei-vectoren-berechnen)
+    - [Umrechnung](#umrechnung)
+      - [zwei Punnkten zu x,y Richtung](#zwei-punnkten-zu-xy-richtung)
+      - [x,y Richtung zu Länge und winkel](#xy-richtung-zu-länge-und-winkel)
+      - [Länge und winkel zu x,y Richtung](#länge-und-winkel-zu-xy-richtung)
+      - [zu x,y Richtung zu zwei Punnkten](#zu-xy-richtung-zu-zwei-punnkten)
+    - [Rechnen mit Vectoren](#rechnen-mit-vectoren)
+      - [Addition und Substraktion](#addition-und-substraktion)
+      - [Rechengesetze](#rechengesetze)
+      - [Skalar multiplkation](#skalar-multiplkation)
+    - [Vektor typen](#vektor-typen)
+      - [Einheitsverktor](#einheitsverktor)
+      - [Gegensvektor](#gegensvektor)
+      - [Ortsvektor](#ortsvektor)
+      - [Skalar](#skalar)
+    - [Kollineare und Komplanare Vektoren](#kollineare-und-komplanare-vektoren)
+      - [Kollinear](#kollinear)
+      - [Komplanar](#komplanar)
+    - [Basisverktoren](#basisverktoren)
+    - [Skalar produkt](#skalar-produkt)
+    - [Kreuzprodukt](#kreuzprodukt)
+      - [rechte hand regel](#rechte-hand-regel)
+      - [betrag](#betrag)
+      - [Rechenregeln](#rechenregeln)
+      - [rechnen](#rechnen)
+      - [Fläche](#fläche)
+        - [Fläche Parallelogramm](#fläche-parallelogramm)
+        - [Fläche Dreiceck](#fläche-dreiceck)
+      - [Vloumen](#vloumen)
+        - [Spat](#spat)
+        - [Prisma](#prisma)
+        - [4-Seitige Pyramide](#4-seitige-pyramide)
+        - [Tetraeder 3-Seitige Pyramide](#tetraeder-3-seitige-pyramide)
+  - [Geraden](#geraden)
+    - [Aufstellen](#aufstellen)
+    - [prüfen ob ein punkt auf der geraden liegt](#prüfen-ob-ein-punkt-auf-der-geraden-liegt)
+    - [Durch stoß punkt](#durch-stoß-punkt)
+    - [Koordinaten gleichung](#koordinaten-gleichung)
+  - [Parameter From](#parameter-from)
+    - [Normalen Form](#normalen-form)
+    - [Umrechnung $\mathbb{R}^2$](#umrechnung-mathbbr2)
+      - [Parameterform in Normalenform](#parameterform-in-normalenform)
+      - [Normalenform in koordinatenform](#normalenform-in-koordinatenform)
+      - [koordinatenform in normalenform](#koordinatenform-in-normalenform)
+      - [Normalenform in Paramterform](#normalenform-in-paramterform)
+      - [parameter in koordianten](#parameter-in-koordianten)
+      - [Koordinaten in Parameter](#koordinaten-in-parameter)
+  - [Ebenen](#ebenen)
+    - [Parameterform](#parameterform)
+    - [Normalenform](#normalenform)
+    - [Koordinaten form](#koordinaten-form)
+    - [Umrechnung](#umrechnung-1)
+      - [Parameter zu normalenform](#parameter-zu-normalenform)
+      - [Normalenform in Koordinateform](#normalenform-in-koordinateform)
+      - [Parameterform zu Koordinatenform](#parameterform-zu-koordinatenform)
+      - [Koordinatenform zu Parameterform](#koordinatenform-zu-parameterform)
+        - [Methode 1](#methode-1)
+        - [Methode 2](#methode-2)
+      - [Koordinateform in Normalenform](#koordinateform-in-normalenform)
+      - [Normalenform in Parameterfrom](#normalenform-in-parameterfrom)
+  - [Lagebeziehungen](#lagebeziehungen)
+    - [Punkt zu Punkt](#punkt-zu-punkt)
+      - [Abstand](#abstand)
+      - [Mittelpunkt](#mittelpunkt)
+    - [Geraden zu geraden](#geraden-zu-geraden)
+      - [Erster Schritt](#erster-schritt)
+      - [Zeiter Schritt](#zeiter-schritt)
+        - [Wenn vielfaches](#wenn-vielfaches)
+          - [Punkt Probe](#punkt-probe)
+        - [Wenn Kein vielfaches](#wenn-kein-vielfaches)
+        - [Gleichsetzen](#gleichsetzen)
+      - [Dritter Schritt](#dritter-schritt)
+        - [Ergebnis Punkt Probe](#ergebnis-punkt-probe)
+        - [Ergebnis Gleich Setzen](#ergebnis-gleich-setzen)
+    - [Ebene zu Gerade](#ebene-zu-gerade)
+      - [Ebene Enthälter Gerade](#ebene-enthälter-gerade)
+      - [Parallel](#parallel)
+      - [Gemeinsamer Punkt](#gemeinsamer-punkt)
+    - [Ebene zu Ebene](#ebene-zu-ebene)
+      - [Parameterfoorm und Parameterform](#parameterfoorm-und-parameterform)
+      - [Koordinatenform und Parameterform](#koordinatenform-und-parameterform)
+      - [Koordinatenform und Koordinatenform](#koordinatenform-und-koordinatenform)
+      - [Normalenform und Normalenform](#normalenform-und-normalenform)
+    - [Winkelbeziehungen](#winkelbeziehungen)
+      - [Geraden](#geraden-1)
+      - [Ebenen](#ebenen-1)
+      - [Gerade und Ebene](#gerade-und-ebene)
+    - [Abstände](#abstände)
+      - [Punkt zu Punkt](#punkt-zu-punkt-1)
+      - [Punkt zu Gerade](#punkt-zu-gerade)
+      - [Gerade zu Gerade](#gerade-zu-gerade)
+        - [EchtParralel](#echtparralel)
+        - [Windschief](#windschief)
+          - [LGS](#lgs)
+          - [Hilfs Ebene](#hilfs-ebene)
+      - [Punkt zu ebene](#punkt-zu-ebene)
+        - [Lotfuß punkt](#lotfuß-punkt)
+        - [Hessische Normalenform](#hessische-normalenform)
+      - [Gerade zu Ebene](#gerade-zu-ebene)
+        - [Echtparallel](#echtparallel)
+        - [Ebene zu Ebene](#ebene-zu-ebene-1)
 
 <!-- /code_chunk_output -->
 
@@ -603,11 +674,11 @@ $$
 $$
 
 $$
-\begin{rcases}
+\begin{matrix}
   0&=3-5 &\implies s=3\\
   -1&=2-5 &\implies s=3 \\
   10 &=1+3s &\implies s=3
-\end{rcases}
+\end{matrix} \Biggr \}
 = \qquad;A\in g
 $$
 
@@ -616,10 +687,10 @@ $$
 in der regel auf einer koordinaten eben
 
 $$
-\begin{rcases}
+\begin{matrix}
   S(s_1|s_2|s_3)\\
   x_1; x_2 : s_3 =0
-\end{rcases}
+\end{matrix} \bigg\}
 \implies \vec{s}=\begin{pmatrix}s_1\\s_2\\0\end{pmatrix}
 \qquad s_1,s_2 \in \mathbb{R}
 $$
@@ -631,10 +702,13 @@ $$
   \implies III: 0=2+4t \implies t=-0,5
 \end{matrix}
 $$
+
 $$
-t \text{ in } I : s_1 = 2-0,5-(-2) \implies s_1=3\\
-t \text{ in } II : s_2 = -1+6*(-0,5) \implies s_2 = -4 \\
-\implies S(3|-4|0)
+\begin{align}
+t \text{ in } I : s_1 &= 2-0,5-(-2) \implies s_1=3 \\
+t \text{ in } II : s_2 &= -1+6*(-0,5) \implies s_2 = -4 \\
+&\implies S(3|-4|0)
+\end{align}
 $$
 
 <!-- ### mit Varable -->
@@ -874,9 +948,9 @@ x_1=\quad x=9-2y-2z
 $$
 
 $$
-\vec{x}=\begin{pmatrix*}
+\vec{x}=\begin{pmatrix}
 x_1\\x_2\\x_3
-\end{pmatrix*}=\left(\begin{array}{}9\\0\\0\end{array}
+\end{pmatrix}=\left(\begin{array}{}9\\0\\0\end{array}
 \begin{array}{}-2y\\y\\0\end{array}
 \begin{array}{}-2z\\0\\z\end{array}
 \right) =
@@ -929,9 +1003,9 @@ n_1*x_1+n_2*x_2+n_3*x_3 &= \vec{n}\circ\vec{p} \\
 $$
 $$
 \vec{n}=
-\begin{pmatrix*}
+\begin{pmatrix}
 1\\2\\2  
-\end{pmatrix*}
+\end{pmatrix}
 $$
 
 richttungsvektoren bestimmen
@@ -939,17 +1013,17 @@ richttungsvektoren bestimmen
 Tausch und minus trick eine 0 setzen
 
 $$
-\vec{n}=\begin{pmatrix*}1\\2\\2\end{pmatrix*} \implies\vec{u}=\begin{pmatrix*}-2\\1\\0\end{pmatrix*};\vec{v}=\begin{pmatrix*}-2\\0\\1\end{pmatrix*}
+\vec{n}=\begin{pmatrix}1\\2\\2\end{pmatrix} \implies\vec{u}=\begin{pmatrix}-2\\1\\0\end{pmatrix};\vec{v}=\begin{pmatrix}-2\\0\\1\end{pmatrix}
 $$
 
 $$
-E:\vec{x}=\begin{pmatrix*}
+E:\vec{x}=\begin{pmatrix}
   9\\0\\0
-\end{pmatrix*}+\lambda\begin{pmatrix*}
+\end{pmatrix}+\lambda\begin{pmatrix}
   -2\\1\\0
-\end{pmatrix*}+\mu\begin{pmatrix*}
+\end{pmatrix}+\mu\begin{pmatrix}
   -2\\0\\1
-\end{pmatrix*}\qquad, \lambda,\mu \in \mathbb{R}
+\end{pmatrix}\qquad, \lambda,\mu \in \mathbb{R}
 $$
 
 #### Koordinateform in Normalenform
@@ -985,49 +1059,49 @@ n_1*x_1+n_2*x_2+n_3*x_3 &= \vec{n}\circ\vec{p} \\
 1*x_1+2*x_2+2*x_3 &= 9
 \end{align*} \qquad
 \vec{n}=
-\begin{pmatrix*}
+\begin{pmatrix}
 1\\2\\2  
-\end{pmatrix*}
+\end{pmatrix}
 $$
 
 $$
 g:
-\begin{pmatrix*}
+\begin{pmatrix}
 1\\2\\2  
-\end{pmatrix*} \circ \left[ \begin{pmatrix*}
+\end{pmatrix} \circ \left[ \begin{pmatrix}
   x_1\\x_2\\x_3
-\end{pmatrix*} - \begin{pmatrix*}
+\end{pmatrix} - \begin{pmatrix}
   9\\0\\0
-\end{pmatrix*}\right]=0
+\end{pmatrix}\right]=0
 $$
 
 #### Normalenform in Parameterfrom
 
 $$
 g:
-\begin{pmatrix*}
+\begin{pmatrix}
 1\\2\\2  
-\end{pmatrix*} \circ \left[ \begin{pmatrix*}
+\end{pmatrix} \circ \left[ \begin{pmatrix}
   x_1\\x_2\\x_3
-\end{pmatrix*} - \begin{pmatrix*}
+\end{pmatrix} - \begin{pmatrix}
   9\\0\\0
-\end{pmatrix*}\right]=0
+\end{pmatrix}\right]=0
 $$
 
 Tausch und minus trick eine 0 setzen
 
 $$
-\vec{n}=\begin{pmatrix*}1\\2\\2\end{pmatrix*} \implies\vec{u}=\begin{pmatrix*}-2\\1\\0\end{pmatrix*};\vec{v}=\begin{pmatrix*}-2\\0\\1\end{pmatrix*}
+\vec{n}=\begin{pmatrix}1\\2\\2\end{pmatrix} \implies\vec{u}=\begin{pmatrix}-2\\1\\0\end{pmatrix};\vec{v}=\begin{pmatrix}-2\\0\\1\end{pmatrix}
 $$
 
 $$
-E:\vec{x}=\begin{pmatrix*}
+E:\vec{x}=\begin{pmatrix}
   9\\0\\0
-\end{pmatrix*}+\lambda\begin{pmatrix*}
+\end{pmatrix}+\lambda\begin{pmatrix}
   -2\\1\\0
-\end{pmatrix*}+\mu\begin{pmatrix*}
+\end{pmatrix}+\mu\begin{pmatrix}
   -2\\0\\1
-\end{pmatrix*}\qquad, \lambda,\mu \in \mathbb{R}
+\end{pmatrix}\qquad, \lambda,\mu \in \mathbb{R}
 $$
 
 ## Lagebeziehungen
@@ -1059,10 +1133,10 @@ $$
 $$
 
 $$
-\begin{pmatrix*}2\\1\\4\end{pmatrix*}= K\begin{pmatrix*}6\\8\\20\end{pmatrix*} \implies \begin{matrix*}
+\begin{pmatrix}2\\1\\4\end{pmatrix}= K\begin{pmatrix}6\\8\\20\end{pmatrix} \implies \begin{matrix}
 I \quad 2 =6s \implies s=\frac{1}{3}\\
 II \quad 1=8s\implies s= \frac{1}{8}\\
-III \quad 4=20s \implies \end{matrix*} => \text{nicht Kolinear}
+III \quad 4=20s \implies \end{matrix} => \text{nicht Kolinear}
 $$ 
 
 
@@ -1138,7 +1212,7 @@ $0=0 \text{ Wahre aussage}$
 
 #### Parallel
 
-$$g_2 \not\subset E \quad \&\& \quad g_2 || E $$
+$$g_2 \not\subset E \quad \\& \\& \quad g_2 || E $$
 
 $0=8 \text{ Falsche Aussage}$
 
@@ -1162,73 +1236,75 @@ Ebene Bilden schnitt gerade
 #### Parameterfoorm und Parameterform
 
 $$
-E_1:\vec{x}=\begin{pmatrix*}
+E_1:\vec{x}=\begin{pmatrix}
   1\\2\\3
-\end{pmatrix*}+r\begin{pmatrix*}
+\end{pmatrix}+r\begin{pmatrix}
   1\\1\\-1\\
-\end{pmatrix*}+t\begin{pmatrix*}
+\end{pmatrix}+t\begin{pmatrix}
   2\\1\\4
-\end{pmatrix*} \\
-E_2:\vec{x}=\begin{pmatrix*}
+\end{pmatrix} \\
+E_2:\vec{x}=\begin{pmatrix}
   0\\0\\-\frac{4}{3}
-\end{pmatrix*}+f\begin{pmatrix*}
+\end{pmatrix}+f\begin{pmatrix}
   1\\0\\\frac{2}{3}
-\end{pmatrix*}+g\begin{pmatrix*}
+\end{pmatrix}+g\begin{pmatrix}
   0\\1\\\frac{1}{3}
-\end{pmatrix*}
+\end{pmatrix}
 $$
 
 $\vec{x}$ gleich setzen
 
 $$
-\begin{pmatrix*}
+\begin{pmatrix}
   1\\2\\3
-\end{pmatrix*}
-+r\begin{pmatrix*}
+\end{pmatrix}
++r\begin{pmatrix}
   1\\1\\-1\\
-\end{pmatrix*}
-+t\begin{pmatrix*}
+\end{pmatrix}
++t\begin{pmatrix}
   2\\1\\4
-\end{pmatrix*}
-=\begin{pmatrix*}
+\end{pmatrix}
+=\begin{pmatrix}
   0\\0\\-\frac{4}{3}
-\end{pmatrix*}
-+f\begin{pmatrix*}
+\end{pmatrix}
++f\begin{pmatrix}
   1\\0\\\frac{2}{3}
-\end{pmatrix*}
-+g\begin{pmatrix*}
+\end{pmatrix}
++g\begin{pmatrix}
   0\\1\\\frac{1}{3}
-\end{pmatrix*}\\
-r\begin{pmatrix*}
+\end{pmatrix}\\
+r\begin{pmatrix}
   1\\1\\-1\\
-\end{pmatrix*}
-+t\begin{pmatrix*}
+\end{pmatrix}
++t\begin{pmatrix}
   2\\1\\4
-\end{pmatrix*}
--f\begin{pmatrix*}
+\end{pmatrix}
+-f\begin{pmatrix}
   1\\0\\\frac{2}{3}
-\end{pmatrix*}
--g\begin{pmatrix*}
+\end{pmatrix}
+-g\begin{pmatrix}
   0\\1\\\frac{1}{3}
-\end{pmatrix*}
-=\begin{pmatrix*}
+\end{pmatrix}
+=\begin{pmatrix}
   0\\0\\-\frac{4}{3}
-\end{pmatrix*}
--\begin{pmatrix*}
+\end{pmatrix}
+-\begin{pmatrix}
   1\\2\\3
-\end{pmatrix*}
+\end{pmatrix}
 $$
 
 Zusammen fassen und LGS aufstellen mit Gaus Lösen
 
 $$
 \begin{align*}
-& r&t, & f & g&|&\\
-  I:& +1,&2,&-1,&-0,&|&-1\\
-  II:& +1,&1,&-0,&-1,&|&-2\\
-  III:& -1,&4,&-\frac{2}{3},&-\frac{1}{3},&|&-\frac{13}{3}\\
-\end{align*}\\
-...\\
+      & r   &t, & f           & g           &|&             \\
+  I:  & +1, &2, &-1,          &-0,          &|&-1           \\
+  II: & +1, &1, &-0,          &-1,          &|&-2           \\
+  III:& -1, &4, &-\frac{2}{3},&-\frac{1}{3},&|&-\frac{13}{3}\\
+\end{align*}
+$$
+$$...$$
+$$
 \begin{align*}
 : & r& t, & f& g& |& \\
   III:&1,&+2,&-1,& 0,&|&-1\\
@@ -1243,29 +1319,28 @@ $$
 f&=-\frac{34}{13}+\frac{19}{13}g
 \end{align*}
 $$
-
 Einsetzen
 
 $$
-E_1:\vec{x}=\begin{pmatrix*}
+E_1:\vec{x}=\begin{pmatrix}
   0\\0\\-\frac{4}{3}
-\end{pmatrix*}+(-\frac{34}{13}+\frac{19}{13}g)\begin{pmatrix*}
+\end{pmatrix}+(-\frac{34}{13}+\frac{19}{13}g)\begin{pmatrix}
   1\\0\\\frac{2}{3}
-\end{pmatrix*}+g\begin{pmatrix*}
+\end{pmatrix}+g\begin{pmatrix}
   0\\1\\\frac{1}{3}
-\end{pmatrix*}\\
-\vec{x}=\begin{pmatrix*}
+\end{pmatrix}\\
+\vec{x}=\begin{pmatrix}
   0\\0\\-\frac{4}{3}
-\end{pmatrix*}+\begin{pmatrix*}
+\end{pmatrix}+\begin{pmatrix}
   -\frac{34}{13}+\frac{19}{13}g\\0\\ -\frac{68}{39}+\frac{38}{39}g
-\end{pmatrix*}+g\begin{pmatrix*}
+\end{pmatrix}+g\begin{pmatrix}
   0\\1\\\frac{1}{3}
-\end{pmatrix*}\\
-\vec{x}=\begin{pmatrix*}
+\end{pmatrix}\\
+\vec{x}=\begin{pmatrix}
  -\frac{34}{13}\\0\\-\frac{40}{13}
-\end{pmatrix*}+g\begin{pmatrix*}
+\end{pmatrix}+g\begin{pmatrix}
   \frac{19}{13}\\1\\\frac{17}{13}
-\end{pmatrix*}\\
+\end{pmatrix}\\
 $$
 
 #### Koordinatenform und Parameterform
@@ -1273,18 +1348,18 @@ $$
 Parameter form nach $x_x$ auflösen
 
 $$
-E_1:\vec{x}=\begin{pmatrix*}
+E_1:\vec{x}=\begin{pmatrix}
   1\\2\\3
-\end{pmatrix*}+r\begin{pmatrix*}
+\end{pmatrix}+r\begin{pmatrix}
   1\\1\\-1\\
-\end{pmatrix*}+t\begin{pmatrix*}
+\end{pmatrix}+t\begin{pmatrix}
   2\\1\\4
-\end{pmatrix*}\implies
-\begin{matrix*}
+\end{pmatrix}\implies
+\begin{matrix}
   x_1=1+r+2t\\
   x_2=2+r+t\\
   x_3=3-r+4t
-\end{matrix*}
+\end{matrix}
 $$
 
 $$
@@ -1307,25 +1382,25 @@ $$
 Schnitt gerade auf stellen
 
 $$
-\vec{x}=\begin{pmatrix*}
+\vec{x}=\begin{pmatrix}
  1\\2\\3
-\end{pmatrix*}+(\frac{9}{6}+\frac{7}{6}t)\begin{pmatrix*}
+\end{pmatrix}+(\frac{9}{6}+\frac{7}{6}t)\begin{pmatrix}
   1\\1\\-1
-\end{pmatrix*}+t\begin{pmatrix*}
+\end{pmatrix}+t\begin{pmatrix}
   2\\1\\4
-\end{pmatrix*}\\
-\vec{x}=\begin{pmatrix*}
+\end{pmatrix}\\
+\vec{x}=\begin{pmatrix}
  1\\2\\3
-\end{pmatrix*}+\begin{pmatrix*}
+\end{pmatrix}+\begin{pmatrix}
   \frac{9}{6}+\frac{7}{6}t\\  \frac{9}{6}+\frac{7}{6}t\\  -\frac{9}{6}-\frac{7}{6}t
-\end{pmatrix*}+t\begin{pmatrix*}
+\end{pmatrix}+t\begin{pmatrix}
   2\\1\\4
-\end{pmatrix*}\\
-\vec{x}=\begin{pmatrix*}
+\end{pmatrix}\\
+\vec{x}=\begin{pmatrix}
  \frac{5}{2}\\\frac{7}{2}\\\frac{3}{2}
-\end{pmatrix*}+t\begin{pmatrix*}
+\end{pmatrix}+t\begin{pmatrix}
   \frac{19}{6}\\\frac{13}{6}\\\frac{17}{6}
-\end{pmatrix*}\\
+\end{pmatrix}\\
 $$
 
 #### Koordinatenform und Koordinatenform
@@ -1360,15 +1435,15 @@ Dies wird der parameter der schnittgerade
 Aufstellen
 
 $$
-gs:\vec{x}=\begin{pmatrix*}
+gs:\vec{x}=\begin{pmatrix}
   x_1\\ x_2\\ x_3
-\end{pmatrix*}=\begin{pmatrix*}
+\end{pmatrix}=\begin{pmatrix}
   1-x_3\\ - \frac{3}{2}+x_3 \\ x_3
-\end{pmatrix*} = \begin{pmatrix*}
+\end{pmatrix} = \begin{pmatrix}
   1 \\ - \frac{3}{2} \\ 0
-\end{pmatrix*}+x_3\begin{pmatrix*}
+\end{pmatrix}+x_3\begin{pmatrix}
   -1 \\1\\1
-\end{pmatrix*} \qquad x_3\in \mathbb{R}
+\end{pmatrix} \qquad x_3\in \mathbb{R}
 $$
 #### Normalenform und Normalenform
 
@@ -1474,40 +1549,40 @@ $$
 bsp.:
 
 $$
-g:\vec{x}=\begin{pmatrix*}
+g:\vec{x}=\begin{pmatrix}
   -1\\3\\1
-\end{pmatrix*}+\lambda*\begin{pmatrix*}
+\end{pmatrix}+\lambda*\begin{pmatrix}
   2\\1\\-1
-\end{pmatrix*} \qquad \lambda \in \mathbb{R}\\
+\end{pmatrix} \qquad \lambda \in \mathbb{R}\\
 A(-2|-5|3)
 $$
 
 $$
-\bigg[ \begin{pmatrix*}
+\bigg[ \begin{pmatrix}
   -1\\3\\1
-\end{pmatrix*}+\lambda*\begin{pmatrix*}
+\end{pmatrix}+\lambda*\begin{pmatrix}
   2\\1\\-1
-\end{pmatrix*}-\begin{pmatrix*}
+\end{pmatrix}-\begin{pmatrix}
   2\\1\\-1
-\end{pmatrix*}\bigg]\circ\begin{pmatrix*}
+\end{pmatrix}\bigg]\circ\begin{pmatrix}
   2\\1\\-1
-\end{pmatrix*} =0\\
-\bigg[ \begin{pmatrix*}
+\end{pmatrix} =0\\
+\bigg[ \begin{pmatrix}
   1\\8\\-2
-\end{pmatrix*}+\lambda*\begin{pmatrix*}
+\end{pmatrix}+\lambda*\begin{pmatrix}
   2\\1\\-1
-\end{pmatrix*}\bigg]\circ\begin{pmatrix*}
+\end{pmatrix}\bigg]\circ\begin{pmatrix}
   2\\1\\-1
-\end{pmatrix*} =0\\
-\begin{pmatrix*}
+\end{pmatrix} =0\\
+\begin{pmatrix}
   1\\8\\-2
-\end{pmatrix*}\circ\begin{pmatrix*}
+\end{pmatrix}\circ\begin{pmatrix}
   2\\1\\-1
-\end{pmatrix*}+\lambda*\begin{pmatrix*}
+\end{pmatrix}+\lambda*\begin{pmatrix}
   2\\1\\-1
-\end{pmatrix*} \circ\begin{pmatrix*}
+\end{pmatrix} \circ\begin{pmatrix}
   2\\1\\-1
-\end{pmatrix*} =0\\
+\end{pmatrix} =0\\
 1*2+8*1-2*(-1)+2\lambda*2+\lambda+\lambda=0\\
 12+6\lambda=0\\
 \lambda=-2
@@ -1516,18 +1591,18 @@ $$
 $\lambda$ in g
 
 $$
-\vec{OL}=\begin{pmatrix*}
+\vec{OL}=\begin{pmatrix}
   -1\\3\\1
-\end{pmatrix*}-2*\begin{pmatrix*}
+\end{pmatrix}-2*\begin{pmatrix}
   2\\1\\-1
-\end{pmatrix*}=\begin{pmatrix*}
+\end{pmatrix}=\begin{pmatrix}
   -5\\1\\3
-\end{pmatrix*}\\
-\vec{AL}=\begin{pmatrix*}
+\end{pmatrix}\\
+\vec{AL}=\begin{pmatrix}
   -5+2\\1-5\\3-3
-\end{pmatrix*}=\begin{pmatrix*}
+\end{pmatrix}=\begin{pmatrix}
   -3\\6\\0
-\end{pmatrix*}
+\end{pmatrix}
 $$
 
 $$
@@ -1591,55 +1666,55 @@ berechnen Wie Punkt zu Ebene
 bsp.
 
 $$
-E:\vec{x}=\begin{pmatrix*}
+E:\vec{x}=\begin{pmatrix}
   0\\0\\0,6
-\end{pmatrix*}+s\begin{pmatrix*}
+\end{pmatrix}+s\begin{pmatrix}
   1\\0\\-0,2
-\end{pmatrix*}+t\begin{pmatrix*}
+\end{pmatrix}+t\begin{pmatrix}
   0\\1\\0,3
-\end{pmatrix*}\\
+\end{pmatrix}\\
 P(0,0,4)
 $$
 
 $$
-\vec{n}=\begin{pmatrix*}
+\vec{n}=\begin{pmatrix}
   1\\0\\-0,2
-\end{pmatrix*} \times \begin{pmatrix*}
+\end{pmatrix} \times \begin{pmatrix}
   0\\1\\0,3
-\end{pmatrix*} = \begin{pmatrix*}
+\end{pmatrix} = \begin{pmatrix}
   0,2\\-0,3\\1
-\end{pmatrix*}
+\end{pmatrix}
 $$
 
 $$
-l:\vec{x}=\begin{pmatrix*}
+l:\vec{x}=\begin{pmatrix}
   0\\0\\4
-\end{pmatrix*}+\lambda\begin{pmatrix*}
+\end{pmatrix}+\lambda\begin{pmatrix}
   0,2\\-0,3\\1
-\end{pmatrix*}
+\end{pmatrix}
 $$
 
 $$
-\begin{pmatrix*}
+\begin{pmatrix}
   0\\0\\4
-\end{pmatrix*}+\lambda\begin{pmatrix*}
+\end{pmatrix}+\lambda\begin{pmatrix}
   0,2\\-0,3\\1
-\end{pmatrix*}=\begin{pmatrix*}
+\end{pmatrix}=\begin{pmatrix}
   0\\0\\0,6
-\end{pmatrix*}+s\begin{pmatrix*}
+\end{pmatrix}+s\begin{pmatrix}
   1\\0\\-0,2
-\end{pmatrix*}+t\begin{pmatrix*}
+\end{pmatrix}+t\begin{pmatrix}
   0\\1\\0,3
-\end{pmatrix*}\\
-\begin{pmatrix*}
+\end{pmatrix}\\
+\begin{pmatrix}
   0\\0\\3,4
-\end{pmatrix*}=-\lambda\begin{pmatrix*}
+\end{pmatrix}=-\lambda\begin{pmatrix}
   0,2\\-0,3\\1
-\end{pmatrix*}+s\begin{pmatrix*}
+\end{pmatrix}+s\begin{pmatrix}
   1\\0\\-0,2
-\end{pmatrix*}+t\begin{pmatrix*}
+\end{pmatrix}+t\begin{pmatrix}
   0\\1\\0,3
-\end{pmatrix*}\\
+\end{pmatrix}\\
 \qquad\\
 \begin{align*}
  \lambda=-\frac{340}{113}
@@ -1647,21 +1722,21 @@ $$
 $$
 
 $$
-l:\vec{s}=\begin{pmatrix*}
+l:\vec{s}=\begin{pmatrix}
   0\\0\\4
-\end{pmatrix*}-\frac{340}{113}\begin{pmatrix*}
+\end{pmatrix}-\frac{340}{113}\begin{pmatrix}
   -0,2\\-0,3\\1
-\end{pmatrix*} = \begin{pmatrix*}
+\end{pmatrix} = \begin{pmatrix}
   \frac{68}{113}\\ \frac{102}{113}\\\frac{112}{113}
-\end{pmatrix*}
+\end{pmatrix}
 $$
 
 $$
-\begin{pmatrix*}
+\begin{pmatrix}
 \frac{68}{113}-0\\ \frac{102}{113}-0\\\frac{112}{113}-4
-\end{pmatrix*}=\begin{pmatrix*}
+\end{pmatrix}=\begin{pmatrix}
   \frac{68}{113}\\ \frac{102}{113}\\-\frac{340}{113}
-\end{pmatrix*}\\
+\end{pmatrix}\\
 \sqrt{\frac{68}{113}^2 \frac{102}{113}^2 (-\frac{340}{113})^2} = 3,198 \approx 3,2LE
 $$
 
@@ -1669,9 +1744,9 @@ $$
 
 $$
 d(P,E)=\bigg|\frac{a*x_1+b*x_2+c*x_3+d}{|\vec{n}|}  \bigg|\\
-mit \quad \vec{n}=\begin{pmatrix*}
+mit \quad \vec{n}=\begin{pmatrix}
   a\\ b\\ c
-\end{pmatrix*}und \quad x_1,x_2,x_3 \quad aus \quad P
+\end{pmatrix}und \quad x_1,x_2,x_3 \quad aus \quad P
 $$
 
 bsp.:
@@ -1682,9 +1757,9 @@ P(0_x|0_y|4_z)
 $$
 
 $$
-\vec{n}=\begin{pmatrix*}
+\vec{n}=\begin{pmatrix}
   2\\-3\\10
-\end{pmatrix*}=\sqrt{2^2+(-3)^2+10^2}=\sqrt{113}\\
+\end{pmatrix}=\sqrt{2^2+(-3)^2+10^2}=\sqrt{113}\\
 d(P,E)=\bigg|\frac{2*0-3*0+10*4-6}{\sqrt{113}}\bigg|=\bigg|\frac{34}{\sqrt{113}}\bigg|=3,198\approx 3,2
 $$
 
