@@ -11,8 +11,13 @@
     - [Symmetrie](#symmetrie)
     - [Achsen schnittpunkte](#achsen-schnittpunkte)
       - [Y achse](#y-achse)
-      - [X Achse](#x-achse)
+      - [X Achse (Nullstellen)](#x-achse-nullstellen)
     - [Extrempunkte](#extrempunkte)
+  - [Asymptoten](#asymptoten)
+    - [Prüfen auf behebbare defintions Lücken](#prüfen-auf-behebbare-defintions-lücken)
+  - [Tangenten](#tangenten)
+    - [Steigungsverhalten](#steigungsverhalten)
+  - [I'Hospital](#ihospital)
 
 <!-- /code_chunk_output -->
 
@@ -60,7 +65,7 @@ f(x)=\frac{Z(x)}{N(x)}=0 \quad |*N(x) \\
 Z(x)=0
 $$
 
-#### X Achse
+#### X Achse (Nullstellen)
 
 NST:
 
@@ -115,5 +120,158 @@ f''(x_2)&=f''(-1)&=-2&<0&\implies& HOP (-1|-2) \\
 \qquad\\
 f(x_1)&=f(1)&=2\\
 f(x_2)&=f(-1)&=-2
+\end{align*}
+$$
+
+## Asymptoten
+
+Höchste expnenenten im nenner und zähler
+
+$$
+\frac{x^3-20x^2+4}{30x^2+60x}
+$$
+
+Zähler $\implies 3$
+Nenner $\implies 2$
+
+|         |                                           |                                |                                                                                                                      |
+|---------|-------------------------------------------|--------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| $m<n$   | Zählergrad < Nennergrad                   | Wagerechte Asymptote           | $A:y=0$                                                                                                              |
+| $m=n$   | Zählergrad = Nennergrad                   | Wagerechte Asymptote           | $A:y=\frac{a_m}{b_n}$                                                                                                |
+| $m=n+1$ | Zählergrad ist um 1 größer als Nennergrad | Schiefe oder schräge Asymptote | $x\rightarrow+\infty \implies f(x) \rightarrow \pm \infty\\x\rightarrow-\infty \implies f(x) \rightarrow \mp \infty$ |
+| $m>n$   | Zählergrad > Nennergrad                   | Schiefe oder schräge Asymptote | $x\rightarrow+\infty \implies f(x) \rightarrow \pm \infty\\x\rightarrow-\infty \implies f(x) \rightarrow \pm \infty$ |
+
+$3=2+1 \implies$ Schräge Asy. $\implies$  Polynomdivision
+
+$$
+\begin{aligned}
+  &f(x)=& &(x^3  &&-20x^2  &&+0x+4)&:&(30x^2+60x)=\frac{1}{30}x-\frac{22}{30}+\frac{44x+4}{30x2+60x}\\
+  &     &-&(x^3  &&+2x^2)  &&     &&\\
+  &     & &0     &&-22x^2   &&+0x    &&\\
+  &     & &      &&-(-22x^2&&-44x)&&\\
+  &     & &      &&0       &&+44x+4     &&\\
+\end{aligned}
+$$
+
+$$
+A_1:y=\frac{1}{30}x+\frac{22}{30}
+$$
+
+### Prüfen auf behebbare defintions Lücken
+
+$$
+\begin{align*}
+Z(x_1)&=Z(0) &&=x^3-20*0^2+4&=&&4 \neq0\\
+Z(x_2)&=Z(-2)&&=(-2)^2-20*(-2)^2+4&=&&-8-80+4\neq0
+\end{align*}\bigg\}\implies\text{Polstellen}
+$$
+
+$\implies$ Senkrechte Asymptoten.:
+$A2: x_{p1}=-2\\ A3: x_{p2}=0$
+
+## Tangenten
+
+Tangente die die funktion in eine bestimmten x punkt berührt
+
+m (steigung) errechnen indem man x in die erste abletung einsetzt
+
+$$
+m= f'(-2)=\frac{(-2)^2-(-2)-1}{(-2-0,5)^2}=\frac{4}{5}
+$$
+
+y brecrechnen indem man x in funktion einsetzt
+
+$$
+y=f(-2)=\frac{(-2)^2-4(-2)+3}{(-2)-0,5}=-6
+$$
+
+t brechnen
+
+$$
+-6=\frac{4}{5}(-2)+t\\
+t=-\frac{22}{5}
+$$
+
+funktion aufstellen
+
+$$
+f(x)=\frac{4}{5}x-\frac{22}{5}
+$$
+
+### Steigungsverhalten
+
+Die intervalle werden durch z.b. definitions lücken oder nullstellen
+
+Deflücke = ${1}$
+Nullstellen = ${0}$
+
+$$
+f(x)=\frac{2x^2}{(x-1)^2}\\
+f'(x)=\frac{-4x^2+4x}{(x-1)^2}
+$$
+
+<svg xmlns="http://www.w3.org/2000/svg">
+  <rect x="21" y="66" width="300" height="4" fill="rgb(0, 0, 0)" />
+  <rect fill="rgb(0, 0, 0)" x="65" y="18" width="4" height="101" />
+  <rect x="72" y="18" width="4" height="97" fill="rgb(0, 0, 0)" />
+  <rect x="110" y="19" width="3" height="101" fill="rgb(0, 0, 0)" />
+  <rect x="156" y="18" width="3" height="101" fill="rgb(0, 0, 0)" />
+  <rect fill="rgb(0, 0, 0)" x="229" y="18" width="3" height="101" />
+  <rect fill="rgb(0, 0, 0)" x="282" y="20" width="3" height="101" />
+  <text textLength="21" font-size="38" x="35" y="49.9" fill="rgb(0, 0, 0)"> x</text>
+  <text textLength="33.9" font-size="25" x="25.6" y="96.8" fill="rgb(0, 0, 0)"> f'(x)</text>
+  <text textLength="38.9" font-size="41" x="80.6" y="103.2" fill="rgb(0, 0, 0)"> -</text>
+  <text textLength="20" font-size="25" x="80.6" y="50" fill="rgb(0, 0, 0)"> -1</text>
+  <text fill="rgb(0, 0, 0)" font-size="41" x="183.6" y="105.2" textLength="38.9">+</text>
+  <text fill="rgb(0, 0, 0)" font-size="25" x="183.6" y="50" textLength="38.9">0,5</text>
+  <text fill="rgb(0, 0, 0)" font-size="41" x="288.6" y="97.2" textLength="38.9">-</text>
+  <text fill="rgb(0, 0, 0)" font-size="25" x="288.6" y="50" textLength="38.9">2</text>
+  <text fill="rgb(0, 0, 0)" font-size="25" x="237.9" y="55.8" textLength="43.2">1</text>
+  <text textLength="45" font-size="25" x="232" y="98.8" fill="rgb(0, 0, 0)">NaN</text>
+  <text fill="rgb(0, 0, 0)" font-size="25" x="111.9" y="52.8" textLength="43.2">0</text>
+  <text fill="rgb(0, 0, 0)" font-size="25" x="123.9" y="101.8" textLength="23.2">0</text>
+</svg>
+
+interwalle
+
+$$
+\begin{align*}
+I_1 &]& -\infty&;0 &[ & FSM\\
+I_2 &]& 0&;1 &[ &SSM\\
+I_2 &]& 1&;\infty &[ &FSM\\
+\end{align*}
+$$
+
+## I'Hospital
+
+Zähler und nenner Funktion werden getrennt voneinander abgeleitet
+
+wenn ableitung $\frac{0}{0}$ oder $\frac{\infty}{\infty}$ ergibt
+
+wird die nenner und zähler funktion abgeleitet und dann erneut gelößt
+
+$$
+\lim_{x\to x_0}\frac{g(x)}{h(x)}=\lim_{x\to x_o}\frac{g'(x)}{g'(x)} \quad ...
+$$
+
+Es gibt auch ausnahmen wo es nicht geht
+
+bsp.
+
+(Ln Kann nicht in den Negativen bereich gehen)
+
+$$
+\begin{align*}
+\lim_{x\to\infty}\frac{\ln x}{x}&\\
+\lim_{x\to\infty}\frac{\ln x}{x} &= \frac{\infty}{\infty}\\
+\lim_{x\to\infty}\frac{\ln x}{x} &\underset{L'H}{\overset{\mathrm{\frac{\infty}{\infty}}}{=}}\lim_{x\to\infty}\frac{\frac{1}{x}}{1}=\lim_{x\to\infty}\frac{1}{x}=\frac{1}{\infty}=0^+
+\end{align*}
+$$
+
+---
+
+$$
+\begin{align*}
+  \lim_{x\to0}\frac{e^x-1}{x} \underset{L'H}{\overset{\mathrm{\frac{0}{0}}}{=}} \lim_{x\to0}\frac{e^x}{1}= \lim_{x\to0}e^x  =1
 \end{align*}
 $$
