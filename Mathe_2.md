@@ -28,7 +28,7 @@
     - [Symmetrie](#symmetrie)
       - [achsen sysmetrie](#achsen-sysmetrie)
       - [Punkt sysmetrie](#punkt-sysmetrie)
-    - [Verhalten Für $f$ für $|x|\\to\\infty$](#verhalten-für-f-für-xtoinfty)
+    - [Verhalten Für $f$ für $|x|\to\infty$](#verhalten-für-f-für-xtoinfty)
     - [stetigkeit](#stetigkeit-1)
     - [Extrempunkte](#extrempunkte)
     - [Monotonie / Steigunsverhalten](#monotonie--steigunsverhalten)
@@ -116,7 +116,8 @@ $$f(x)=\begin{cases}(x+1)^2-1& \text{für } x \leq 0 \\2x& \text{für } x > 0\en
 
 $$g(x)=\begin{cases}x(x+3)& \text{für } x \leq 0 \\2x& \text{für } x > 0\end{cases}$$
 
-$$\lim\limits_{x\to0^+}
+$$
+\lim\limits_{x\to0^+}
 \bigg(\frac{f(x)-f(x_0)}{x-x_0}\bigg)=
 \lim\limits_{x\to0^+}
 \bigg(\frac{2x-2*0}{x-0}\bigg)=
@@ -124,7 +125,8 @@ $$\lim\limits_{x\to0^+}
 \bigg(\frac{2 \textcolor{red}{x}}{\textcolor{red}{x}}\bigg)=2
 $$
 
-$$\lim\limits_{x\to0^-}
+$$
+\lim\limits_{x\to0^-}
 \bigg(\frac{f(x)-f(x_0)}{x-x_0}\bigg)=
 \lim\limits_{x\to0^-}
 \bigg(\frac{(x+1)^2-1-[(0+1)^2-1]}{x-0}\bigg)=
@@ -133,7 +135,8 @@ $$\lim\limits_{x\to0^-}
 \lim\limits_{x\to0^-}\bigg(\frac{\textcolor{red}{x}(x+2)}{\textcolor{red}{x}} \bigg)=2
 $$
 
-$$\lim\limits_{x\to0^-}
+$$
+\lim\limits_{x\to0^-}
 \bigg(\frac{g(x)-g(x_0)}{x-x_0}\bigg)=
 \lim\limits_{x\to0^-}
 \bigg(\frac{\textcolor{red}{x}(x+3)-0}{\textcolor{red}{x}-0}\bigg)=3
@@ -146,8 +149,13 @@ $g(x)$ ist nicht differenzierbar
 
 ### Potenz
 
-$$f(x)=x^m \qquad m \in \mathbb{Q}\ \{0\}$$
-$$\bigg(f'(x)=m*x^{m-1}\bigg)=\bigg( \frac{d}{dx}(x^r)=(r*x^{r-1})\bigg)$$
+$$
+f(x)=x^m \qquad m \in \mathbb{Q}\ \{0\}
+$$
+
+$$
+\bigg(f'(x)=m*x^{m-1}\bigg)=\bigg( \frac{d}{dx}(x^r)=(r*x^{r-1})\bigg)
+$$
 
 ---
 
@@ -174,32 +182,44 @@ $$
 \end{align*}
 $$
 
-
 ### Faktor
 
-$$g(x)=a*f(x)\qquad a \in \mathbb{R}$$
+$$
+g(x)=a*f(x)\qquad a \in \mathbb{R}
+$$
 
-$$\bigg(g'(x)=a*f'(x)\bigg)=\bigg( f'(x)=c*u'(x)\bigg)$$
+$$
+\bigg(g'(x)=a*f'(x)\bigg)=\bigg( f'(x)=c*u'(x)\bigg)
+$$
 
 ---
 
-$$f(x)=5x^3=5*3x^2=15x^2$$
+$$
+f(x)=5x^3=5*3x^2=15x^2
+$$
 
-$$f(s)=-2x^{10}=-2*10x^9=-20x^9 $$
+$$
+f(s)=-2x^{10}=-2*10x^9=-20x^9
+$$
 
 ### Konstantenregel
 
-$$f(x)=c \text{ mit x,c } \in \mathbb{R} \text{ gilt: } f(x)=0$$
+$$
+f(x)=c \text{ mit x,c } \in \mathbb{R} \text{ gilt: } f(x)=0
+$$
 
 ---
 
-$$f(x)=3\\f'(x)=0$$
-
+$$
+f(x)=3\\f'(x)=0
+$$
 
 ### Summenregel
 
 Sind zwei funktionen $u$ und $v$ differenzierbar auf einem infervall $D$, so ist auch die SummenFunktion $f=u+v$ auf $D$ Differenzierbar und es gilt für $x \in D$:
-$$f(x)=u(x)+v(x) \Rightarrow f'(x)=u'(x)+v'(x) $$
+$$
+f(x)=u(x)+v(x) \Rightarrow f'(x)=u'(x)+v'(x)
+$$
 
 ---
 
@@ -209,7 +229,7 @@ f(x)&=x^2+x^3\\
 f'(x)&=2x^1+3x^2=2x+3x^2
 \end{align*}
 $$
- 
+
 $$
 \begin{align*}
   f(x)&=x^7+10\\
@@ -219,11 +239,15 @@ $$
 
 ### Produkt Regel
 
-$$f(x)=u(x)+v(x)=u'(x)*v(x)+u(x)*v'(x)$$
+$$
+f(x)=u(x)+v(x)=u'(x)*v(x)+u(x)*v'(x)
+$$
 
 ---
 
-$$f(x)=x^5+x^3$$
+$$
+f(x)=x^5+x^3
+$$
 
 $$
 \begin{align*}
@@ -244,13 +268,17 @@ $$
 
 Sind zwei funktionen $u$ und $v$ differenzierbar und gilt $v(x)\neq 0$, so ist auch die funktione $f$ mit $f(x)=\frac{v(x)}{v(x)}$ differenzierbar
 
-$$f(x)=\frac{u(x)}{v(x)}=\frac{u'(x)*v(x)-u(x)*v'(x)}{[v(x)]^2}$$
+$$
+f(x)=\frac{u(x)}{v(x)}=\frac{u'(x)*v(x)-u(x)*v'(x)}{[v(x)]^2}
+$$
 
 #### KehrwertRegel
 
 Ist die funktion $u(x)=1$ und die funktion $v$ differenzierbar und gilt $v(x)\neq0$, so ist auch $f(x)=\frac{1}{v(x)}$
 
-$$f(x)=\frac{1}{v(x)}\Rightarrow f'(x)=\frac{-v'(x)}{(v(x))^2}$$
+$$
+f(x)=\frac{1}{v(x)}\Rightarrow f'(x)=\frac{-v'(x)}{(v(x))^2}
+$$
 
 ---
 
@@ -268,21 +296,31 @@ $$
 
 ### Ketten Regel
 
-$$k(x)=f[g(x)]$$
+$$
+k(x)=f[g(x)]
+$$
 
-$$k'(x)=(f[g(x)])=f'[g(x)]*g'(x)$$
+$$
+k'(x)=(f[g(x)])=f'[g(x)]*g'(x)
+$$
 
 --
 
-$$f(x)=u(v(x))$$
+$$
+f(x)=u(v(x))
+$$
 
-$$f'(x)=u'(v(x))*v'(x)$$
+$$
+f'(x)=u'(v(x))*v'(x)
+$$
 
 Äusere mal innere ableitung
 
 ---
 
-$$k(x)=\underbrace{ (\overbrace{3x^4+2x}^{g(x)})^2}_{f(g(x))}$$
+$$
+k(x)=\underbrace{ (\overbrace{3x^4+2x}^{g(x)})^2}_{f(g(x))}
+$$
 
 $$
 \begin{align*}
@@ -302,7 +340,9 @@ $$
 
 --
 
-$$k(x)=\sqrt{3x^4+2x}=(3x^4+2x)^{\frac{1}{2}}$$
+$$
+k(x)=\sqrt{3x^4+2x}=(3x^4+2x)^{\frac{1}{2}}
+$$
 
 $$
 \begin{align*}
@@ -391,7 +431,9 @@ Beachten das $-x^4 = -x*-x*-x*-x = + ;\qquad -x^3 = -x*-x*-x=-$
 
 #### achsen sysmetrie
 
-$$f(x)=f(-x)$$
+$$
+f(x)=f(-x)
+$$
 
 bsp.
 
@@ -428,8 +470,8 @@ $x^3$ ist ungerade
 
 $$
 \begin{align*}
-   \rightarrow\quad&x\to-\infin&:&f(x)\to- \infin\\
-  &x\to+\infin&:&f(x)\to+\infin
+   \rightarrow\quad&x\to-\infty&:&f(x)\to- \infty\\
+  &x\to+\infty&:&f(x)\to+\infty
 \end{align*}
 $$
 
@@ -437,7 +479,7 @@ Koeffizient $\frac{1}{12}$ ist positiv
 
 Lim für $\lim\limits_{x\to x_0^+}$ und $\lim\limits_{x\to x_0^-}$
 
-ergibnt $\infin$ und $-\infin$
+ergibnt $\infty$ und $-\infty$
 
 ### stetigkeit
 
@@ -454,13 +496,13 @@ bsp.
 Positive seite
 
 $$
-\lim_{x\rightarrow \infin}(x^4-8x^3+18x^2)=\lim_{x\rightarrow \infin}x^4(1-\frac{8}{x}+\frac{18}{x^2})=\infin(1-0^++0^+)=0*\infin=+\infin
+\lim_{x\rightarrow \infty}(x^4-8x^3+18x^2)=\lim_{x\rightarrow \infty}x^4(1-\frac{8}{x}+\frac{18}{x^2})=\infty(1-0^++0^+)=0*\infty=+\infty
 $$
 
 negative seite
 
 $$
-\lim_{x\rightarrow -\infin}(x^4-8x^3+18x^2)=\lim_{x\rightarrow -\infin}x^4(1-\frac{8}{x}+\frac{18}{x^2})=\infin(1-0+0)=0*\infin=+\infin
+\lim_{x\rightarrow -\infty}(x^4-8x^3+18x^2)=\lim_{x\rightarrow -\infty}x^4(1-\frac{8}{x}+\frac{18}{x^2})=\infty(1-0+0)=0*\infty=+\infty
 $$
 
 Die funktion verläuft auf beiden seiten ins positive unendlich
@@ -471,7 +513,9 @@ Die Nullstelle der 1. Ableitung sind Mögliche Extrema, müssen aber nicht
 
 **HOP / TIP**
 
-$$f'(x)=0$$
+$$
+f'(x)=0
+$$
 
 Vorzeichen wechsel von $f'(x)$ ->Extrempunkt
 
@@ -495,7 +539,7 @@ $$lösungsformel\\x_1=-3\\x_2=2$$
 Vorzeichen Tabelle
 
 |          |                  |     |             |     |            |
-| -------- | ---------------- | --- | ----------- | --- | ---------- | 
+| -------- | ---------------- | --- | ----------- | --- | ---------- |
 | x        | --               | -3  | --          | 2   | --         |
 | $f'(x)$  | +                | 0   | -           | 0   | +          |
 | steigung | $\nearrow$       | --  | $\searrow$  | --  | $\nearrow$ |
@@ -546,9 +590,9 @@ monoton steigend/Fallend ist wenn der verlauf durch z.b. einen Terrasen punkt
 
 $$
 \begin{align*}
-  f(x)\text{ ist im } &I_1 =]-\infin;-3[ & \text{streng monoton steigend (sms)} \\
+  f(x)\text{ ist im } &I_1 =]-\infty;-3[ & \text{streng monoton steigend (sms)} \\
   &I_2 = ]-3;2[& \text{streng monoton fallend (smf)} \\
-  &I_3 =]2;\infin[& \text{streng monoton steigend (sms)}\\
+  &I_3 =]2;\infty[& \text{streng monoton steigend (sms)}\\
 \end{align*}
 $$
 
@@ -605,8 +649,8 @@ Die richung stellt man sich vor indem man von oben drauf schaut auf den verlauf
 
 $$
 \begin{align*}
-  f(x)\text{ ist } &I_1 =]-\infin&;-\frac{1}{2}[ & \text{ rechtsgekümmt} \\
-  &I_2 =]\frac{1}{2}&;\infin[& \text{ Linksgekrümmt}\\
+  f(x)\text{ ist } &I_1 =]-\infty &;-\frac{1}{2}[ & \text{ rechtsgekümmt} \\
+  &I_2 =]\frac{1}{2}&;\infty[& \text{ Linksgekrümmt}\\
 \end{align*}
 $$
 
@@ -664,16 +708,25 @@ $ t(x)=m_t*x+S_{yt} $
 1. Wep bestimmen
 
 
- $$\text{Wep   }(-1|\frac{8}{3})$$
-$$x_0 =-1$$
+$$
+\text{Wep   }(-1|\frac{8}{3})
+$$
+
+$$
+x_0 =-1
+$$
 
 2.  $t_m$ bestimmen
 
-$$m_t=f'(x_0)=f'(-1)=-\frac{8}{3}$$
+$$
+m_t=f'(x_0)=f'(-1)=-\frac{8}{3}
+$$
 
 3. $t(x_0)$
 
-$$t(x_0)=f(x_0)=f(-1)=\frac{8}{3} \widehat{=} \text{   y-wert des WEPs}$$
+$$
+t(x_0)=f(x_0)=f(-1)=\frac{8}{3} \widehat{=} \text{   y-wert des WEPs}
+$$
 
 4. y-Achsenabschnitt | $S_{yt}$ bestimmen
 
@@ -687,13 +740,16 @@ $$t(x_0)=f(x_0)=f(-1)=\frac{8}{3} \widehat{=} \text{   y-wert des WEPs}$$
 
 5. Gleichung aufstellen
 
-$$ t(x) = -\frac{8}{3}x $$
+$$
+t(x) = -\frac{8}{3}x 
+$$
 
 ### Wende Normale
 
 grundform 
 
-$$ n(x) = m_n*x*S_{Yn}\\
+$$
+n(x) = m_n*x*S_{Yn}\\
 t(x) \perp n(x)
 $$
 
@@ -729,7 +785,9 @@ $$
 
 4. Wendenormale Aufstellen
 
-$$ n(x)=\frac{3}{8}x+\frac{73}{24}$$
+$$
+n(x)=\frac{3}{8}x+\frac{73}{24}
+$$
 
 # Tests
 
