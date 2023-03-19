@@ -13,10 +13,11 @@
       - [Y achse](#y-achse)
       - [X Achse (Nullstellen)](#x-achse-nullstellen)
     - [Extrempunkte](#extrempunkte)
-  - [Asymptoten](#asymptoten)
+    - [Asymptoten](#asymptoten)
     - [Prüfen auf behebbare defintions Lücken](#prüfen-auf-behebbare-defintions-lücken)
-  - [Tangenten](#tangenten)
-    - [Steigungsverhalten](#steigungsverhalten)
+    - [Tangenten](#tangenten)
+    - [Steigungsverhalten montonioe verhalten](#steigungsverhalten-montonioe-verhalten)
+    - [Verhalten im unendlichen](#verhalten-im-unendlichen)
   - [I'Hospital](#ihospital)
 
 <!-- /code_chunk_output -->
@@ -123,7 +124,7 @@ f(x_2)&=f(-1)&=-2
 \end{align*}
 $$
 
-## Asymptoten
+### Asymptoten
 
 Höchste expnenenten im nenner und zähler
 
@@ -169,7 +170,7 @@ $$
 $\implies$ Senkrechte Asymptoten.:
 $A2: x_{p1}=-2\\ A3: x_{p2}=0$
 
-## Tangenten
+### Tangenten
 
 Tangente die die funktion in eine bestimmten x punkt berührt
 
@@ -198,7 +199,7 @@ $$
 f(x)=\frac{4}{5}x-\frac{22}{5}
 $$
 
-### Steigungsverhalten
+### Steigungsverhalten montonioe verhalten
 
 Die intervalle werden durch z.b. definitions lücken oder nullstellen
 
@@ -239,6 +240,31 @@ $$
 I_1 &]& -\infty&;0 &[ & FSM\\
 I_2 &]& 0&;1 &[ &SSM\\
 I_2 &]& 1&;\infty &[ &FSM\\
+\end{align*}
+$$
+
+
+### Verhalten im unendlichen
+
+in $\infty$ und $-\infty$ I'Hospital Nutzen
+
+$$
+f(x)=\frac{2x^2}{(x-1)^2}
+$$
+
+$$
+\begin{align*}
+\lim_{x\to\infty}f(x)=&\lim_{x\to\infty}\frac{2x^2}{(x-1)^2}&=\frac{\infty}{\infty}\\
+\lim_{x\to\infty} \underset{L'H}{\overset{\mathrm{\frac{\infty}{\infty}}}{=}}& \lim_{x\to\infty}\frac{4x}{x(x-1)^2}&=\frac{\infty}{\infty}\\  
+\lim_{x\to\infty} \underset{L'H}{\overset{\mathrm{\frac{\infty}{\infty}}}{=}}& \lim_{x\to\infty}\frac{4}{2}&=2
+\end{align*}
+$$
+
+$$
+\begin{align*}
+\lim_{x\to-\infty}f(x)=&\lim_{x\to-\infty}\frac{2x^2}{(x-1)^2}&=\frac{-\infty}{-\infty}\\
+\lim_{x\to-\infty} \underset{L'H}{\overset{\mathrm{\frac{\infty}{\infty}}}{=}}& \lim_{x\to-\infty}\frac{4x}{x(x-1)^2}&=\frac{-\infty}{-\infty}\\  
+\lim_{x\to-\infty} \underset{L'H}{\overset{\mathrm{\frac{\infty}{\infty}}}{=}}& \lim_{x\to-\infty}\frac{4}{2}&=2
 \end{align*}
 $$
 
