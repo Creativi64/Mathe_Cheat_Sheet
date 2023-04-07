@@ -19,6 +19,18 @@
     - [Steigungsverhalten montonioe verhalten](#steigungsverhalten-montonioe-verhalten)
     - [Verhalten im unendlichen](#verhalten-im-unendlichen)
   - [I'Hospital](#ihospital)
+  - [KuvenDiskussion  $e$ funktion](#kuvendiskussion--e-funktion)
+    - [Was ist $e$ Funktion](#was-ist-e-funktion)
+    - [Symetrie](#symetrie)
+    - [Nullstellen](#nullstellen)
+    - [Vorzeichen Verteilung](#vorzeichen-verteilung)
+    - [Y-achsen Abschnitt](#y-achsen-abschnitt)
+    - [Asymtoten](#asymtoten)
+    - [Abletungen](#abletungen)
+    - [Monitonoieverhalten](#monitonoieverhalten)
+    - [Extrempunkte](#extrempunkte-1)
+    - [Krümmungsverhalten](#krümmungsverhalten)
+    - [Wendepunkte](#wendepunkte)
 
 <!-- /code_chunk_output -->
 
@@ -133,6 +145,7 @@ $$
 $$
 
 Zähler $\implies 3$
+
 Nenner $\implies 2$
 
 |         |                                           |                                |                                                                                                                      |
@@ -300,4 +313,195 @@ $$
 \begin{align*}
   \lim_{x\to0}\frac{e^x-1}{x} \underset{L'H}{\overset{\mathrm{\frac{0}{0}}}{=}} \lim_{x\to0}\frac{e^x}{1}= \lim_{x\to0}e^x  =1
 \end{align*}
+$$
+
+## KuvenDiskussion  $e$ funktion
+
+### Was ist $e$ Funktion
+
+Fnuktion die $e^x$ enthält
+
+$$
+f(x)=e^x
+$$
+
+Die allgemeine e-funktion unterschreitet die X achse niemals und nur wenn eine y achsen verschiebung vor liegt
+
+### Symetrie
+
+Efinktionen besitzen keine Symetrie
+
+$$
+f(-x)=f(x)\\
+f(x)=(x+1)*e^x\\
+f(-x)=(-x+1)*e^{-x}=\frac{(1-x)}{e^x} \neq f(x)
+$$
+$$
+-f(x)=-(\frac{1-x}{e^x})=\frac{-1+x}{e^x}\neq f(x)\\
+\implies KEINE \quad Symetrie
+$$
+### Nullstellen
+
+$$
+f(x)=0\\
+0=\underbrace{(x+1)}_{=-1}*\underbrace{e^x}_{>0}
+$$
+
+$$
+\text{Fall 1.}:x+1 =0 \implies x_1=-1 \implies einfache NST(-1|0)\\
+\text{Fall 2.}:e^x =0 \implies e^x>0 \implies \text{Keine Nst}
+$$
+
+### Vorzeichen Verteilung
+
+<svg xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="55" width="300" height="3" fill="rgb(0, 0, 0)" />
+  <rect x="20" y="107" width="300" height="3" fill="rgb(0, 0, 0)" />
+  <rect x="65" y="20" width="3" height="160" fill="rgb(0, 0, 0)" />
+  <rect x="70" y="20" width="3" height="160" fill="rgb(0, 0, 0)" />
+  <rect x="150" y="20" width="3" height="160" fill="rgb(0, 0, 0)" />
+  <rect x="220" y="20" width="3" height="160" fill="rgb(0, 0, 0)" />
+  <text textLength="21" font-size="38" x="35" y="50" fill="rgb(0, 0, 0)">x</text>
+  <text textLength="34" font-size="25" x="26" y="80" fill="rgb(0, 0, 0)">(x+1)</text>
+  <text textLength="34" font-size="25" x="26" y="105" fill="rgb(0, 0, 0)">e^x</text>
+  <text textLength="34" font-size="25" x="26" y="130" fill="rgb(0, 0, 0)">f(x)</text>
+  <!-- 1-->
+  <text textLength="35" font-size="30" x="170" y="50" fill="rgb(0, 0, 0)">-1</text>
+  <!-- 1-->
+  <text textLength="35" font-size="30" x="100" y="80" fill="rgb(0, 0, 0)">-</text>
+  <text textLength="35" font-size="30" x="180" y="80"  fill="rgb(0, 0, 0)">0</text>
+  <text textLength="35" font-size="30" x="235" y="80" fill="rgb(0, 0, 0)">+</text>
+  <!-- 1-->
+  <text textLength="35" font-size="30" x="100" y="105" fill="rgb(0, 0, 0)">+</text>
+  <text textLength="35" font-size="30" x="235" y="105" fill="rgb(0, 0, 0)">+</text>
+  <!-- 1-->
+  <text textLength="35" font-size="30" x="100" y="130" fill="rgb(0, 0, 0)">-</text>
+  <text textLength="35" font-size="30" x="235" y="130" fill="rgb(0, 0, 0)">+</text>
+</svg>
+
+$$
+\text{für } > -1: f(x)>0\\
+\text{für } < -1: f(x)<0
+$$
+
+### Y-achsen Abschnitt
+
+$$
+f(0)=(0+1)*e^0=1*1=1\implies S_y(0|1)
+$$
+
+### Asymtoten
+
+$$
+\lim_{x\to-\infty}(x+1)*e^x=-\infty*0= \lim_{x\to-\infty}\frac{(x+1)}{e^{-x}} \underset{L'H}{\overset{\mathrm{\frac{\infty}{\infty}}}{=}}\lim_{x\to\infty}\frac{1}{-e^{-x}}=\frac{1}{-\infty}=0^-\\
+A_1:y=0\\
+\lim_{x\to\infty}(x+1)*e^x=\infty*\infty=\infty\implies \text{Keine Weitere Asy.}
+$$
+
+### Abletungen
+
+Ableitung  von $e^x \implies e^x$
+
+$$
+\begin{align*}
+f(x)&=(x+1)*e^x\\
+f'(x)&=1*e^x+(x+1)*e^x\\
+&e  \text{ Ausklammern} \\
+f'(x)&=e^x(1+(x+1))\\
+&\text{Zusammenfassen}\\
+f'(x)&=e^x(x+2)\\
+f'(x)&=(x+2)*e^x\\
+\end{align*}
+$$
+
+zweite
+
+$$
+f''(x)=1*e^x+(x+2)*e^x\\
+f''(x)=e^x(1+(x+2))\\
+f''(x)=(x+3)*e^x
+$$
+
+### Monitonoieverhalten
+
+$$
+f'(x)=(x+2)*e^x\\
+f'(x)=0\\
+0=\underbrace{(x+2)}_{=-2}*\underbrace{e^x}_{>0}\\
+x_2=-2
+$$
+
+<svg xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="55" width="300" height="3" fill="rgb(0, 0, 0)" />
+  <rect x="20" y="107" width="300" height="3" fill="rgb(0, 0, 0)" />
+  <rect x="65" y="20" width="3" height="160" fill="rgb(0, 0, 0)" />
+  <rect x="70" y="20" width="3" height="160" fill="rgb(0, 0, 0)" />
+  <rect x="150" y="20" width="3" height="160" fill="rgb(0, 0, 0)" />
+  <rect x="220" y="20" width="3" height="160" fill="rgb(0, 0, 0)" />
+  <text textLength="21" font-size="38" x="35" y="50" fill="rgb(0, 0, 0)">x</text>
+  <text textLength="34" font-size="25" x="26" y="80" fill="rgb(0, 0, 0)">(x+2)</text>
+  <text textLength="34" font-size="25" x="26" y="105" fill="rgb(0, 0, 0)">e^x</text>
+  <text textLength="34" font-size="25" x="26" y="130" fill="rgb(0, 0, 0)">f'(x)</text>
+  <!-- 1-->
+  <text textLength="35" font-size="30" x="170" y="50" fill="rgb(0, 0, 0)">-2</text>
+  <!-- 1-->
+  <text textLength="35" font-size="30" x="100" y="80" fill="rgb(0, 0, 0)">-</text>
+  <text textLength="35" font-size="30" x="180" y="80"  fill="rgb(0, 0, 0)">0</text>
+  <text textLength="35" font-size="30" x="235" y="80" fill="rgb(0, 0, 0)">+</text>
+  <!-- 1-->
+  <text textLength="35" font-size="30" x="100" y="105" fill="rgb(0, 0, 0)">+</text>
+  <text textLength="35" font-size="30" x="235" y="105" fill="rgb(0, 0, 0)">+</text>
+  <!-- 1-->
+  <text textLength="35" font-size="30" x="100" y="130" fill="rgb(0, 0, 0)">-</text>
+  <text textLength="35" font-size="30" x="235" y="130" fill="rgb(0, 0, 0)">+</text>
+  <text textLength="50" font-size="20" x="160" y="130" fill="rgb(0, 0, 0)">VZW</text>
+</svg>
+
+$$
+\qquad\\
+I_1 ]-\infty;-2[ FSM\\
+I_2 ]-2;\infty[ SSM
+$$
+
+### Extrempunkte
+
+$$
+TIP(-2|f(-2)) \implies TIP(-2|-1,34)\\
+$$
+
+### Krümmungsverhalten
+
+$$
+f''(x)=0\\
+0=\underbrace{(x+3)}_{=-3}*\underbrace{e^x}_{>0}\\
+x_1=-3 \implies NST_3(-3|0)
+$$
+
+
+<svg xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="55" width="300" height="3" fill="rgb(0, 0, 0)" />
+  <rect x="65" y="20" width="3" height="160" fill="rgb(0, 0, 0)" />
+  <rect x="70" y="20" width="3" height="160" fill="rgb(0, 0, 0)" />
+  <rect x="150" y="20" width="3" height="160" fill="rgb(0, 0, 0)" />
+  <rect x="220" y="20" width="3" height="160" fill="rgb(0, 0, 0)" />
+  <text textLength="21" font-size="38" x="35" y="50" fill="rgb(0, 0, 0)">x</text>
+  <text textLength="34" font-size="25" x="26" y="100" fill="rgb(0, 0, 0)">f''(x)</text>
+  <!-- 1-->
+  <text textLength="35" font-size="30" x="170" y="50" fill="rgb(0, 0, 0)">-3</text>
+  <!-- 1-->
+  <text textLength="35" font-size="30" x="100" y="80" fill="rgb(0, 0, 0)">-</text>
+  <text textLength="35" font-size="30" x="180" y="80"  fill="rgb(0, 0, 0)">0</text>
+  <text textLength="35" font-size="30" x="235" y="80" fill="rgb(0, 0, 0)">+</text>
+  <text textLength="50" font-size="20" x="160" y="130" fill="rgb(0, 0, 0)">VZW</text>
+</svg>
+
+$$
+I_3 = ]-\infty;-3 [ \text{Rechts Gekrm}\\
+I_4 = ]-3;\infty [ \text{Links Gekrm}\\
+$$
+
+### Wendepunkte
+
+$$
+\implies WEP(-3|f(-3)) \implies WEP(-3|0,1)
 $$

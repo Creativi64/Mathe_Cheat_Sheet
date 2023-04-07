@@ -5,7 +5,11 @@
 		}
 	],
 	"settings": {
-		"svg.preview.background": "transparent"
-		 
+		"svg.preview.background": "transparent",
+		"editor.wordWrap":"off",
+		"editor.wordWrapColumn": 500,
+		"interactiveSession.editor.wordWrap": "off",
+		"diffEditor.wordWrap": "off"
 	}
+
 }
